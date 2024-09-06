@@ -1,0 +1,2166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+    <link rel="stylesheet" href="./libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./pages/portal/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container desktop">
+            <div class="row">
+                <div class="col p-0 d-flex justify-content-between flex-wrap">
+                    <a class="logo" href="https://sergey-khomyakov.github.io/AdamDemo/PortalIndex.html">
+                        <img src="./img/Other/Logo.svg" class="logo__img" />
+                    </a>
+                    <div class="header__bar">
+                        <div class="searchbox">
+                            <div class="searchbox__input">
+                                <img src="./img/icon/MagnifyingGlass.svg" />
+                                <input type="text" id="searchPeople" class="active" placeholder="Поиск по сотруднику" />
+                                <input type="text" id="searchDocument" placeholder="Поиск по документам" />
+                            </div>
+                            <div class="searchbox__btns">
+                                <div class="searchbox__btn active">
+                                    <img src="./img/icon/UserCircleHeader.svg" class="searchbox__icon" />
+                                    <p class="searchbox__text">Сотрудники</p>
+                                </div>
+                                <div class="searchbox__btn">
+                                    <img src="./img/icon/FileHeader.svg" class="searchbox__icon" />
+                                    <p class="searchbox__text">Документы</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tooltip__cust" id="zoom">
+                            <a href="#">
+                                <img src="./img/icon/ArrowsOut.svg" alt="Масштаб сайта">
+                            </a>
+                            <div class="tooltip_arrow"></div>
+                            <p class="tooltip__info">Масштаб сайта</p>
+                        </div>
+                        <div class="scale__point">
+                            <div class="scale__box">
+                                <p>Масштаб</p>
+                                <input type="range" disabled id="scale" min="0.5" max="5" step="0.1" value="1">
+                                <div class="scale__block">
+                                    <img src="./img/icon/Minus.svg" id="scaleMinus" alt="">
+                                    <span id="scaleVal">1</span>
+                                    <img src="./img/icon/Plus.svg" id="scalePlus" alt="">
+                                </div>
+                                <a href="#" id="saveScale" class="btn">Сохранить</a>
+                            </div>
+                        </div>
+                        <div class="tooltip__cust">
+                            <a href="#" style="display: flex; align-items: center;">
+                                <img src="./img/icon/UsersThree.svg" style="width: 20px; height: 20px;" alt="">
+                            </a>
+                            <div class="tooltip_arrow"></div>
+                            <p class="tooltip__info">Орг.структура</p>
+                        </div>
+                        <div class="tooltip__cust">
+                            <a href="#" style="display: flex; align-items: center;">
+                                <img src="./img/icon/dataflow-01.svg" style="width: 18px; height: 18px;" alt="">
+                            </a>
+                            <div class="tooltip_arrow"></div>
+                            <p class="tooltip__info">Карта сайта</p>
+                        </div>
+                        <a class="widget__lk__info"
+                            href="https://sergey-khomyakov.github.io/AdamDemo/PortalEmployeeCard.html">
+                            <div class="widget__lk__img header">
+                                <img src="./img/people/Avatar.svg">
+                                <div class="widget__lk__counter header">12</div>
+                            </div>
+                            <div class="widget__lk__block">
+                                <p style="margin-bottom: 5px;">Здравствуйте,</p>
+                                <div class="widget__lk__fio header">Александр Иванович</div>
+                            </div>
+                        </a>
+                        <div class="tooltip__cust">
+                            <a href="#">
+                                <img src="./img/icon/logout (1).svg" alt="">
+                            </a>
+                            <div class="tooltip_arrow"></div>
+                            <p class="tooltip__info">Выход</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-0 ">
+                    <ul class="nav">
+                        <li>
+                            <a class="nav__link" href="#">О КОМПАНИИ</a>
+                        </li>
+                        <li><a class="nav__link" href="#">ЖИЗНЬ</a></li>
+                        <li><a class="nav__link" href="#">HR СОТРУДНИКИ</a></li>
+                        <li><a class="nav__link" href="#">СЕРВИСЫ</a></li>
+                        <li><a class="nav__link" href="#">
+                                БАЗА ЗНАНИЙ
+                                <img src="./img/icon/chevron-down.svg" class="" style="user-select: auto;">
+                            </a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a class="dropdown__item" href="#">
+                                        <img src="./img/icon/layout-bottom.svg" />
+                                        <div class="dropdown__block">
+                                            <p class="dropdown__block__title">Составление отчетов</p>
+                                            <p class="dropdown__block__description">Статистика и метрики</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown__item" href="#">
+                                        <img src="./img/icon/cube-01.svg" />
+                                        <div class="dropdown__block">
+                                            <p class="dropdown__block__title">Командная сеть</p>
+                                            <p class="dropdown__block__description">Мониторинг команд</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown__item" href="#">
+                                        <img src="./img/icon/play-circle.svg" />
+                                        <div class="dropdown__block">
+                                            <p class="dropdown__block__title">Сегментация по отчетам</p>
+                                            <p class="dropdown__block__description">Проверка скрытых трендов</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown__item" href="#">
+                                        <img src="./img/icon/file-code-01.svg" />
+                                        <div class="dropdown__block">
+                                            <p class="dropdown__block__title">Групповая аналитика</p>
+                                            <p class="dropdown__block__description">Подсчет в B2B сегменте</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown__item" href="#">
+                                        <img src="./img/icon/life-buoy-01.svg" />
+                                        <div class="dropdown__block">
+                                            <p class="dropdown__block__title">Конвертация</p>
+                                            <p class="dropdown__block__description">Learn, fix a problem, and get ansers
+                                                to your questions.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="nav__link" href="#">ДОКУМЕНТЫ</a></li>
+                        <li><a class="nav__link" href="#">ОБУЧЕНИЕ</a></li>
+                        <li><a class="nav__link" href="#">ИДЕИ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container mob">
+            <div class="row">
+                <div class="col p-0">
+                    <div class="header__mob__box">
+                        <a class="logo" href="https://sergey-khomyakov.github.io/AdamDemo/PortalIndex.html">
+                            <img src="./img/Other/LogoMob.svg" class="logo__img__mob" />
+                        </a>
+                        <div class="header__group_btn">
+                            <a class="search__btn" href="#"></a>
+                            <a class="header__btn__menu" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="header__group__menu">
+                        <div class="menu">
+                            <div class="searchbox">
+                                <div class="searchbox__input">
+                                    <img src="./img/icon/MagnifyingGlass.svg" />
+                                    <input type="text" id="searchPeople" class="active"
+                                        placeholder="Поиск по сотруднику" />
+                                    <input type="text" id="searchDocument" placeholder="Поиск по документам" />
+                                </div>
+                                <div class="searchbox__btns">
+                                    <div class="searchbox__btn active">
+                                        <img src="./img/icon/UserCircleHeader.svg" class="searchbox__icon" />
+                                        <p class="searchbox__text">Сотрудники</p>
+                                    </div>
+                                    <div class="searchbox__btn">
+                                        <img src="./img/icon/FileHeader.svg" class="searchbox__icon" />
+                                        <p class="searchbox__text">Документы</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="nav">
+                                <li>
+                                    <a class="nav__link disable" href="#">О КОМПАНИИ</a>
+                                </li>
+                                <li><a class="nav__link disable" href="#">ЖИЗНЬ</a></li>
+                                <li><a class="nav__link disable" href="#">HR СОТРУДНИКИ</a></li>
+                                <li><a class="nav__link disable" href="#">СЕРВИСЫ</a></li>
+                                <li><a class="nav__link" href="#">БАЗА ЗНАНИЙ<img
+                                            src="./img/icon/chevron-down.svg" /></a>
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/layout-bottom.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Составление отчетов</p>
+                                                    <p class="dropdown__block__description">Статистика и метрики</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/cube-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Командная сеть</p>
+                                                    <p class="dropdown__block__description">Мониторинг команд</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/play-circle.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Сегментация по отчетам</p>
+                                                    <p class="dropdown__block__description">Проверка скрытых трендов</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/file-code-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Групповая аналитика</p>
+                                                    <p class="dropdown__block__description">Подсчет в B2B сегменте</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/life-buoy-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Конвертация</p>
+                                                    <p class="dropdown__block__description">Learn, fix a problem, and
+                                                        get ansers to your questions.</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav__link disable" href="#">ДОКУМЕНТЫ</a></li>
+                                <li><a class="nav__link disable" href="#">ОБУЧЕНИЕ</a></li>
+                                <li><a class="nav__link disable" href="#">ИДЕИ</a></li>
+                                <li><a class="nav__link disable" href="#">КАРТА САЙТА</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-0">
+                    <div class="mob__account">
+                        <a class="widget__lk__info"
+                            href="https://sergey-khomyakov.github.io/AdamDemo/pages/portal/employeeCard.html">
+                            <div class="widget__lk__img">
+                                <img src="./img/people/Avatar.svg">
+                                <div class="widget__lk__counter">12</div>
+                            </div>
+                            <div>
+                                <p>Здравствуйте,</p>
+                                <div class="widget__lk__fio">Александр Иванович</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <script>
+            let scale = document.getElementById('scale');
+            let scaleVal = document.getElementById('scaleVal');
+
+            let btnSave = document.getElementById('saveScale');
+            let cookieVal = getCookie("scale");
+
+            if (cookieVal !== "") {
+                document.body.style.zoom = cookieVal;
+                scale.value = cookieVal;
+                scaleVal.innerHTML = cookieVal;
+            } else {
+
+                if (window.devicePixelRatio <= 1.5 && window.devicePixelRatio !== 1 && document.documentElement.clientWidth >= 1097) {
+                    let scaleValue = (1 / window.devicePixelRatio);
+                    document.body.style.zoom = scaleValue;
+                    scale.value = scaleValue;
+                    scaleVal.innerHTML = scaleValue;
+                } else {
+                    if (document.documentElement.clientWidth <= 1097) {
+                        scale.value = 1;
+                        document.body.style.zoom = 1;
+                        scaleVal.innerHTML = 1;
+                    }
+                }
+            }
+
+
+            scalePlus.addEventListener("click", function (evt) {
+                let scaleVal = document.getElementById('scaleVal');
+                let scale = document.getElementById('scale');
+
+                if (Number(scale.value) < 5) {
+                    document.body.style.zoom = (Number(scale.value) + 0.1).toFixed(1);
+                    scaleVal.innerHTML = (Number(scale.value) + 0.1).toFixed(1);
+                    scale.value = (Number(scale.value) + 0.1).toFixed(1);
+                }
+            });
+
+            scaleMinus.addEventListener("click", function (evt) {
+                let scaleVal = document.getElementById('scaleVal');
+                let scale = document.getElementById('scale');
+
+                if (Number(scale.value) > 0.5) {
+                    document.body.style.zoom = (Number(scale.value) - 0.1).toFixed(1);
+                    scaleVal.innerHTML = (Number(scale.value) - 0.1).toFixed(1);
+                    scale.value = (Number(scale.value) - 0.1).toFixed(1);
+                }
+            });
+
+
+            window.onresize = function (event) {
+                let scaleVal = document.getElementById('scaleVal');
+                let scale = document.getElementById('scale');
+                if (window.devicePixelRatio <= 1.5 && window.devicePixelRatio !== 1 && document.documentElement.clientWidth >= 1097) {
+                    let scaleValue = (1 / window.devicePixelRatio);
+                    document.body.style.zoom = scaleValue;
+                    scale.value = scaleValue;
+                    scaleVal.innerHTML = scaleValue;
+                } else {
+                    if (document.documentElement.clientWidth <= 1097) {
+                        scale.value = 1;
+                        document.body.style.zoom = 1;
+                        scaleVal.innerHTML = 1;
+                    }
+                }
+            };
+
+            btnSave.addEventListener("click", function () {
+                let scale = document.getElementById('scale');
+                const currentDate = new Date();
+                currentDate.setFullYear(currentDate.getFullYear() + 5);
+                console.log(currentDate.toUTCString())
+                document.cookie = "scale=" + scale.value + ';expires=' + currentDate.toUTCString() + ';';
+
+                var scaleBoxes = document.getElementsByClassName('scale__box');
+                Array.from(scaleBoxes).forEach(function (element) {
+                    element.classList.remove('active');
+                });
+            });
+
+            function getCookie(name) {
+                var cookies = document.cookie.split(";"); // Разбиваем строку cookie на отдельные записи
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i].trim(); // Удаляем лишние пробелы для каждой записи
+                    if (cookie.indexOf(name + "=") === 0) { // Находим запись, начинающуюся с имени, которое мы ищем
+                        return cookie.substring(name.length + 1); // Возвращаем значение cookie
+                    }
+                }
+                return ""; // Возвращаем пустую строку, если cookie с указанным именем не найдено
+            }
+        </script>
+        <div class="container mob-fixed-right-col">
+            <div class="row">
+                <div class="col-9 px-0">
+                    <div class="container__block">
+                        <div class="board__news owl-carousel owl-theme">
+                            <div class="board__new" data-hash="slide0">
+                                <div class="card board__new">
+                                    <div class="board__new__img">
+                                        <img class="card__img" src=".\img\Other\Image.png" />
+                                    </div>
+                                    <div class="card__box">
+                                        <div class="card__header">
+                                            <div class="card__header__nav">
+                                                <p class="text data red">16.02.2023</p>
+                                                <p class="text">Статьи</p>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__title">Московский автомобильный завод «Москвич»
+                                                    запускает программу трейд-ин</p>
+                                            </a>
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__footer__box">
+                                                <div class="btn__group">
+                                                    <a class="btn img" href="#">
+                                                        <p class="btn__text">Открыть</p>
+                                                        <img src=".\img\icon\linkPage.svg" />
+                                                    </a>
+                                                    <div class="btn__panel__group">
+                                                        <div class="btn__panel like">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Likes.svg">
+                                                            </div>
+                                                            <p class="btn__panel number">35</p>
+                                                        </div>
+                                                        <div class="btn__panel heart">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Heart.svg">
+                                                            </div>
+                                                            <p class="btn__panel number">25</p>
+                                                        </div>
+                                                        <div class="btn__panel view">
+                                                            <div class="btn__panel bg__img grey">
+                                                                <img src="./img/icon/eye.svg">
+                                                            </div>
+                                                            <p class="btn__panel number">76</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="board__new" data-hash="slide1">
+                                <div class="card board__new">
+                                    <div class="board__new__img">
+                                        <img class="card__img" src=".\img\Other\Image-1.png" />
+                                    </div>
+                                    <div class="card__box">
+                                        <div class="card__header">
+                                            <div class="card__header__nav">
+                                                <p class="text data red">16.02.2023</p>
+                                                <p class="text">Новости</p>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__title">Автомобили Москвич появятся в такси и каршеринге
+                                                    Яндекс по всей стране</p>
+                                            </a>
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__footer__box">
+                                                <div class="btn__group">
+                                                    <a class="btn img" href="#">
+                                                        <p class="btn__text">Открыть</p>
+                                                        <img src=".\img\icon\linkPage.svg" />
+                                                    </a>
+                                                    <div class="btn__panel__group">
+                                                        <div class="btn__panel like">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Likes.svg">
+                                                            </div>
+                                                            <p class="btn__panel number">35</p>
+                                                        </div>
+                                                        <div class="btn__panel heart">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Heart.svg">
+                                                            </div>
+                                                            <p class="btn__panel number">25</p>
+                                                        </div>
+                                                        <div class="btn__panel view">
+                                                            <div class="btn__panel bg__img grey">
+                                                                <img src="./img/icon/eye.svg">
+                                                            </div>
+                                                            <p class="btn__panel number">76</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="board__new" data-hash="slide2">
+                                <div class="card board__new">
+                                    <div class="board__new__img">
+                                        <img class="card__img" src=".\img\Other\Photo.png" />
+                                    </div>
+                                    <div class="card__box">
+                                        <div class="card__header">
+                                            <div class="card__header__nav">
+                                                <p class="text data red">16.02.2023</p>
+                                                <p class="text">Новости</p>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__title">«Москвич» подписал крупнейший в мире контракт на
+                                                    поставку 2 тысяч электромобилей в московские сервисы такси и
+                                                    каршеринга в этом году</p>
+                                            </a>
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__footer__box">
+                                                <div class="btn__group">
+                                                    <a class="btn img" href="#">
+                                                        <p class="btn__text">Открыть</p>
+                                                        <img src=".\img\icon\linkPage.svg" />
+                                                    </a>
+                                                    <div class="btn__panel__group">
+                                                        <div class="btn__panel like">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Likes.svg">
+                                                            </div>
+                                                            <p class="btn__panel number">35</p>
+                                                        </div>
+                                                        <div class="btn__panel heart">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Heart.svg">
+                                                            </div>
+                                                            <p class="btn__panel number">25</p>
+                                                        </div>
+                                                        <div class="btn__panel view">
+                                                            <div class="btn__panel bg__img grey">
+                                                                <img src="./img/icon/eye.svg">
+                                                            </div>
+                                                            <p class="btn__panel number">76</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="board__new" data-hash="slide3">
+                                <div class="card board__new">
+                                    <div class="board__new__img">
+                                        <img class="card__img" src=".\img\Other\Image-3.png" />
+                                    </div>
+                                    <div class="card__box">
+                                        <div class="card__header">
+                                            <div class="card__header__nav">
+                                                <p class="text data red">16.02.2023</p>
+                                                <p class="text">Фото</p>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__title">На Московском автомобильном заводе «Москвич»
+                                                    запустили производство</p>
+                                            </a>
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__footer__box">
+                                                <div class="btn__group">
+                                                    <a class="btn img" href="#">
+                                                        <p class="btn__text">Открыть</p>
+                                                        <img src=".\img\icon\linkPage.svg" />
+                                                    </a>
+                                                    <div class="btn__panel__group">
+                                                        <div class="btn__panel like">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Likes.svg">
+                                                            </div>
+                                                            <p class="btn__panel number">35</p>
+                                                        </div>
+                                                        <div class="btn__panel heart">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Heart.svg">
+                                                            </div>
+                                                            <p class="btn__panel number">25</p>
+                                                        </div>
+                                                        <div class="btn__panel view">
+                                                            <div class="btn__panel bg__img grey">
+                                                                <img src="./img/icon/eye.svg">
+                                                            </div>
+                                                            <p class="btn__panel number">76</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="board__news__bottom">
+                            <div class="card new " data-slide="slide0">
+                                <div class="card__header">
+                                    <div class="card__img__container active">
+                                        <img class="card__img" src=".\img\Other\Image.png" />
+                                    </div>
+                                    <div class="card__header__nav">
+                                        <p class="text data red">16.02.2023</p>
+                                        <p class="text">Статьи</p>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__body__box">
+                                        <a src="#">
+                                            <p class="card__text">Московский автомобильный завод «Москвич» запускает
+                                                программу трейд-ин</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__footer__box">
+                                        <div class="btn__group">
+                                            <div class="btn__panel like">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Likes.svg" />
+                                                </div>
+                                                <p class="btn__panel number">35</p>
+                                            </div>
+                                            <div class="btn__panel heart">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Heart.svg">
+                                                </div>
+                                                <p class="btn__panel number">25</p>
+                                            </div>
+                                            <div class="btn__panel view">
+                                                <div class="btn__panel bg__img grey">
+                                                    <img src="./img/icon/eye.svg">
+                                                </div>
+                                                <p class="btn__panel number">76</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card new" data-slide="slide1">
+                                <div class="card__header">
+                                    <div class="card__img__container">
+                                        <img class="card__img" src=".\img\Other\Image-1.png" />
+                                    </div>
+                                    <div class="card__header__nav">
+                                        <div class="card__header__nav">
+                                            <p class="text data red">16.02.2023</p>
+                                            <p class="text">Новости</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__body__box">
+                                        <a src="#">
+                                            <p class="card__text">Автомобили Москвич появятся в такси и каршеринге
+                                                Яндекс по всей стране</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__footer__box">
+                                        <div class="btn__group">
+                                            <div class="btn__panel like">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Likes.svg" />
+                                                </div>
+                                                <p class="btn__panel number">35</p>
+                                            </div>
+                                            <div class="btn__panel heart">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Heart.svg">
+                                                </div>
+                                                <p class="btn__panel number">25</p>
+                                            </div>
+                                            <div class="btn__panel view">
+                                                <div class="btn__panel bg__img grey">
+                                                    <img src="./img/icon/eye.svg">
+                                                </div>
+                                                <p class="btn__panel number">76</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card new" data-slide="slide2">
+                                <div class="card__header">
+                                    <div class="card__img__container">
+                                        <img class="card__img" src=".\img\Other\Image-2.png" />
+                                    </div>
+                                    <div class="card__header__nav">
+                                        <div class="card__header__nav">
+                                            <p class="text data red">16.02.2023</p>
+                                            <p class="text">Новости</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__body__box">
+                                        <a src="#">
+                                            <p class="card__text">«Москвич» подписал крупнейший в мире контракт на
+                                                поставку 2 тысяч электромобилей в московские сервисы такси и каршеринга
+                                                в этом году</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__footer__box">
+                                        <div class="btn__group">
+                                            <div class="btn__panel like">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Likes.svg" />
+                                                </div>
+                                                <p class="btn__panel number">35</p>
+                                            </div>
+                                            <div class="btn__panel heart">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Heart.svg">
+                                                </div>
+                                                <p class="btn__panel number">25</p>
+                                            </div>
+                                            <div class="btn__panel view">
+                                                <div class="btn__panel bg__img grey">
+                                                    <img src="./img/icon/eye.svg">
+                                                </div>
+                                                <p class="btn__panel number">76</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card new" data-slide="slide3">
+                                <div class="card__header">
+                                    <div class="card__img__container">
+                                        <img class="card__img" src=".\img\Other\Image-3.png" />
+                                    </div>
+                                    <div class="card__header__nav">
+                                        <div class="card__header__nav">
+                                            <p class="text data red">16.02.2023</p>
+                                            <p class="text">Фото</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__body__box">
+                                        <a src="#">
+                                            <p class="card__text">На Московском автомобильном заводе «Москвич» запустили
+                                                производство</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__footer__box">
+                                        <div class="btn__group">
+                                            <div class="btn__panel like">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Likes.svg" />
+                                                </div>
+                                                <p class="btn__panel number">35</p>
+                                            </div>
+                                            <div class="btn__panel heart">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Heart.svg">
+                                                </div>
+                                                <p class="btn__panel number">25</p>
+                                            </div>
+                                            <div class="btn__panel view">
+                                                <div class="btn__panel bg__img grey">
+                                                    <img src="./img/icon/eye.svg">
+                                                </div>
+                                                <p class="btn__panel number">76</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="link red" href="#" style="font-style: italic;">Показать все новости</a>
+                    </div>
+                    <div class="container__block">
+                        <div class="board__facts owl-carousel owl-theme">
+                            <div class="board__fact">
+                                <img class="board__fact__img" src=".\img\Other\photo-22.jpg" />
+                                <div class="board__fact__box">
+                                    <div class="board__fact__header">
+                                        <p class="board__fact__text">Факт дня</p>
+                                        <p class="board__fact__data">21.20.2023</p>
+                                    </div>
+                                    <div class="board__fact__body">
+                                        <a href="#">
+                                            <h2 class="board__fact__title">«Москвич» подписал крупнейший в мире контракт
+                                                на поставку 2 тысяч электромобилей в московские сервисы такси и
+                                                каршеринга в этом году</h2>
+                                        </a>
+                                    </div>
+                                    <div class="board__fact__footer">
+                                        <p class="board__fact__counter"><span
+                                                class="board__fact__counter this">1</span>/<span
+                                                class="board__fact__counter all">2</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="board__fact">
+                                <img class="board__fact__img" src=".\img\Other\photo-22.jpg" />
+                                <div class="board__fact__box">
+                                    <div class="board__fact__header">
+                                        <p class="board__fact__text">Факт дня</p>
+                                        <p class="board__fact__data">20.20.2023</p>
+                                    </div>
+                                    <div class="board__fact__body">
+                                        <a href="#">
+                                            <h2 class="board__fact__title">«Москвич» подписал крупнейший в мире контракт
+                                                на поставку 2 тысяч электромобилей в московские сервисы такси и
+                                                каршеринга в этом году</h2>
+                                        </a>
+                                    </div>
+                                    <div class="board__fact__footer">
+                                        <p class="board__fact__counter"><span
+                                                class="board__fact__counter this">2</span>/<span
+                                                class="board__fact__counter all">2</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__block ribbon" style="display: none;">
+                        <a href="#">
+                            <h2 class="container__title">ЛЕНТА ИЗМЕНЕНИЙ НА ПОРТАЛЕ</h2>
+                        </a>
+                        <div class="cards">
+                            <div class="card ribbon">
+                                <div class="card__header">
+                                    <div class="card__header__nav">
+                                        <div class="tags">
+                                            <div class="tag">
+                                                <p class="tag__text">Финансы</p>
+                                            </div>
+                                        </div>
+                                        <p class="text data">19.03.2022</p>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__body__box">
+                                        <a src="#">
+                                            <p class="card__text">Реквизиты заказчика и сведения о лице, уполномоченном
+                                                подписать договор о проведении оценки</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card ribbon">
+                                <div class="card__header">
+                                    <div class="card__header__nav">
+                                        <div class="tags">
+                                            <div class="tag">
+                                                <p class="tag__text">Технологии</p>
+                                            </div>
+                                        </div>
+                                        <p class="text data">19.03.2022</p>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__body__box">
+                                        <a src="#">
+                                            <p class="card__text">Расшифровка статей №2: выручки по видам деятельности и
+                                                себестоимости</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card ribbon">
+                                <div class="card__header">
+                                    <div class="card__header__nav">
+                                        <div class="tags">
+                                            <div class="tag">
+                                                <p class="tag__text">Технологии</p>
+                                            </div>
+                                        </div>
+                                        <p class="text data">19.03.2022</p>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__body__box">
+                                        <a src="#">
+                                            <p class="card__text">Расшифровка статей №2: выручки по видам деятельности и
+                                                себестоимости</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card ribbon">
+                                <div class="card__header">
+                                    <div class="card__header__nav">
+                                        <div class="tags">
+                                            <div class="tag">
+                                                <p class="tag__text">Технологии</p>
+                                            </div>
+                                        </div>
+                                        <p class="text data">19.03.2022</p>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__body__box">
+                                        <a src="#">
+                                            <p class="card__text">Расшифровка статей №2: выручки по видам деятельности и
+                                                себестоимости</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card ribbon">
+                                <div class="card__header">
+                                    <div class="card__header__nav">
+                                        <div class="tags">
+                                            <div class="tag">
+                                                <p class="tag__text">Развитие</p>
+                                            </div>
+                                        </div>
+                                        <p class="text data">19.03.2022</p>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__body__box">
+                                        <a src="#">
+                                            <p class="card__text">Расшифровка статей №2: выручки по видам деятельности и
+                                                себестоимости</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card ribbon">
+                                <div class="card__header">
+                                    <div class="card__header__nav">
+                                        <div class="tags">
+                                            <div class="tag">
+                                                <p class="tag__text">Развитие</p>
+                                            </div>
+                                        </div>
+                                        <p class="text data">19.03.2022</p>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__body__box">
+                                        <a src="#">
+                                            <p class="card__text">Расшифровка статей №2: выручки по видам деятельности и
+                                                себестоимости</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card ribbon">
+                                <div class="card__header">
+                                    <div class="card__header__nav">
+                                        <div class="tags">
+                                            <div class="tag">
+                                                <p class="tag__text">Развитие</p>
+                                            </div>
+                                        </div>
+                                        <p class="text data">19.03.2022</p>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__body__box">
+                                        <a src="#">
+                                            <p class="card__text">Расшифровка статей №2: выручки по видам деятельности и
+                                                себестоимости</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card ribbon">
+                                <div class="card__header">
+                                    <div class="card__header__nav">
+                                        <div class="tags">
+                                            <div class="tag">
+                                                <p class="tag__text">Финансы</p>
+                                            </div>
+                                        </div>
+                                        <p class="text data">19.03.2022</p>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__body__box">
+                                        <a src="#">
+                                            <p class="card__text">Реквизиты заказчика и сведения о лице, уполномоченном
+                                                подписать договор о проведении оценки</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card ribbon">
+                                <div class="card__header">
+                                    <div class="card__header__nav">
+                                        <div class="tags">
+                                            <div class="tag">
+                                                <p class="tag__text">Финансы</p>
+                                            </div>
+                                        </div>
+                                        <p class="text data">19.03.2022</p>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__body__box">
+                                        <a src="#">
+                                            <p class="card__text">Реквизиты заказчика и сведения о лице, уполномоченном
+                                                подписать договор о проведении оценки</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="link" href="#">
+                            <p>Показать еще</p>
+                            <!-- <img class="link__img" src="#" /> -->
+                            <!-- <p class="link__counter">(<span class="link__counter__number">10</span>)</p> -->
+                        </a>
+                    </div>
+                    <div class="container__block">
+                        <div class="widget__blocks">
+                            <div class="widget__block col-sm-12 col-md-4 col-xl-4">
+                                <a href="#">
+                                    <h2 class="container__title">НОВЫЕ СОТРУДНИКИ</h2>
+                                </a>
+                                <div class="cards__employee">
+                                    <div class="card employee">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\people\Rectangle 111.png" />
+                                        </a>
+                                        <div class="card__box">
+                                            <div class="card__header">
+                                                <a src="#">
+                                                    <p class="card__fio">Татьяна Романова</p>
+                                                </a>
+                                            </div>
+                                            <div class="card__body">
+                                                <p class="card__departament">Планово-экономический отдел</p>
+                                            </div>
+                                            <div class="card__footer">
+                                                <p class="card__job">Аналитик</p>
+                                                <a class="link" href="#">
+                                                    <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                    <p>Поздравить</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card employee">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\people\Rectangle 111-1.png" />
+                                        </a>
+                                        <div class="card__box">
+                                            <div class="card__header">
+                                                <a src="#">
+                                                    <p class="card__fio">Алан Яковлев</p>
+                                                </a>
+                                            </div>
+                                            <div class="card__body">
+                                                <p class="card__departament">Склад материалов и готовой продукции</p>
+                                            </div>
+                                            <div class="card__footer">
+                                                <p class="card__job">Руководитель направления</p>
+                                                <a class="link" href="#">
+                                                    <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                    <p>Поздравить</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card employee">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\people\Rectangle 111-2.png" />
+                                        </a>
+                                        <div class="card__box">
+                                            <div class="card__header">
+                                                <a src="#">
+                                                    <p class="card__fio">Янис Кузнецов</p>
+                                                </a>
+                                            </div>
+                                            <div class="card__body">
+                                                <p class="card__departament">Отдел главного энергетика</p>
+                                            </div>
+                                            <div class="card__footer">
+                                                <p class="card__job">Владелец продукта</p>
+                                                <a class="link" href="#">
+                                                    <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                    <p>Поздравить</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card employee">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\people\Rectangle 111-3.png" />
+                                        </a>
+                                        <div class="card__box">
+                                            <div class="card__header">
+                                                <a src="#">
+                                                    <p class="card__fio">Румия Гусева</p>
+                                                </a>
+                                            </div>
+                                            <div class="card__body">
+                                                <p class="card__departament">Канцелярий</p>
+                                            </div>
+                                            <div class="card__footer">
+                                                <p class="card__job">Руководитель проектов</p>
+                                                <a class="link" href="#">
+                                                    <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                    <p>Поздравить</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card employee">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\people\Rectangle 111-4.png" />
+                                        </a>
+                                        <div class="card__box">
+                                            <div class="card__header">
+                                                <a src="#">
+                                                    <p class="card__fio">Кира Попова</p>
+                                                </a>
+                                            </div>
+                                            <div class="card__body">
+                                                <p class="card__departament">Канцелярий</p>
+                                            </div>
+                                            <div class="card__footer">
+                                                <p class="card__job">Главный экономист</p>
+                                                <a class="link" href="#">
+                                                    <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                    <p>Поздравить</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="link" href="#">
+                                    <p>Показать еще</p>
+                                </a>
+                            </div>
+                            <div class="widget__block col-sm-12 col-md-4 col-xl-4">
+                                <a href="#">
+                                    <h2 class="container__title">ДНИ РОЖДЕНИЯ</h2>
+                                </a>
+                                <div class="cards__employee birthday">
+                                    <div class="card employee birthday">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\people\Rectangle 111-4.png" />
+                                        </a>
+                                        <div class="card__box">
+                                            <div class="card__header">
+                                                <p class="card__data">12 апреля</p>
+                                            </div>
+                                            <div class="card__body">
+                                                <a src="#">
+                                                    <p class="card__fio">Кира Попова</p>
+                                                </a>
+                                            </div>
+                                            <div class="card__footer">
+                                                <a class="link" href="#">
+                                                    <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                    <p>Поздравить</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card employee birthday">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\people\Rectangle 111-5.png" />
+                                        </a>
+                                        <div class="card__box">
+                                            <div class="card__header">
+                                                <p class="card__data">12 апреля</p>
+                                            </div>
+                                            <div class="card__body">
+                                                <a src="#">
+                                                    <p class="card__fio">Владислав Тарасов</p>
+                                                </a>
+                                            </div>
+                                            <div class="card__footer">
+                                                <a class="link" href="#">
+                                                    <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                    <p>Поздравить</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card employee birthday">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\people\Rectangle 111-6.png" />
+                                        </a>
+                                        <div class="card__box">
+                                            <div class="card__header">
+                                                <p class="card__data">12 апреля</p>
+                                            </div>
+                                            <div class="card__body">
+                                                <a src="#">
+                                                    <p class="card__fio">Аскар Алексеев</p>
+                                                </a>
+                                            </div>
+                                            <div class="card__footer">
+                                                <a class="link" href="#">
+                                                    <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                    <p>Поздравить</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card employee birthday">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\people\Rectangle 111-7.png" />
+                                        </a>
+                                        <div class="card__box">
+                                            <div class="card__header">
+                                                <p class="card__data">12 апреля</p>
+                                            </div>
+                                            <div class="card__body">
+                                                <a src="#">
+                                                    <p class="card__fio">Афина Борисова</p>
+                                                </a>
+                                            </div>
+                                            <div class="card__footer">
+                                                <a class="link" href="#">
+                                                    <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                    <p>Поздравить</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card employee birthday">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\people\Rectangle 111-8.png" />
+                                        </a>
+                                        <div class="card__box">
+                                            <div class="card__header">
+                                                <p class="card__data">12 апреля</p>
+                                            </div>
+                                            <div class="card__body">
+                                                <a src="#">
+                                                    <p class="card__fio">Ксения Павлова</p>
+                                                </a>
+                                            </div>
+                                            <div class="card__footer">
+                                                <a class="link" href="#">
+                                                    <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                    <p>Поздравить</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="link" href="#">
+                                    <p>Показать еще</p>
+                                    <p class="link__counter">(<span class="link__counter__number">10</span>)</p>
+                                </a>
+                            </div>
+                            <div class="widget__block col-sm-12 col-md-4 col-xl-4">
+                                <a href="#">
+                                    <h2 class="container__title">РЕЙТИНГ СОТРУДНИКОВ</h2>
+                                </a>
+                                <div class="cards__employee rating">
+                                    <div class="card employee rating">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\people\Rectangle 111-9.png" />
+                                        </a>
+                                        <div class="card__box">
+                                            <div class="card__header">
+                                                <a src="#">
+                                                    <p class="card__fio">Анастасия Козлова</p>
+                                                </a>
+                                            </div>
+                                            <div class="card__body">
+                                                <p class="card__job">Бухгалтерия</p>
+                                            </div>
+                                            <div class="card__footer">
+                                                <div class="rating__block">
+                                                    <div class="rating__stars">
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                    </div>
+                                                    <p class="rating__number">5.0</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__award">
+                                            <p class="card__award__count">5</p>
+                                            <img class="card__award__img" src=".\img\icon\award.svg" />
+                                        </div>
+                                    </div>
+                                    <div class="card employee rating">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\people\Rectangle 111-8.png" />
+                                        </a>
+                                        <div class="card__box">
+                                            <div class="card__header">
+                                                <a src="#">
+                                                    <p class="card__fio">Ксения Павлова</p>
+                                                </a>
+                                            </div>
+                                            <div class="card__body">
+                                                <p class="card__job">Служба безопасности</p>
+                                            </div>
+                                            <div class="card__footer">
+                                                <div class="rating__block">
+                                                    <div class="rating__stars">
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star disable" src=".\img\icon\star.svg" />
+                                                    </div>
+                                                    <p class="rating__number">4.2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__award">
+                                            <p class="card__award__count">5</p>
+                                            <img class="card__award__img" src=".\img\icon\award.svg" />
+                                        </div>
+                                    </div>
+                                    <div class="card employee rating">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\people\Rectangle 111-7.png" />
+                                        </a>
+                                        <div class="card__box">
+                                            <div class="card__header">
+                                                <a src="#">
+                                                    <p class="card__fio">Кристина Тарасова</p>
+                                                </a>
+                                            </div>
+                                            <div class="card__body">
+                                                <p class="card__job">Центральная заводская лаборатория </p>
+                                            </div>
+                                            <div class="card__footer">
+                                                <div class="rating__block">
+                                                    <div class="rating__stars">
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star disable" src=".\img\icon\star.svg" />
+                                                    </div>
+                                                    <p class="rating__number">4.2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__award">
+                                            <p class="card__award__count">5</p>
+                                            <img class="card__award__img" src=".\img\icon\award.svg" />
+                                        </div>
+                                    </div>
+                                    <div class="card employee rating">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\people\Rectangle 111-10.png" />
+                                        </a>
+                                        <div class="card__box">
+                                            <div class="card__header">
+                                                <a src="#">
+                                                    <p class="card__fio">Иван Семёнов</p>
+                                                </a>
+                                            </div>
+                                            <div class="card__body">
+                                                <p class="card__job">Отдел метрологии</p>
+                                            </div>
+                                            <div class="card__footer">
+                                                <div class="rating__block">
+                                                    <div class="rating__stars">
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star disable" src=".\img\icon\star.svg" />
+                                                    </div>
+                                                    <p class="rating__number">4.0</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__award">
+                                            <p class="card__award__count">5</p>
+                                            <img class="card__award__img" src=".\img\icon\award.svg" />
+                                        </div>
+                                    </div>
+                                    <div class="card employee rating">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\people\Rectangle 111-2.png" />
+                                        </a>
+                                        <div class="card__box">
+                                            <div class="card__header">
+                                                <a src="#">
+                                                    <p class="card__fio">Янис Кузнецов</p>
+                                                </a>
+                                            </div>
+                                            <div class="card__body">
+                                                <p class="card__job">Отдел метрологии</p>
+                                            </div>
+                                            <div class="card__footer">
+                                                <div class="rating__block">
+                                                    <div class="rating__stars">
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star" src=".\img\icon\star.svg" />
+                                                        <img class="star disable" src=".\img\icon\star.svg" />
+                                                    </div>
+                                                    <p class="rating__number">3.9</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__award">
+                                            <p class="card__award__count">5</p>
+                                            <img class="card__award__img" src=".\img\icon\award.svg" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="link" href="#">
+                                    <p>Показать еще</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__block">
+                        <a href="#">
+
+                            <h2 class="container__title">ФОТО И ВИДЕО</h2>
+                        </a>
+                        <div class="cards desktop">
+                            <div class="card media">
+                                <div class="card__header">
+                                    <div class="card__img__bg"></div>
+                                    <div class="card__img__bg first"></div>
+                                    <div class="card__img__container">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\Other\Media-1.png" />
+                                        </a>
+                                    </div>
+                                    <div class="card__header__nav">
+                                        <p class="text data red">14.02.2022</p>
+                                        <div class="tags">
+                                            <div class="tag">
+                                                <p class="tag__text">Бизнес</p>
+                                            </div>
+                                            <div class="tag">
+                                                <p class="tag__text">Культура</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__body__box">
+                                        <a src="#">
+                                            <p class="card__text">Организации, инвестирующие в навыки управленцев</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__footer__box">
+                                        <div class="btn__group">
+                                            <div class="btn__panel like">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Likes.svg" />
+                                                </div>
+                                                <p class="btn__panel number">235</p>
+                                            </div>
+                                            <div class="btn__panel comment">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/ChatCentered.svg" />
+                                                </div>
+                                                <p class="btn__panel number">20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card media">
+                                <div class="card__header">
+                                    <div class="card__img__bg" style="background: #D6DEFF;"></div>
+                                    <div class="card__img__bg first"></div>
+                                    <div class="card__img__container">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\Other\Media-2.png" />
+                                        </a>
+                                    </div>
+                                    <div class="card__header__nav">
+                                        <p class="text data red">14.02.2022</p>
+                                        <div class="tags">
+                                            <div class="tag">
+                                                <p class="tag__text">Бизнес</p>
+                                            </div>
+                                            <div class="tag">
+                                                <p class="tag__text">Культура</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__body__box">
+                                        <a src="#">
+                                            <p class="card__text">Организации, инвестирующие в навыки управленцев</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__footer__box">
+                                        <div class="btn__group">
+                                            <div class="btn__panel like">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Likes.svg" />
+                                                </div>
+                                                <p class="btn__panel number">35</p>
+                                            </div>
+                                            <div class="btn__panel comment">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/ChatCentered.svg" />
+                                                </div>
+                                                <p class="btn__panel number">20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card media">
+                                <div class="card__header">
+                                    <div class="card__img__bg"></div>
+                                    <div class="card__img__bg first"></div>
+                                    <div class="card__img__container">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\Other\Media-3.png" />
+                                        </a>
+                                    </div>
+                                    <div class="card__header__nav">
+                                        <p class="text data red">14.02.2022</p>
+                                        <div class="tags">
+                                            <div class="tag">
+                                                <p class="tag__text">Бизнес</p>
+                                            </div>
+                                            <div class="tag">
+                                                <p class="tag__text">Культура</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__body__box">
+                                        <a src="#">
+                                            <p class="card__text">Организации, инвестирующие в навыки управленцев</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__footer__box">
+                                        <div class="btn__group">
+                                            <div class="btn__panel like">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Likes.svg" />
+                                                </div>
+                                                <p class="btn__panel number">722</p>
+                                            </div>
+                                            <div class="btn__panel comment">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/ChatCentered.svg" />
+                                                </div>
+                                                <p class="btn__panel number">20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards mob owl-carousel owl-theme">
+                            <div class="card media">
+                                <div class="card__header">
+                                    <div class="card__img__bg"></div>
+                                    <div class="card__img__bg first"></div>
+                                    <div class="card__img__container">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\Other\Media-1.png" />
+                                        </a>
+                                    </div>
+                                    <div class="card__header__nav">
+                                        <p class="text data red">14.02.2022</p>
+                                        <div class="tags">
+                                            <div class="tag">
+                                                <p class="tag__text">Бизнес</p>
+                                            </div>
+                                            <div class="tag">
+                                                <p class="tag__text">Культура</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__body__box">
+                                        <a src="#">
+                                            <p class="card__text">Организации, инвестирующие в навыки управленцев</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__footer__box">
+                                        <div class="btn__group">
+                                            <div class="btn__panel like">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Likes.svg" />
+                                                </div>
+                                                <p class="btn__panel number">235</p>
+                                            </div>
+                                            <div class="btn__panel comment">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/ChatCentered.svg" />
+                                                </div>
+                                                <p class="btn__panel number">20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card media">
+                                <div class="card__header">
+                                    <div class="card__img__bg" style="background: #D6DEFF;"></div>
+                                    <div class="card__img__bg first"></div>
+                                    <div class="card__img__container">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\Other\Media-2.png" />
+                                        </a>
+                                    </div>
+                                    <div class="card__header__nav">
+                                        <p class="text data red">14.02.2022</p>
+                                        <div class="tags">
+                                            <div class="tag">
+                                                <p class="tag__text">Бизнес</p>
+                                            </div>
+                                            <div class="tag">
+                                                <p class="tag__text">Культура</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__body__box">
+                                        <a src="#">
+                                            <p class="card__text">Организации, инвестирующие в навыки управленцев</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__footer__box">
+                                        <div class="btn__group">
+                                            <div class="btn__panel like">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Likes.svg" />
+                                                </div>
+                                                <p class="btn__panel number">35</p>
+                                            </div>
+                                            <div class="btn__panel comment">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/ChatCentered.svg" />
+                                                </div>
+                                                <p class="btn__panel number">20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card media">
+                                <div class="card__header">
+                                    <div class="card__img__bg"></div>
+                                    <div class="card__img__bg first"></div>
+                                    <div class="card__img__container">
+                                        <a href="#">
+                                            <img class="card__img" src=".\img\Other\Media-3.png" />
+                                        </a>
+                                    </div>
+                                    <div class="card__header__nav">
+                                        <p class="text data red">14.02.2022</p>
+                                        <div class="tags">
+                                            <div class="tag">
+                                                <p class="tag__text">Бизнес</p>
+                                            </div>
+                                            <div class="tag">
+                                                <p class="tag__text">Культура</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__body">
+                                    <div class="card__body__box">
+                                        <a src="#">
+                                            <p class="card__text">Организации, инвестирующие в навыки управленцев</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card__footer">
+                                    <div class="card__footer__box">
+                                        <div class="btn__group">
+                                            <div class="btn__panel like">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Likes.svg" />
+                                                </div>
+                                                <p class="btn__panel number">722</p>
+                                            </div>
+                                            <div class="btn__panel comment">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/ChatCentered.svg" />
+                                                </div>
+                                                <p class="btn__panel number">20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 px-0">
+                    <div class="widget__container">
+                        <div>
+                            <div class="widget__journal box">
+                                <a class="link">Корпоративная газета</a>
+                                <a href="#">
+                                    <img class="widget__img" src=".\img\Other\journal.png">
+                                </a>
+                            </div>
+                            <div class="widget__messenger box">
+                                <h2 class="widget__title">Уведомления</h2>
+                                <a class="btn red">Все</a>
+                                <div class="messenger__items">
+                                    <div class="card__messenger new">
+                                        <div class="card__messenger__block">
+                                            <div class="card__messenger__header">
+                                                <p class="title">Согласование</p>
+                                            </div>
+                                            <div class="card__messenger__body">
+                                                <p class="text">Добрый день. Документ №41234 По контракту на доставку
+                                                    партии автомобилей</p>
+                                            </div>
+                                            <div class="card__messenger__footer">
+                                                <p class="text">17.01.2022 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__messenger">
+                                        <div class="card__messenger__block">
+                                            <div class="card__messenger__header">
+                                                <p class="title">Согласование</p>
+                                            </div>
+                                            <div class="card__messenger__body">
+                                                <p class="text">Добрый день. Документ №41234 По контракту на доставку
+                                                    партии автомобилей</p>
+                                            </div>
+                                            <div class="card__messenger__footer">
+                                                <p class="text">17.01.2022 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card__messenger">
+                                        <div class="card__messenger__block">
+                                            <div class="card__messenger__header">
+                                                <p class="title">Согласование</p>
+                                            </div>
+                                            <div class="card__messenger__body">
+                                                <p class="text">Добрый день. Документ №41234 По контракту на доставку
+                                                    партии автомобилей</p>
+                                            </div>
+                                            <div class="card__messenger__footer">
+                                                <p class="text">17.01.2022 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget__links box">
+                                <a href="#">
+                                    <h2 class="widget__title">БЫСТРЫЕ ССЫЛКИ</h2>
+                                </a>
+                                <a class="link" href="#">
+                                    <img class="link__img" src=".\img\icon\UsersThree.svg" />
+                                    <p>ОРГСТРУКТУРА КОМПАНИИ</p>
+                                </a>
+                                <a class="link" href="#">
+                                    <img class="link__img" src="./img/icon/Compass.svg" />
+                                    <p>Антимонопольный комплекс</p>
+                                </a>
+                                <a class="link" href="#">
+                                    <img class="link__img" src="./img/icon/Fingerprint.svg" />
+                                    <p>Информационная безопасность</p>
+                                </a>
+                                <a class="link" href="#">
+                                    <img class="link__img" src="./img/icon/Bank.svg" />
+                                    <p>Юридическая деятельность</p>
+                                </a>
+                                <a class="link" href="#">
+                                    <img class="link__img" src="./img/icon/CircleWavyQuestion.svg" />
+                                    <p>HelpDesk</p>
+                                </a>
+                                <a class="link" href="#">
+                                    <img class="link__img" src="./img/icon/Crown.svg" />
+                                    <p>Блок руководителя</p>
+                                </a>
+                                <a class="link" href="#">
+                                    <img class="link__img" src="./img/icon/Baby.svg" />
+                                    <p>Новому сотруднику</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="widget__vote box mob__hidden">
+                                <a href="#">
+                                    <h2 class="widget__title">Голосование</h2>
+                                </a>
+                                <div class="widget__vote__block">
+                                    <p class="vote__block__question">Веберите идеи для корпоратива</p>
+                                    <div class="vote__block__answers">
+                                        <div class="choice__block">
+                                            <input type="radio" id="choice-1" name="answer">
+                                            <label for="choice-1">Квест</label>
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        <div class="choice__block">
+                                            <input type="radio" id="choice-2" name="answer">
+                                            <label for="choice-2">Мастер класс</label>
+                                            <span class="checkmark "></span>
+                                        </div>
+                                        <div class="choice__block">
+                                            <input type="radio" id="choice-3" name="answer">
+                                            <label for="choice-3">Поездка на природу</label>
+                                            <span class="checkmark "></span>
+                                        </div>
+                                        <div class="choice__block">
+                                            <input type="radio" id="choice-4" name="answer">
+                                            <label for="choice-4">Корпоративная регата</label>
+                                            <span class="checkmark"></span>
+                                        </div>
+                                    </div>
+                                    <a class="btn">Голосовать</a>
+                                </div>
+                            </div>
+                            <div class="widget__journal box mob__hidden">
+                                <a href="#">
+                                    <h2 class="widget__title">КОРПОРАТИВНАЯ ГАЗЕТА</h2>
+                                </a>
+                                <a href="#">
+                                    <img class="widget__img" src=".\img\Other\journal-1.png">
+                                </a>
+                            </div>
+                            <div class="widget__ideas box mob__hidden" style="display: none;">
+                                <div class="widget__title__box">
+                                    <a href="#">
+                                        <h2 class="widget__title">Идеи</h2>
+                                    </a>
+                                    <a class="link__add" href="#">Добавить</a>
+                                </div>
+                                <div class="widget__ideas__items">
+                                    <a class="link card status" href="#">
+                                        <p class="link__card__text">Делопроизводство</p>
+                                        <p class="link__card__title">Оптимезация сервисов согласования и постановки на
+                                            учет распределенных решений</p>
+                                        <div class="link__card__block">
+                                            <div class="btn__panel like">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Likes.svg">
+                                                </div>
+                                                <p class="btn__panel number">35</p>
+                                            </div>
+                                            <div class="btn__panel heart">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Heart.svg">
+                                                </div>
+                                                <p class="btn__panel number">25</p>
+                                            </div>
+                                            <div class="link__card__status">
+                                                <p>Опубликовано</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="link card status" href="#">
+                                        <p class="link__card__text">Информационные технолгии</p>
+                                        <p class="link__card__title">Оптимезация сервисов согласования и постановки на
+                                            учет распределенных решений</p>
+                                        <div class="link__card__block">
+                                            <div class="btn__panel like">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Likes.svg">
+                                                </div>
+                                                <p class="btn__panel number">35</p>
+                                            </div>
+                                            <div class="btn__panel heart">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Heart.svg">
+                                                </div>
+                                                <p class="btn__panel number">25</p>
+                                            </div>
+                                            <div class="link__card__status yellow">
+                                                <img src="./img/icon/TimerStatus.svg" />
+                                                <p>Рассмотрение</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="link card status" href="#">
+                                        <p class="link__card__text">Навыки компетенции</p>
+                                        <p class="link__card__title">Оптимезация сервисов согласования и постановки на
+                                            учет распределенных решений</p>
+                                        <div class="link__card__block">
+                                            <div class="btn__panel like">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Likes.svg">
+                                                </div>
+                                                <p class="btn__panel number">35</p>
+                                            </div>
+                                            <div class="btn__panel heart">
+                                                <div class="btn__panel bg__img">
+                                                    <img src="./img/icon/Heart.svg">
+                                                </div>
+                                                <p class="btn__panel number">25</p>
+                                            </div>
+                                            <div class="link__card__status green">
+                                                <img src="./img/icon/CheckStatus.svg" />
+                                                <p>Принято</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="widget__ribbon box" style="margin-bottom: 0;">
+                                <a href="#">
+                                    <h2 class="widget__title">ЛЕНТА ИЗМЕНЕНИЙ</h2>
+                                </a>
+                                <div class="widget__ribbon__block">
+                                    <div class="card ribbon">
+                                        <div class="card__header">
+                                            <div class="card__header__nav">
+                                                <div class="tags">
+                                                    <div class="tag">
+                                                        <p class="tag__text">Финансы</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text data">19.03.2022</p>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__body__box">
+                                                <a src="#">
+                                                    <p class="card__text">Реквизиты заказчика и сведения о лице,
+                                                        уполномоченном подписать договор о проведении оценки</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card ribbon">
+                                        <div class="card__header">
+                                            <div class="card__header__nav">
+                                                <div class="tags">
+                                                    <div class="tag">
+                                                        <p class="tag__text">Технологии</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text data">19.03.2022</p>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__body__box">
+                                                <a src="#">
+                                                    <p class="card__text">Расшифровка статей №2: выручки по видам
+                                                        деятельности и себестоимости</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card ribbon">
+                                        <div class="card__header">
+                                            <div class="card__header__nav">
+                                                <div class="tags">
+                                                    <div class="tag">
+                                                        <p class="tag__text">Технологии</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text data">19.03.2022</p>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__body__box">
+                                                <a src="#">
+                                                    <p class="card__text">Расшифровка статей №2: выручки по видам
+                                                        деятельности и себестоимости</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card ribbon">
+                                        <div class="card__header">
+                                            <div class="card__header__nav">
+                                                <div class="tags">
+                                                    <div class="tag">
+                                                        <p class="tag__text">Технологии</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text data">19.03.2022</p>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__body__box">
+                                                <a src="#">
+                                                    <p class="card__text">Расшифровка статей №2: выручки по видам
+                                                        деятельности и себестоимости</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card ribbon">
+                                        <div class="card__header">
+                                            <div class="card__header__nav">
+                                                <div class="tags">
+                                                    <div class="tag">
+                                                        <p class="tag__text">Развитие</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text data">19.03.2022</p>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__body__box">
+                                                <a src="#">
+                                                    <p class="card__text">Расшифровка статей №2: выручки по видам
+                                                        деятельности и себестоимости</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card ribbon">
+                                        <div class="card__header">
+                                            <div class="card__header__nav">
+                                                <div class="tags">
+                                                    <div class="tag">
+                                                        <p class="tag__text">Развитие</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text data">19.03.2022</p>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__body__box">
+                                                <a src="#">
+                                                    <p class="card__text">Расшифровка статей №2: выручки по видам
+                                                        деятельности и себестоимости</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__sliders owl-carousel owl-theme">
+            <div class="footer__slider first">
+                <img src=".\img\Other\Footer_graphics1.svg" />
+                <div class="footer__slider__items">
+                    <div class="footer__slider__item">
+                        <div class="board__new__img">
+                            <img class="card__img" src=".\img\Other\Type event.png" />
+                        </div>
+                    </div>
+                    <div class="footer__slider__item">
+                        <div class="board__new__img">
+                            <img class="card__img" src=".\img\Other\Botton\Москвич-017 (2).jpg " />
+                        </div>
+                    </div>
+                    <div class="footer__slider__item ">
+                        <div class="board__new__img ">
+                            <img class="card__img" style="object-position: bottom;"
+                                src=".\img\Other\Botton\Москвич Драйв_003.JPG " />
+                        </div>
+                    </div>
+                    <div class="footer__slider__item ">
+                        <div class="board__new__img ">
+                            <img class="card__img " src=".\img\Other\type-1.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__slider second ">
+                <img src=".\img\Other\Footer_graphics2.svg " />
+                <img src=".\img\Other\Footer_graphics2_2.svg " />
+                <div class="footer__slider__items ">
+                    <div class="footer__slider__item ">
+                        <div class="board__new__img ">
+                            <img class="card__img " src=".\img\Other\Botton\065A0566.JPG" />
+                        </div>
+                    </div>
+                    <div class="footer__slider__item ">
+                        <div class="board__new__img ">
+                            <img class="card__img " style="object-position: 10% top;"
+                                src=".\img\Other\Botton\KUZ_6677.jpg " />
+                        </div>
+                    </div>
+                    <div class="footer__slider__item ">
+                        <div class="board__new__img ">
+                            <img class="card__img " src=".\img\Other\Botton\IMG_1480.jpg" />
+                        </div>
+                    </div>
+                    <div class="footer__slider__item ">
+                        <div class="board__new__img ">
+                            <img class="card__img " style="object-position: 10% top;"
+                                src=".\img\Other\Botton\KUZ_7015.jpg " />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="row ">
+                <div class="col p-0 ">
+                    <div class="footer__content desktop ">
+                        <div class="footer__items ">
+                            <div class="footer__item ">
+                                <a class="logo " href="# ">
+                                    <img src="./img/Other/LogoWhite.svg " class="logo__img " />
+                                </a>
+                            </div>
+                            <div class="footer__item ">
+                                <p>Помощь по сайту</p>
+                                <a href="# ">Руководство пользователя портала</a>
+                            </div>
+                            <div class="footer__item ">
+                                <p>Описание ресурса</p>
+                                <a href="# ">moskvich-auto.ru</a>
+                            </div>
+                            <div class="footer__item ">
+                                <p>Описание ресурса</p>
+                                <a href="# ">moskvich-auto.ru</a>
+                            </div>
+                        </div>
+                        <div class="footer__feedback ">
+                            <p>Обратная связь по работе портала</p>
+                            <a href="# ">Иванов Иван</a>
+                        </div>
+                    </div>
+                    <div class="footer__content tablet ">
+                        <div class="footer__content left ">
+                            <div class="footer__item ">
+                                <a class="logo " href="# ">
+                                    <img src="./img/Other/LogoWhite.svg " class="logo__img " />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__content right ">
+                            <div class="footer__items ">
+                                <div class="footer__item ">
+                                    <p>Описание ресурса</p>
+                                    <a href="# ">russainhighways.ru</a>
+                                </div>
+                                <div class="footer__item ">
+                                    <p>Описание ресурса</p>
+                                    <a href="# ">russainhighways.ru</a>
+                                </div>
+                            </div>
+                            <div class="footer__items ">
+                                <div class="footer__feedback ">
+                                    <p>Обратная связь по работе портала</p>
+                                    <a href="# ">Иван Иванов</a>
+                                </div>
+                                <div class="footer__item ">
+                                    <p>Помощь по сайту</p>
+                                    <a href="# ">Руководство пользователя портала</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./libs/bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
+    <script src="./libs/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="./pages/portal/js/mobNav.js"></script>
+    <script src="./pages/portal/js/master.js"></script>
+</body>
+
+</html>

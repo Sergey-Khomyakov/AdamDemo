@@ -3,6 +3,10 @@
     padding: 0 1rem;
 }
 
+body {
+    background: #fff;
+}
+
 .cards {
     display: flex;
     gap: 2rem;

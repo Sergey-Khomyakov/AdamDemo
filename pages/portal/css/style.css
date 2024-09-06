@@ -139,6 +139,12 @@ table {
     border-spacing: 0;
 }
 
+:root {
+    --primary: #1d4f9b;
+    --white: #fff;
+    --black: #111;
+}
+
 @font-face {
     src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
     font-family: "Montserrat";
@@ -179,13 +185,13 @@ body {
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: var(--black);
     font-family: "Montserrat";
     cursor: pointer;
 }
 
 a:hover {
-    color: #EE2A24 !important;
+    color: var(--primary) !important;
 }
 
 a.logo {
@@ -315,7 +321,7 @@ header .menu {
     position: absolute;
     top: 160px;
     left: 0;
-    background: #FFFFFF;
+    background: var(--white);
     z-index: 100;
     width: 100%;
     height: 100%;
@@ -329,7 +335,7 @@ header .menu.active {
 header .menu .searchbox {
     width: 100%;
     padding: 0 10px;
-    background: #FFFFFF;
+    background: var(--white);
 }
 
 header .menu .searchbox__input {
@@ -416,7 +422,7 @@ h1 {
     font-size: 32px;
     line-height: 140%;
     margin-bottom: 40px;
-    color: #000000;
+    color: var(--black);
     max-width: 930px;
 }
 
@@ -441,7 +447,7 @@ h1 {
 }
 
 .red {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 main {
@@ -484,7 +490,7 @@ main {
     font-style: italic;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid var(--black);
     margin-bottom: 45px;
 }
 
@@ -601,8 +607,8 @@ main {
 }
 
 .tab li.active {
-    color: #000000;
-    border-bottom: 1px solid #000000;
+    color: var(--black);
+    border-bottom: 1px solid var(--black);
 }
 
 .table {
@@ -695,19 +701,19 @@ main {
 }
 
 .btn:hover {
-    background: #EE2A24;
-    color: #FFFFFF;
+    background: var(--primary);
+    color: var(--white);
 }
 
 .btn:focus {
-    background: #EE2A24;
-    color: #FFFFFF;
+    background: var(--primary);
+    color: var(--white);
     border: 3px solid #FDBE9B;
 }
 
 .btn:active {
-    background: #EE2A24;
-    color: #FFFFFF;
+    background: var(--primary);
+    color: var(--white);
 }
 
 .btn__group {
@@ -797,7 +803,7 @@ main {
 }
 
 .btn__panel:hover .btn__panel.number {
-    color: #000000 !important;
+    color: var(--black) !important;
 }
 
 .btn__panel.active:hover .btn__panel.bg__img {
@@ -817,8 +823,8 @@ main {
 .btn.img {
     display: flex;
     width: auto;
-    color: #FFFFFF;
-    background: #EE2A24;
+    color: var(--white);
+    background: var(--primary);
     padding: 8px 14px;
     align-items: center;
     border-radius: 2px;
@@ -839,8 +845,8 @@ main {
 }
 
 .btn.img:hover {
-    background-color: #B42318;
-    color: #FFFFFF !important;
+    background-color: var(--primary);
+    color: var(--white) !important;
 }
 
 .btn.img:active {
@@ -848,7 +854,7 @@ main {
 }
 
 .btn.img.grey {
-    background: #FFFFFF;
+    background: var(--white);
     border: 1px solid #E5E7EB;
 }
 
@@ -870,7 +876,7 @@ main {
 
 .btn.img.red {
     background: #FEF3F2;
-    color: #EE2A24;
+    color: var(--primary);
     margin-left: auto;
     display: flex;
     justify-content: space-between;
@@ -885,7 +891,7 @@ main {
 
 .btn.img.red:hover {
     background: #FEE4E2;
-    color: #EE2A24 !important;
+    color: var(--primary) !important;
 }
 
 .btn.img.red img {
@@ -894,7 +900,7 @@ main {
 
 .btn.widget__surveys {
     background: #FEF3F2;
-    color: #EE2A24;
+    color: var(--primary);
     width: 57%;
     margin-left: auto;
     display: flex;
@@ -909,7 +915,7 @@ main {
 }
 
 .btn.widget__surveys:hover {
-    color: #EE2A24 !important;
+    color: var(--primary) !important;
     background: #FEE4E2;
 }
 
@@ -939,8 +945,8 @@ main {
 }
 
 .btn.red:hover {
-    background-color: #B42318;
-    color: #FFFFFF !important;
+    background-color: var(--primary);
+    color: var(--white) !important;
 }
 
 .btn.red:active {
@@ -948,8 +954,8 @@ main {
 }
 
 .btn.submit:hover {
-    color: #FFFFFF !important;
-    background: #B42318;
+    color: var(--white) !important;
+    background: var(--primary);
 }
 
 .btn__info {
@@ -966,7 +972,7 @@ main {
 .btn__close {
     display: flex;
     width: auto;
-    color: #FFFFFF;
+    color: var(--white);
     background: #969696 !important;
     padding: 8px 14px;
     align-items: center;
@@ -1058,8 +1064,8 @@ input[type=button],
 input[type=submit] {
     display: flex;
     width: auto;
-    color: #FFFFFF;
-    background: #EE2A24;
+    color: var(--white);
+    background: var(--primary);
     padding: 8px 14px;
     align-items: center;
     border-radius: 2px;
@@ -1092,7 +1098,7 @@ input[type=submit] {
     background: none;
     border: none;
     font-size: 15px;
-    color: #000000;
+    color: var(--black);
     align-self: center;
     width: 100%;
 }
@@ -1118,7 +1124,7 @@ input[type=submit] {
 
 .searchbox__btns {
     display: flex;
-    background: #FFFFFF;
+    background: var(--white);
     border: 1px solid #E0E0E0;
     border-radius: 2px;
     align-items: center;
@@ -1167,8 +1173,8 @@ input[type=submit] {
 }
 
 .nav__link:hover {
-    color: #EE2A24;
-    border-bottom: 1px solid #EE2A24;
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
 }
 
 @media (max-width: 959px) {
@@ -1241,7 +1247,7 @@ input[type=submit] {
 }
 
 .dropdown {
-    background: #FFFFFF;
+    background: var(--white);
     box-sizing: border-box;
     position: absolute;
     width: 280px;
@@ -1257,7 +1263,7 @@ input[type=submit] {
 }
 
 .dropdown li {
-    color: #000000;
+    color: var(--black);
     font-weight: 300;
     font-size: 14px;
     line-height: 140%;
@@ -1275,7 +1281,7 @@ input[type=submit] {
 }
 
 .dropdown__item:hover {
-    color: #000000;
+    color: var(--black);
     background-color: #F9FAFB;
 }
 
@@ -1308,7 +1314,7 @@ input[type=submit] {
 }
 
 .dropdown__block__title:hover {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .dropdown__block__description {
@@ -1476,7 +1482,7 @@ input[type=submit] {
     z-index: 2;
     right: -5px;
     bottom: 0px;
-    background: #FFFFFF;
+    background: var(--white);
     box-shadow: 0px 4px 8px -2px rgba(16, 24, 40, 0.1), 0px 2px 4px -2px rgba(16, 24, 40, 0.06);
     cursor: pointer;
 }
@@ -1524,7 +1530,7 @@ input[type=submit] {
 }
 
 .card.ribbon .text.data {
-    color: #000000;
+    color: var(--black);
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -1605,7 +1611,7 @@ input[type=submit] {
     font-size: 15px;
     line-height: 24px;
     font-style: unset;
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .card.employee.birthday .link__img {
@@ -1634,8 +1640,8 @@ input[type=submit] {
 }
 
 .card.employee.red {
-    border: 1px solid #EE2A24;
-    background: linear-gradient(20deg, #FF2D2D 30%, #EE2A24 80%);
+    border: 1px solid var(--primary);
+    background: linear-gradient(20deg, #FF2D2D 30%, var(--primary) 80%);
 }
 
 .card.employee.red:before {
@@ -1646,11 +1652,11 @@ input[type=submit] {
 .card.employee.red .card__fio,
 .card.employee.red .card__departament,
 .card.employee.red .card__job {
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .card.employee.red .card__fio:hover {
-    color: #000000;
+    color: var(--black);
 }
 
 .card.employee.rating .card__job {
@@ -1707,7 +1713,7 @@ input[type=submit] {
     font-size: 15px;
     line-height: 24px;
     font-style: unset;
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .card.employee .link__img {
@@ -1740,7 +1746,7 @@ input[type=submit] {
     font-weight: 300;
     font-size: 13px;
     line-height: 20px;
-    color: #000000;
+    color: var(--black);
     max-height: 38px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -1753,7 +1759,7 @@ input[type=submit] {
     font-weight: 300;
     font-size: 13px;
     line-height: 20px;
-    color: #000000;
+    color: var(--black);
     max-height: 20px;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -1774,7 +1780,7 @@ input[type=submit] {
     padding: 2px 7px;
     height: 20px;
     /*
-background-color: #EE2A24 ;
+background-color: var(--primary) ;
 */
     border-radius: 2px;
     margin: 5px 5px auto auto;
@@ -1942,7 +1948,7 @@ background-color: #EE2A24 ;
 }
 
 .card.new .card__img__container.active {
-    border: 2px solid #EE2A24;
+    border: 2px solid var(--primary);
 }
 
 .card.new .card__img__container.active:before,
@@ -2001,7 +2007,7 @@ background-color: #EE2A24 ;
 }
 
 .card.depart.no-hover:hover .card__departament {
-    color: #000000 !important;
+    color: var(--black) !important;
 }
 
 .card.depart .card__header {
@@ -2067,7 +2073,7 @@ background-color: #EE2A24 ;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
     z-index: 2;
     position: relative;
     max-height: 48px;
@@ -2202,7 +2208,7 @@ background-color: #EE2A24 ;
 
 .card.surveys .btn.result {
     width: 240px !important;
-    background: #FFFFFF;
+    background: var(--white);
     border: 1px solid #E5E7EB;
 }
 
@@ -2363,7 +2369,7 @@ background-color: #EE2A24 ;
 }
 
 .card__new__employees__title {
-    color: #000000;
+    color: var(--black);
     margin: 0;
     margin-bottom: 10px;
     font-weight: 300;
@@ -2392,7 +2398,7 @@ background-color: #EE2A24 ;
 }
 
 .card__new__employees__description.red {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .card__new__employees:before {
@@ -2497,7 +2503,7 @@ background-color: #EE2A24 ;
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
-    color: #000000;
+    color: var(--black);
     margin-bottom: 5px;
     max-height: 35px;
     display: -webkit-box;
@@ -2526,7 +2532,7 @@ background-color: #EE2A24 ;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     overflow: hidden;
-    color: #000000;
+    color: var(--black);
     margin-bottom: 5px;
 }
 
@@ -2652,7 +2658,7 @@ background-color: #EE2A24 ;
     width: 100%;
     padding: 30.5px;
     margin-bottom: 40px;
-    border-bottom: 6px solid #EE2A24;
+    border-bottom: 6px solid var(--primary);
     background: linear-gradient(119deg, #F9FAFB 75%, rgba(231, 236, 243, 0.58) 65%);
     position: relative;
     overflow: hidden;
@@ -2781,7 +2787,7 @@ background-color: #EE2A24 ;
 .card__idea__footer .btn__panel.like:hover .btn__panel.number,
 .card__idea__footer .btn__panel.comment:hover .btn__panel.number,
 .card__idea__footer .btn__panel.rating:hover .btn__panel.number {
-    color: #000000;
+    color: var(--black);
 }
 
 .card__idea__footer .btn.img {
@@ -3225,7 +3231,7 @@ background-color: #EE2A24 ;
 }
 
 .card.shop.line .card__header .card.info .card__title:hover {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 @media (max-width: 959px) {
@@ -3338,7 +3344,7 @@ background-color: #EE2A24 ;
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
     margin: 0;
 }
 
@@ -3389,7 +3395,7 @@ background-color: #EE2A24 ;
 }
 
 .card.achievement .item__block .text {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .card.achievement .item__block img {
@@ -3476,7 +3482,7 @@ background-color: #EE2A24 ;
 }
 
 .gallery__image__item.btn__panel.number {
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 @media (max-width: 959px) {
@@ -3524,7 +3530,7 @@ background-color: #EE2A24 ;
 }
 
 .gallery__image .btn__group .btn__panel.number {
-    color: #FFFFFF;
+    color: var(--white);
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
@@ -3552,15 +3558,15 @@ background-color: #EE2A24 ;
 
 .chart span {
     margin-left: 5px;
-    color: #000;
+    color: var(--black);
     font-weight: bolder;
     font-size: 12px;
 }
 
 .bar {
-    box-shadow: 0 10px 40px -10px #EE2A24;
+    box-shadow: 0 10px 40px -10px var(--primary);
     border-radius: 100px;
-    background: #EE2A24;
+    background: var(--primary);
     height: 8px;
     width: 0;
 }
@@ -3624,17 +3630,17 @@ background-color: #EE2A24 ;
 
 .choice__block input:checked~.checkmark {
     background-color: #FEF3F2;
-    border: 1px solid #EE2A24;
+    border: 1px solid var(--primary);
 }
 
 .choice__block input:checked~.checkmark:hover {
     background-color: #FEF3F2;
-    border: 1px solid #EE2A24;
+    border: 1px solid var(--primary);
 }
 
 .choice__block input:checked~.checkmark:active {
     background-color: #FEF3F2;
-    border: 1px solid #EE2A24;
+    border: 1px solid var(--primary);
 }
 
 .choice__block input:checked~.checkmark:focus {
@@ -3666,7 +3672,7 @@ background-color: #EE2A24 ;
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #EE2A24;
+    background: var(--primary);
 }
 
 .choice__block:hover .checkmark {
@@ -3684,7 +3690,7 @@ background-color: #EE2A24 ;
 }
 
 .choice__block.error .checkmark {
-    border: 2px solid #EE2A24;
+    border: 2px solid var(--primary);
     background-color: #F5F5F5;
 }
 
@@ -3725,7 +3731,7 @@ background-color: #EE2A24 ;
 
 textarea {
     border: 1px solid #E5E7EB;
-    background: #FFFFFF;
+    background: var(--white);
     border-radius: 8px;
     font-weight: 300;
     font-size: 16px;
@@ -3735,11 +3741,11 @@ textarea {
     height: 114px;
     resize: none;
     padding: 12px 14px;
-    color: #000000;
+    color: var(--black);
 }
 
 input {
-    color: #000000;
+    color: var(--black);
 }
 
 .checkbox {
@@ -3798,7 +3804,7 @@ input {
 }
 
 .checkbox .custom-checkbox:checked+label:before {
-    border-color: #EE2A24;
+    border-color: var(--primary);
     background-color: #FEF3F2;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23EE2A24' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
@@ -3813,7 +3819,7 @@ select {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
     width: 100%;
     padding: 8px 40px 8px 16px;
 }
@@ -3841,7 +3847,7 @@ select.folder__shop {
 
 input[name=datepicker] {
     border: none;
-    color: #000000;
+    color: var(--black);
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -3914,7 +3920,7 @@ input[name=datepicker] {
 }
 
 .switch input:checked+.slider {
-    background-color: #EE2A24;
+    background-color: var(--primary);
 }
 
 .switch input:checked+.slider:before {
@@ -3975,7 +3981,7 @@ input[name=datepicker] {
     position: absolute;
     top: 10%;
     right: 24%;
-    background: #ffffff;
+    background: var(--white);
     border-radius: 5px;
     opacity: 1;
     padding: 5px;
@@ -3990,7 +3996,7 @@ input[name=datepicker] {
 }
 
 .scale__box .btn:hover {
-    color: #FFFFFF !important;
+    color: var(--white) !important;
 }
 
 .scale__box p {
@@ -4003,7 +4009,7 @@ input[name=datepicker] {
 
 .scale__box input[type=range] {
     width: 100%;
-    accent-color: #EE2A24;
+    accent-color: var(--primary);
     margin-bottom: 10px;
 }
 
@@ -4036,11 +4042,11 @@ input[name=datepicker] {
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
 }
 
 .text.data.red {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .text.online {
@@ -4068,7 +4074,7 @@ input[name=datepicker] {
 }
 
 .text.red {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .text__box {
@@ -4118,13 +4124,13 @@ input[name=datepicker] {
 }
 
 .text__status.red {
-    background: #EE2A24;
-    color: #FFFFFF;
+    background: var(--primary);
+    color: var(--white);
 }
 
 .text__status.yellow {
     background: #F6BE00;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .text__status.blue__light {
@@ -4151,7 +4157,7 @@ input[name=datepicker] {
 }
 
 .text__money.red {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .text__money.red::before {
@@ -4187,7 +4193,7 @@ input[name=datepicker] {
 
 .link:hover {
     /*color: #B32318;*/
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .link:hover .link__img {
@@ -4203,7 +4209,7 @@ input[name=datepicker] {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color: #EE2A24;
+    color: var(--primary);
     font-style: italic;
 }
 
@@ -4218,7 +4224,7 @@ input[name=datepicker] {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
-    color: #EE2A24;
+    color: var(--primary);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -4247,7 +4253,7 @@ input[name=datepicker] {
     display: flex;
     width: 19%;
     height: 115px;
-    background: #FFFFFF;
+    background: var(--white);
     border: 1px solid #E6E7E8;
     border-radius: 2px;
     padding: 15px 14px;
@@ -4373,7 +4379,7 @@ input[name=datepicker] {
     font-size: 15px;
     line-height: 24px;
     align-items: center;
-    color: #000000;
+    color: var(--black);
     font-style: unset;
     max-height: 48px;
     display: -webkit-box;
@@ -4414,11 +4420,11 @@ input[name=datepicker] {
 }
 
 .link.card.nav.fitnes p {
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .link.card.nav.fitnes:hover {
-    background: #000000;
+    background: var(--black);
 }
 
 .link.card.nav:hover {
@@ -4426,7 +4432,7 @@ input[name=datepicker] {
 }
 
 .link.card.nav:hover p {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 @media (max-width: 959px) {
@@ -4452,7 +4458,7 @@ input[name=datepicker] {
 
 .link.file p {
     width: 80%;
-    color: #EE2A24 !important;
+    color: var(--primary) !important;
     text-transform: unset !important;
     max-height: 20px;
     display: -webkit-box;
@@ -4483,7 +4489,7 @@ input[name=datepicker] {
 }
 
 .link.red p {
-    color: #EE2A24 !important;
+    color: var(--primary) !important;
 }
 
 .link.red img {
@@ -4516,23 +4522,23 @@ input[name=datepicker] {
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
-    color: #000000;
+    color: var(--black);
 }
 
 .link__date__text:hover {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .link__date__number {
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
-    color: #EE2A24;
+    color: var(--primary);
     margin: 0;
 }
 
 .link__date__number.red {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .link.grey {
@@ -4571,13 +4577,13 @@ input[name=datepicker] {
 }
 
 .two__tier__structure li p {
-    color: #EE2A24;
+    color: var(--primary);
     margin-bottom: 15px;
     width: -moz-max-content;
     width: max-content;
     cursor: pointer;
     padding: 0 0 5px 0;
-    border-bottom: 1px dashed #EE2A24;
+    border-bottom: 1px dashed var(--primary);
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
@@ -4624,7 +4630,7 @@ input[name=datepicker] {
 }
 
 .tags.border_off .tag:hover {
-    color: #000000;
+    color: var(--black);
 }
 
 @media (max-width: 959px) {
@@ -4655,7 +4661,7 @@ input[name=datepicker] {
 
 .tag.active {
     background: #F2F4F7;
-    color: #000000 !important;
+    color: var(--black) !important;
 }
 
 .board__facts {
@@ -4738,7 +4744,7 @@ input[name=datepicker] {
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: var(--white);
     text-align: center;
 }
 
@@ -4746,7 +4752,7 @@ input[name=datepicker] {
     font-weight: 200;
     font-size: 16px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: var(--white);
     text-align: center;
 }
 
@@ -4756,7 +4762,7 @@ input[name=datepicker] {
     line-height: 44px;
     text-align: center;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: var(--white);
     max-height: 132px;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -4783,7 +4789,7 @@ input[name=datepicker] {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: var(--white);
     text-align: center;
 }
 
@@ -5073,7 +5079,7 @@ input[name=datepicker] {
 }
 
 .widget__lk__info:hover .widget__lk__fio {
-    color: #B42318;
+    color: var(--primary);
 }
 
 .widget__lk__img {
@@ -5090,12 +5096,12 @@ input[name=datepicker] {
 
 .widget__lk__counter {
     text-align: center;
-    background: #EE2A24;
+    background: var(--primary);
     width: 22px;
     height: 22px;
     border-radius: 50%;
     font-size: 16px;
-    color: #FFFFFF;
+    color: var(--white);
     position: absolute;
     right: -8px;
     top: 35px;
@@ -5138,7 +5144,7 @@ input[name=datepicker] {
 }
 
 .widget__lk__block:hover .widget__lk__fio {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .widget__blocks {
@@ -5234,12 +5240,12 @@ input[name=datepicker] {
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
-    color: #000000;
+    color: var(--black);
     margin-bottom: 20px;
 }
 
 .widget__title:hover {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .widget__title__box {
@@ -5275,7 +5281,7 @@ input[name=datepicker] {
     margin: 10px 0;
     display: none;
     text-align: center;
-    color: #EE2A24;
+    color: var(--primary);
     font-size: 16px;
 }
 
@@ -5333,12 +5339,12 @@ input[name=datepicker] {
     line-height: 20px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #000000;
+    color: var(--black);
     font-style: unset;
 }
 
 .widget__links .link p:hover {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .widget__links .link.red {
@@ -5435,16 +5441,16 @@ input[name=datepicker] {
     line-height: 24px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #EE2A24;
-    background-color: #FFFFFF;
-    border: 1px solid #EE2A24;
+    color: var(--primary);
+    background-color: var(--white);
+    border: 1px solid var(--primary);
     border-radius: 2px;
     width: 100%;
 }
 
 .widget__vote__block .btn:hover {
     background-color: #FEF3F2;
-    color: #EE2A24 !important;
+    color: var(--primary) !important;
 }
 
 @media (max-width: 959px) {
@@ -5575,7 +5581,7 @@ input[name=datepicker] {
 .widget__archive__news .link.active,
 .widget__archive__event .link.active {
     background: #F2F4F7;
-    color: #000000 !important;
+    color: var(--black) !important;
 }
 
 .widget__archive__news.box,
@@ -5626,7 +5632,7 @@ input[name=datepicker] {
 
 .widget__archive__doc .link.active {
     background: #F2F4F7;
-    color: #000000 !important;
+    color: var(--black) !important;
 }
 
 .widget__archive__media .widget__title {
@@ -5651,7 +5657,7 @@ input[name=datepicker] {
 
 .widget__archive__media .link.active {
     background: #F2F4F7;
-    color: #000000 !important;
+    color: var(--black) !important;
 }
 
 .widget__archive__media.box {
@@ -5693,7 +5699,7 @@ input[name=datepicker] {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
     margin-bottom: 30px;
 }
 
@@ -5760,7 +5766,7 @@ input[name=datepicker] {
 }
 
 .widget__dropdown .table thead {
-    background: #FFFFFF;
+    background: var(--white);
 }
 
 .widget__dropdown .table tr {
@@ -5881,8 +5887,8 @@ input[name=datepicker] {
 }
 
 .widget__birthdays .tab li.active {
-    color: #EE2A24;
-    border-color: #EE2A24;
+    color: var(--primary);
+    border-color: var(--primary);
 }
 
 .widget__birthdays__tab {
@@ -5927,7 +5933,7 @@ input[name=datepicker] {
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
-    color: #000000;
+    color: var(--black);
     font-style: unset;
 }
 
@@ -5936,7 +5942,7 @@ input[name=datepicker] {
 }
 
 .folder__menu .two__tier__list .link.active .link__title {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .folder__menu .two__tier__list .link.active .link__img {
@@ -6002,11 +6008,11 @@ input[name=datepicker] {
 }
 
 .folder__menu .two__tier__list.shop .checkbox .custom-checkbox:checked+label {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .folder__menu .two__tier__list.shop .checkbox label {
-    color: #000000;
+    color: var(--black);
 }
 
 .page__block {
@@ -6168,7 +6174,7 @@ input[name=datepicker] {
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
     width: 71%;
 }
 
@@ -6203,7 +6209,7 @@ input[name=datepicker] {
 
 .page__news .page__nav .btn {
     background: #FEF3F2;
-    color: #EE2A24;
+    color: var(--primary);
     border: 1px solid #FEF3F2;
     border-radius: 2px;
     width: 130px;
@@ -6283,7 +6289,7 @@ input[name=datepicker] {
     font-size: 13px;
     line-height: 20px;
     align-items: center;
-    background: #FFFFFF;
+    background: var(--white);
     border: 1px solid #e6e7e8;
     justify-content: space-between;
     height: 36px;
@@ -6374,7 +6380,7 @@ input[name=datepicker] {
     font-weight: 300;
     font-size: 24px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: var(--white);
     margin-bottom: 10px;
 }
 
@@ -6404,7 +6410,7 @@ input[name=datepicker] {
     font-weight: 300;
     font-size: 20px;
     line-height: 30px;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 @media (max-width: 959px) {
@@ -6612,7 +6618,7 @@ input[name=datepicker] {
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
-    color: #000000;
+    color: var(--black);
 }
 
 .page__department__title {
@@ -6777,7 +6783,7 @@ input[name=datepicker] {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
     padding: 10px 14px;
 }
 
@@ -6801,7 +6807,7 @@ input[name=datepicker] {
     font-weight: 300;
     font-size: 15px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
 }
 
 @media (max-width: 959px) {
@@ -6896,7 +6902,7 @@ input[name=datepicker] {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
     padding: 10px 14px;
 }
 
@@ -6926,7 +6932,7 @@ input[name=datepicker] {
     font-weight: 300;
     font-size: 15px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
 }
 
 @media (max-width: 1340px) {
@@ -7064,7 +7070,7 @@ input[name=datepicker] {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
     padding: 10px 14px;
 }
 
@@ -7088,7 +7094,7 @@ input[name=datepicker] {
     font-weight: 300;
     font-size: 15px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
 }
 
 @media (max-width: 959px) {
@@ -7186,9 +7192,9 @@ input[name=datepicker] {
 }
 
 .page__surveys .btn.red {
-    background: #EE2A24;
+    background: var(--primary);
     border: 1px solid #D92D20;
-    color: #FFFFFF !important;
+    color: var(--white) !important;
     width: auto;
 }
 
@@ -7221,7 +7227,7 @@ input[name=datepicker] {
     font-size: 72px;
     line-height: 90px;
     letter-spacing: -0.02em;
-    color: #000000;
+    color: var(--black);
 }
 
 @media (max-width: 959px) {
@@ -7237,7 +7243,7 @@ input[name=datepicker] {
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
-    color: #000000;
+    color: var(--black);
     margin-bottom: 35px;
 }
 
@@ -7254,8 +7260,8 @@ input[name=datepicker] {
     width: 65%;
     padding: 10px 18px;
     justify-content: space-between;
-    background: #EE2A24;
-    color: #FFFFFF;
+    background: var(--primary);
+    color: var(--white);
 }
 
 .page__404__block .btn img {
@@ -7263,8 +7269,8 @@ input[name=datepicker] {
 }
 
 .page__404__block .btn:hover {
-    color: #FFFFFF !important;
-    background: #B42318;
+    color: var(--white) !important;
+    background: var(--primary);
 }
 
 @media (max-width: 639px) {
@@ -7546,7 +7552,7 @@ input[name=datepicker] {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
     border: 1px solid #E5E7EB;
     padding: 10px 14px;
 }
@@ -7561,13 +7567,13 @@ input[name=datepicker] {
 
 .page__authorization__block .btn {
     width: 100%;
-    background: #EE2A24;
-    color: #FFFFFF;
+    background: var(--primary);
+    color: var(--white);
 }
 
 .page__authorization__block .btn:hover {
-    color: #FFFFFF !important;
-    background: #B42318;
+    color: var(--white) !important;
+    background: var(--primary);
 }
 
 @media (max-width: 959px) {
@@ -7719,7 +7725,7 @@ input[name=datepicker] {
     font-size: 24px;
     line-height: 36px;
     padding-left: 20px;
-    border-left: 2px solid #EE2A24;
+    border-left: 2px solid var(--primary);
 }
 
 @media (max-width: 959px) {
@@ -7733,7 +7739,7 @@ input[name=datepicker] {
 .page__type__page__quote__card {
     padding-left: 20px;
     align-self: stretch;
-    border-left: 2px solid #EE2A24;
+    border-left: 2px solid var(--primary);
     margin-bottom: 70px;
 }
 
@@ -8160,7 +8166,7 @@ input[name=datepicker] {
 .page__type__page__comments .btn.comments {
     width: 100%;
     margin-bottom: 40px;
-    background: #FFFFFF;
+    background: var(--white);
     border: 1px solid #E5E7EB;
     font-weight: 600;
     font-size: 14px;
@@ -8240,7 +8246,7 @@ input[name=datepicker] {
     font-size: 14px;
     line-height: 18px;
     letter-spacing: -0.006em;
-    color: #000000;
+    color: var(--black);
     margin: 0;
     min-height: 160px;
     resize: none;
@@ -8251,9 +8257,9 @@ input[name=datepicker] {
     width: 167px;
     margin-right: 17px;
     padding: 8px 49px;
-    border: 1px solid #EE2A24;
-    background: #FFFFFF;
-    color: #EE2A24;
+    border: 1px solid var(--primary);
+    background: var(--white);
+    color: var(--primary);
 }
 
 .page__type__page__comments .comment__form .btn:hover {
@@ -8479,8 +8485,8 @@ input[name=datepicker] {
 }
 
 .page__shop__nav ul li.active a {
-    color: #EE2A24 !important;
-    border-bottom: 1px solid #EE2A24;
+    color: var(--primary) !important;
+    border-bottom: 1px solid var(--primary);
 }
 
 @media (max-width: 1340px) {
@@ -8737,7 +8743,7 @@ input[name=datepicker] {
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
 }
 
 .page__shop__basket__nav {
@@ -8827,8 +8833,8 @@ input[name=datepicker] {
     width: 100%;
     padding: 10px 18px;
     justify-content: space-between;
-    background: #EE2A24;
-    color: #FFFFFF;
+    background: var(--primary);
+    color: var(--white);
 }
 
 .page__shop__basket__block__footer .btn img {
@@ -8836,8 +8842,8 @@ input[name=datepicker] {
 }
 
 .page__shop__basket__block__footer .btn:hover {
-    color: #FFFFFF !important;
-    background: #B42318;
+    color: var(--white) !important;
+    background: var(--primary);
 }
 
 @media (max-width: 959px) {
@@ -9213,14 +9219,14 @@ input[name=datepicker] {
     font-weight: 300;
     font-size: 17px;
     line-height: 28px;
-    color: #000000;
+    color: var(--black);
 }
 
 .page__shop__orders .card.shop.line .card__box .text.red {
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .page__shop__orders .card.shop.line .card__box__left {
@@ -9269,7 +9275,7 @@ input[name=datepicker] {
 
 .page__shop__orders .card.shop.line .card__box .text__status.green {
     background: #12B76A;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 @media (max-width: 959px) {
@@ -9337,7 +9343,7 @@ input[name=datepicker] {
 
 @media (max-width: 959px) {
     .page__bar__block__btn .btn__panel {
-        color: #FFFFFF;
+        color: var(--white);
     }
 }
 
@@ -9397,7 +9403,7 @@ input[name=datepicker] {
 }
 
 .page__kit__block .color__block {
-    border: 1px solid #000000;
+    border: 1px solid var(--black);
     border-radius: 5px;
     padding: 5px;
     height: 50px;
@@ -9510,7 +9516,7 @@ input[name=datepicker] {
 }
 
 .breadcrumbs .active {
-    color: #EE2A24 !important;
+    color: var(--primary) !important;
     margin: 0;
 }
 
@@ -9585,8 +9591,8 @@ input[name=datepicker] {
 }
 
 .pagination__item:hover {
-    background: #FFFFFF;
-    color: #000000;
+    background: var(--white);
+    color: var(--black);
 }
 
 .pagination__item.active {
@@ -9676,11 +9682,11 @@ input[name=datepicker] {
 
 .accordion__item.active {
     background: white;
-    border-bottom: 4px solid #EE2A24;
+    border-bottom: 4px solid var(--primary);
 }
 
 .accordion__item.active .accordion__item__title {
-    color: #EE2A24;
+    color: var(--primary);
     margin-bottom: 20px;
 }
 
@@ -9782,7 +9788,7 @@ input[name=datepicker] {
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
     margin: 0;
 }
 
@@ -9805,9 +9811,9 @@ input[name=datepicker] {
     width: 167px;
     margin-right: 17px;
     padding: 8px 49px;
-    border: 1px solid #EE2A24;
-    background: #FFFFFF;
-    color: #EE2A24;
+    border: 1px solid var(--primary);
+    background: var(--white);
+    color: var(--primary);
 }
 
 @media (max-width: 959px) {
@@ -10282,7 +10288,7 @@ input[name=datepicker] {
 .block__content .content__aside__img {
     width: 26px;
     height: 26px;
-    background: #EE2A24;
+    background: var(--primary);
     border-radius: 100px;
     display: flex;
     justify-content: center;
@@ -10491,7 +10497,7 @@ input[name=datepicker] {
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid var(--black);
 }
 
 @media (max-width: 959px) {
@@ -10578,7 +10584,7 @@ input[name=datepicker] {
 }
 
 .employees__item__info__fio:hover {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .employees__item__info__job {
@@ -10622,7 +10628,7 @@ input[name=datepicker] {
 .employees__item__congratulate p {
     font-size: 16px;
     line-height: 140%;
-    color: #EE2A24;
+    color: var(--primary);
     margin: 0;
     margin-left: 5px;
 }
@@ -10812,8 +10818,8 @@ textarea.form-control {
 a.btn.submit {
     width: 109px;
     height: 36px;
-    background: #EE2A24;
-    color: #FFFFFF;
+    background: var(--primary);
+    color: var(--white);
     padding: 8px 14px;
     margin-right: 20px;
     font-weight: 600;
@@ -10829,7 +10835,7 @@ a.btn.submit {
 }
 
 .widget__archive__news .filter-active {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .upload__file {
@@ -10841,7 +10847,7 @@ a.btn.submit {
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
-    color: #EE2A24;
+    color: var(--primary);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -11000,7 +11006,7 @@ label.upload__file::before {
 }
 
 .modal-body .card.employee .card__box .card__departament {
-    color: #000000;
+    color: var(--black);
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -11015,7 +11021,7 @@ label.upload__file::before {
 }
 
 .modal-body .card.employee .card__box .card__job {
-    color: #000000;
+    color: var(--black);
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -11102,7 +11108,7 @@ label.upload__file::before {
     line-height: 24px;
     padding: 12px 14px;
     width: 100%;
-    background: #FFFFFF;
+    background: var(--white);
     border: 1px solid #E5E7EB;
     border-radius: 8px;
     resize: none;
@@ -11113,7 +11119,7 @@ label.upload__file::before {
     width: 30%;
     padding: 10px 18px;
     justify-content: space-between;
-    background: #EE2A24;
+    background: var(--primary);
 }
 
 .modal-comment__form .btn img {
@@ -11141,12 +11147,12 @@ label.upload__file::before {
     width: 48%;
     padding: 10px 18px;
     justify-content: space-between;
-    background: #EE2A24;
-    color: #FFFFFF;
+    background: var(--primary);
+    color: var(--white);
 }
 
 .modal .notification__form .btn:hover {
-    color: #FFFFFF !important;
+    color: var(--white) !important;
 }
 
 .modal .notification__title {
@@ -11180,8 +11186,6 @@ label.upload__file::before {
     margin: 0 auto;
 }
 
-
-}
 
 @media (max-width: 1440px) {
     .modal.media .modal-dialog {
@@ -11244,7 +11248,7 @@ label.upload__file::before {
 .modal.media .modal-close {
     width: 40px;
     height: 40px;
-    background: #FFFFFF;
+    background: var(--white);
     border-radius: 100px;
     position: absolute;
     top: 22px;
@@ -11436,7 +11440,7 @@ label.upload__file::before {
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
 }
 
 .modal.shop .btn.img {
@@ -11506,7 +11510,7 @@ footer {
     justify-content: space-between;
     margin: 41px 0 48px 0;
     flex-wrap: wrap;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .footer__content p {
@@ -11523,7 +11527,7 @@ footer {
 }
 
 .footer__content a:hover {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .footer__content.left {
@@ -11806,7 +11810,7 @@ footer {
     bottom: -40px;
     left: 8%;
     transform: skewX(-20deg);
-    background: #EE2A24;
+    background: var(--primary);
     z-index: 999;
 }
 
@@ -12058,12 +12062,12 @@ footer {
     width: 2rem;
     height: 2rem;
     stroke-width: 2px;
-    stroke: #B42318;
+    stroke: var(--primary);
     fill: none;
 }
 
 .icon-star-full {
-    fill: #B42318;
+    fill: var(--primary);
 }
 
 .rating-labels {
@@ -12254,7 +12258,7 @@ input:not(:checked):focus~#helper-text {
     border-style: solid;
     bottom: -1px;
     border-width: 0 calc(0.8rem * .5) 0.4rem;
-    border-bottom-color: #000;
+    border-bottom-color: var(--black);
 }
 
 .tooltip__info {
@@ -12265,14 +12269,14 @@ input:not(:checked):focus~#helper-text {
     left: -50%;
     max-width: 200px;
     padding: 0.25rem 0.5rem;
-    color: #fff;
+    color: var(--white);
     text-align: center;
-    background-color: #000;
+    background-color: var(--black);
     border-radius: 0.375rem;
 }
 
 .modal.media .btn__panel.number {
-    color: #000;
+    color: var(--black);
 }
 
 .board__achievements .owl-nav button[type="button"]:hover {
@@ -12280,7 +12284,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .text.zam {
-    color: #000;
+    color: var(--black);
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -12308,7 +12312,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .text.zam span a {
-    color: #EE2A24 !important;
+    color: var(--primary) !important;
 }
 
 .text.zam::before {
@@ -12546,7 +12550,7 @@ input:not(:checked):focus~#helper-text {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    background: #fff;
+    background: var(--white);
     border: 1px solid #ebebeb;
     border-radius: 5px;
     padding: 5px;
@@ -12770,7 +12774,7 @@ input:not(:checked):focus~#helper-text {
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
 }
 
 .page__type__page>p strong,
@@ -13000,7 +13004,7 @@ input:not(:checked):focus~#helper-text {
     margin-top: 42px;
 }*/
 .tooltip__info {
-    color: #fff !important;
+    color: var(--white) !important;
 }
 
 .page__structure__header .card.employee.red .card__img {
@@ -13139,7 +13143,7 @@ input:not(:checked):focus~#helper-text {
 
 .page__departament__block .link:hover,
 .page__departament__block .link:hover+.two__tier__list__col {
-    border-color: #EE2A24 !important;
+    border-color: var(--primary) !important;
     position: relative;
 }
 
@@ -13154,7 +13158,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .page__departament__block .link:hover .link__title {
-    color: #EE2A24 !important;
+    color: var(--primary) !important;
 }
 
 .page__departament__block .link:hover .link__img {
@@ -13180,7 +13184,7 @@ input:not(:checked):focus~#helper-text {
     background-size: cover;
     border-radius: 4px 4px 0px 0px;
     border-left: 0;
-    border-bottom: 2px solid #EE2A24;
+    border-bottom: 2px solid var(--primary);
 }
 
 .page__departament__block .link.header:hover {
@@ -13190,7 +13194,7 @@ input:not(:checked):focus~#helper-text {
 
 .page__departament__block .link.header:hover .link__title,
 .page__departament__block .link.header:hover .link__title:hover {
-    color: #fff !important;
+    color: var(--white) !important;
 }
 
 .page__departament__block .link.header:hover .link__img {
@@ -13262,7 +13266,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .depart__header .card__box .title {
-    color: #000;
+    color: var(--black);
     font-size: 16px;
     font-weight: 600;
     line-height: normal;
@@ -13272,7 +13276,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .depart__header .card__box .text {
-    color: #000;
+    color: var(--black);
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -13287,7 +13291,7 @@ input:not(:checked):focus~#helper-text {
     margin-bottom: 14px;
     border: unset;
     background: unset;
-    color: #EE2A24;
+    color: var(--primary);
     font-size: 14px;
 }
 
@@ -13315,13 +13319,13 @@ input:not(:checked):focus~#helper-text {
 }
 
 .page__departament__block .card.employee:hover {
-    border-color: #EE2A24 !important;
+    border-color: var(--primary) !important;
     border-width: 1px;
     background-color: #F3F4F8;
 }
 
 .page__departament__block .card.employee:hover .card__fio {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .page__departament__block .card.employee .card__img__block a .card__img {
@@ -13330,7 +13334,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .page__departament__block .card.employee .card__fio {
-    color: #000;
+    color: var(--black);
     font-size: 14px;
     font-weight: 600;
     line-height: normal;
@@ -13350,11 +13354,11 @@ input:not(:checked):focus~#helper-text {
 }
 
 .page__departament__block .depart__body .card.employee:hover {
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .depart__body .card.depart:hover .card__header .card__departament {
-    color: #EE2A24 !important;
+    color: var(--primary) !important;
 }
 
 .depart__header:after {
@@ -13433,15 +13437,15 @@ input:not(:checked):focus~#helper-text {
     overflow: hidden;
     width: 463px;
     height: 150px;
-    border: 2px solid #ee2a24c9;
+    border: 2px solid var(--primary)c9;
     border-radius: 2px;
-    background: #fff;
+    background: var(--white);
     padding: 6px;
 }
 
 .card__view__info>.card__img {
     border-radius: 2.721px !important;
-    /*background: linear-gradient(0deg, #C4C4C4 0%, #C4C4C4 100%), #FFF;*/
+    /*background: linear-gradient(0deg, #C4C4C4 0%, #C4C4C4 100%), var(--white);*/
 
     width: 100px !important;
     height: 100% !important;
@@ -13453,7 +13457,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .card__view__info .card__fio {
-    color: #EE2A24 !important;
+    color: var(--primary) !important;
     font-size: 14px !important;
     margin-bottom: 5px;
 }
@@ -13473,7 +13477,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .card__view__info .card__box .text {
-    color: #000;
+    color: var(--black);
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -13527,7 +13531,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .depart__header .card .card__header__nav .item .text.black {
-    color: #000000;
+    color: var(--black);
 }
 
 .page__departament__block.subdivision .depart__header .card__box .title {
@@ -13686,19 +13690,19 @@ input:not(:checked):focus~#helper-text {
 }
 
 .page__departament__block.page>.card .card__text {
-    color: #000;
+    color: var(--black);
     font-size: 28.333px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     width: max-content;
     padding-bottom: 15px;
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid var(--black);
     margin-bottom: 20px;
 }
 
 .page__departament__block.page>.card .card__fio {
-    color: #000;
+    color: var(--black);
     font-size: 28.333px;
     font-style: normal;
     font-weight: 500;
@@ -13722,7 +13726,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .page__departament__block.page .page__description b {
-    color: #000;
+    color: var(--black);
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -13737,7 +13741,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .page__departament__block.page .page__description p {
-    color: #000;
+    color: var(--black);
     font-size: 20px;
     font-style: normal;
     font-weight: 300;
@@ -13746,12 +13750,12 @@ input:not(:checked):focus~#helper-text {
 }
 
 .page__departament__block.page .page__description a {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid var(--black);
 }
 
 .page__departament__block.page .page__description a:hover {
-    border-color: #EE2A24;
-    color: #EE2A24 !important;
+    border-color: var(--primary);
+    color: var(--primary) !important;
 }
 
 .page__departament__block.subdivision .depart__header .card__box .item .text {
@@ -13759,7 +13763,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .page__departament__block.subdivision .depart__header .card__box a .title:hover {
-    color: #EE2A24;
+    color: var(--primary);
 }
 
 .page__departament__block .departament {
@@ -13874,7 +13878,7 @@ input:not(:checked):focus~#helper-text {
 
 @media (max-width: 650px) {
     .page__departament__block.page>.card .card__text {
-        border-bottom: 2px solid #000;
+        border-bottom: 2px solid var(--black);
     }
 
     .page__departament__block.page>.card .card__text,
@@ -13974,30 +13978,30 @@ input:not(:checked):focus~#helper-text {
 }
 
 .depart__header:hover {
-    border-color: #EE2A24;
+    border-color: var(--primary);
 }
 
 .depart__header:hover .card:before {
-    background: linear-gradient(155.3deg, #EE2A24 20.1%, rgba(242, 244, 247, 0) 65.17%);
+    background: linear-gradient(155.3deg, var(--primary) 20.1%, rgba(242, 244, 247, 0) 65.17%);
 }
 
 .depart__body .card.depart:hover {
-    border-color: #ee2a24c9;
+    border-color: var(--primary)c9;
 }
 
 .depart__body .card.depart>.card__header:hover {
-    border-bottom: 2px solid #EE2A24;
+    border-bottom: 2px solid var(--primary);
 }
 
 .depart__body .card.depart>.card__header:hover:before {
-    background: linear-gradient(155.3deg, #EE2A24 20.1%, rgba(242, 244, 247, 0) 65.17%);
+    background: linear-gradient(155.3deg, var(--primary) 20.1%, rgba(242, 244, 247, 0) 65.17%);
 }
 
 .depart__body .card.depart>.card__header .card__departament {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
     z-index: 2;
     position: relative;
     max-height: 48px;
@@ -14030,7 +14034,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .depart__body .card.depart>.card__header:hover:before {
-    background: linear-gradient(155.3deg, #EE2A24 20.1%, rgba(242, 244, 247, 0) 65.17%);
+    background: linear-gradient(155.3deg, var(--primary) 20.1%, rgba(242, 244, 247, 0) 65.17%);
 }
 
 .depart__body .card.depart>.card__header:before {
@@ -14169,7 +14173,7 @@ input:not(:checked):focus~#helper-text {
 
 /*    line-height: 20px;*/
 
-/*    color: #000000;*/
+/*    color: var(--black);*/
 
 /*    margin-bottom: 5px;*/
 
@@ -14216,7 +14220,7 @@ input:not(:checked):focus~#helper-text {
 
 .card__messenger.new .card__messenger__header .title {
     font-weight: bold;
-    color: #000;
+    color: var(--black);
 }
 
 .card__messenger.new:after {
@@ -14237,7 +14241,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .widget__messenger .widget__title:hover {
-    color: #000;
+    color: var(--black);
 }
 
 .page__messenger {
@@ -14283,7 +14287,7 @@ input:not(:checked):focus~#helper-text {
     font-weight: 300;
     font-size: 15px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
 }
 
 .page__messenger__block:first-child .page__messenger__nav {
@@ -14298,7 +14302,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .page__messenger__block .page__messenger__nav .btn:hover {
-    color: #fff !important;
+    color: var(--white) !important;
 }
 
 .page__messenger .messenger__items {
@@ -14320,7 +14324,7 @@ input:not(:checked):focus~#helper-text {
 .page__messenger .messenger__items::-webkit-scrollbar-thumb {
     border-radius: 100px;
     background-color: #cb241f;
-    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    box-shadow: inset 2px 2px 5px 0 rgba(var(--white), 0.5);
 }
 
 .page__messenger .page__messenger__block:last-child .page__messenger__nav {
@@ -14415,7 +14419,7 @@ input:not(:checked):focus~#helper-text {
     max-width: 40%;
     padding: 5px;
     border-radius: 5px;
-    background: #fff;
+    background: var(--white);
 }
 
 .message__item .message__body,
@@ -14564,7 +14568,7 @@ input:not(:checked):focus~#helper-text {
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
-    color: #000000;
+    color: var(--black);
     max-height: 24px;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -14574,7 +14578,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .card__messenger.active {
-    border: 1px solid #EE2A24;
+    border: 1px solid var(--primary);
 }
 
 .widget__container.lk.mes {
@@ -14599,7 +14603,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .text-red {
-    color: #EE2A24 !important;
+    color: var(--primary) !important;
 }
 
 .text-grey {
@@ -14740,9 +14744,9 @@ input:not(:checked):focus~#helper-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #EE2A24;
+    background: var(--primary);
     font-size: 17px;
-    color: #fff;
+    color: var(--white);
 }
 
 .widget__nav>img {
@@ -14788,7 +14792,7 @@ input:not(:checked):focus~#helper-text {
     width: 100%;
     justify-content: center;
     font-size: 16px;
-    color: #EE2A24;
+    color: var(--primary);
     padding: 0;
     min-height: auto;
 }
@@ -14894,7 +14898,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .employee__body .employee__box:nth-child(4) .block:last-child .link {
-    color: #EE2A24;
+    color: var(--primary);
     background: transparent;
     border: unset;
     padding: 0;
@@ -14944,7 +14948,7 @@ input:not(:checked):focus~#helper-text {
 .employee__body .employee__block:nth-child(2) .inline-block .link {
     background: transparent;
     border: unset;
-    color: #EE2A24;
+    color: var(--primary);
     font-size: 18px;
     font-weight: 500;
     padding: unset;
@@ -14973,7 +14977,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .employee__header .card.employee .card__body .inline-block .text {
-    color: #000;
+    color: var(--black);
 }
 
 .employee__block .text.online {
@@ -14991,16 +14995,16 @@ input:not(:checked):focus~#helper-text {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    color: #FFF;
+    color: var(--white);
     font-size: 18px;
     font-weight: 500;
-    background: #EE2A24;
+    background: var(--primary);
     height: 38px;
     width: 100%;
 }
 
 .btn-red:hover {
-    color: #FFF !important;
+    color: var(--white) !important;
 }
 
 .employee__body .copy-icon {

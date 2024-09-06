@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Карточка сотрудника</title>
+    <link rel="stylesheet" href="./libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container desktop">
+            <div class="row">
+                <div class="col p-0 d-flex justify-content-between flex-wrap">
+                    <a class="logo" href="https://sergey-khomyakov.github.io/MV-v50/">
+                        <img src="./img/Other/Logo.svg" class="logo__img" />
+                    </a>
+                    <div class="header__bar">
+                        <div class="searchbox">
+                            <div class="searchbox__input">
+                                <img src="./img/icon/MagnifyingGlass.svg" />
+                                <input type="text" id="searchPeople" class="active" placeholder="Поиск по сотруднику" />
+                                <input type="text" id="searchDocument" placeholder="Поиск по документам" />
+                            </div>
+                            <div class="searchbox__btns">
+                                <div class="searchbox__btn active">
+                                    <img src="./img/icon/UserCircleHeader.svg" class="searchbox__icon" />
+                                    <p class="searchbox__text">Сотрудники</p>
+                                </div>
+                                <div class="searchbox__btn">
+                                    <img src="./img/icon/FileHeader.svg" class="searchbox__icon" />
+                                    <p class="searchbox__text">Документы</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tooltip__cust" id="zoom">
+                            <a href="#">
+                                <img src="./img/icon/ArrowsOut.svg" alt="Масштаб сайта">
+                            </a>
+                            <div class="tooltip_arrow"></div>
+                            <p class="tooltip__info">Масштаб сайта</p>
+                        </div>
+                        <div class="scale__point">
+                            <div class="scale__box">
+                                <p>Масштаб</p>
+                                <input type="range" disabled id="scale" min="0.5" max="5" step="0.1" value="1">
+                                <div class="scale__block">
+                                    <img src="./img/icon/Minus.svg" id="scaleMinus" alt="">
+                                    <span id="scaleVal">1</span>
+                                    <img src="./img/icon/Plus.svg" id="scalePlus" alt="">
+                                </div>
+                                <a href="#" id="saveScale" class="btn">Сохранить</a>
+                            </div>
+                        </div>
+                        <div class="tooltip__cust">
+                            <a href="#" style="display: flex; align-items: center;">
+                                <img src="./img/icon/dataflow-01.svg" style="width: 18px; height: 18px;" alt="">
+                            </a>
+                            <div class="tooltip_arrow"></div>
+                            <p class="tooltip__info">Карта сайта</p>
+                        </div>
+                        <a class="widget__lk__info" href="#">
+                            <div class="widget__lk__img header">
+                                <img src="./img/people/Avatar.svg">
+                                <div class="widget__lk__counter header">12</div>
+                            </div>
+                            <div class="widget__lk__block">
+                                <p style="margin-bottom: 5px;">Здравствуйте,</p>
+                                <div class="widget__lk__fio header">Александр Иванович</div>
+                            </div>
+                        </a>
+                        <div class="tooltip__cust">
+                            <a href="#">
+                                <img src="./img/icon/logout (1).svg" alt="">
+                            </a>
+                            <div class="tooltip_arrow"></div>
+                            <p class="tooltip__info">Выход</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-0 ">
+                    <ul class="nav">
+                        <li>
+                            <a class="nav__link" href="#">О КОМПАНИИ</a>
+                        </li>
+                        <li><a class="nav__link" href="#">ЖИЗНЬ</a></li>
+                        <li><a class="nav__link" href="#">HR СОТРУДНИКИ</a></li>
+                        <li><a class="nav__link" href="#">СЕРВИСЫ</a></li>
+                        <li><a class="nav__link" href="#">БАЗА ЗНАНИЙ</a>
+                            <ul class="dropdown">
+                                <li>
+                                    <a class="dropdown__item" href="#">
+                                        <img src="./img/icon/layout-bottom.svg" />
+                                        <div class="dropdown__block">
+                                            <p class="dropdown__block__title">Составление отчетов</p>
+                                            <p class="dropdown__block__description">Статистика и метрики</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown__item" href="#">
+                                        <img src="./img/icon/cube-01.svg" />
+                                        <div class="dropdown__block">
+                                            <p class="dropdown__block__title">Командная сеть</p>
+                                            <p class="dropdown__block__description">Мониторинг команд</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown__item" href="#">
+                                        <img src="./img/icon/play-circle.svg" />
+                                        <div class="dropdown__block">
+                                            <p class="dropdown__block__title">Сегментация по отчетам</p>
+                                            <p class="dropdown__block__description">Проверка скрытых трендов</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown__item" href="#">
+                                        <img src="./img/icon/file-code-01.svg" />
+                                        <div class="dropdown__block">
+                                            <p class="dropdown__block__title">Групповая аналитика</p>
+                                            <p class="dropdown__block__description">Подсчет в B2B сегменте</p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown__item" href="#">
+                                        <img src="./img/icon/life-buoy-01.svg" />
+                                        <div class="dropdown__block">
+                                            <p class="dropdown__block__title">Конвертация</p>
+                                            <p class="dropdown__block__description">Learn, fix a problem, and get ansers
+                                                to your questions.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="nav__link" href="#">ДОКУМЕНТЫ</a></li>
+                        <li><a class="nav__link" href="#">ОБУЧЕНИЕ</a></li>
+                        <li><a class="nav__link" href="#">ИДЕИ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container mob">
+            <div class="row">
+                <div class="col p-0">
+                    <div class="header__mob__box">
+                        <a class="logo" href="https://sergey-khomyakov.github.io/MV-v50/">
+                            <img src="./img/Other/LogoMob.svg" class="logo__img__mob" />
+                        </a>
+                        <div class="header__group_btn">
+                            <a class="search__btn" href="#"></a>
+                            <a class="header__btn__menu" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="header__group__menu">
+                        <div class="menu">
+                            <div class="searchbox">
+                                <div class="searchbox__input">
+                                    <img src="./img/icon/MagnifyingGlass.svg" />
+                                    <input type="text" id="searchPeople" class="active"
+                                        placeholder="Поиск по сотруднику" />
+                                    <input type="text" id="searchDocument" placeholder="Поиск по документам" />
+                                </div>
+                                <div class="searchbox__btns">
+                                    <div class="searchbox__btn active">
+                                        <img src="./img/icon/UserCircleHeader.svg" class="searchbox__icon" />
+                                        <p class="searchbox__text">Сотрудники</p>
+                                    </div>
+                                    <div class="searchbox__btn">
+                                        <img src="./img/icon/FileHeader.svg" class="searchbox__icon" />
+                                        <p class="searchbox__text">Документы</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="nav">
+                                <li>
+                                    <a class="nav__link disable" href="#">О КОМПАНИИ</a>
+                                </li>
+                                <li><a class="nav__link disable" href="#">ЖИЗНЬ</a></li>
+                                <li><a class="nav__link disable" href="#">HR СОТРУДНИКИ</a></li>
+                                <li><a class="nav__link disable" href="#">СЕРВИСЫ</a></li>
+                                <li><a class="nav__link" href="#">БАЗА ЗНАНИЙ<img
+                                            src="./img/icon/chevron-down.svg" /></a>
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/layout-bottom.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Составление отчетов</p>
+                                                    <p class="dropdown__block__description">Статистика и метрики</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/cube-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Командная сеть</p>
+                                                    <p class="dropdown__block__description">Мониторинг команд</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/play-circle.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Сегментация по отчетам</p>
+                                                    <p class="dropdown__block__description">Проверка скрытых трендов</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/file-code-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Групповая аналитика</p>
+                                                    <p class="dropdown__block__description">Подсчет в B2B сегменте</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/life-buoy-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Конвертация</p>
+                                                    <p class="dropdown__block__description">Learn, fix a problem, and
+                                                        get ansers to your questions.</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav__link disable" href="#">ДОКУМЕНТЫ</a></li>
+                                <li><a class="nav__link disable" href="#">ОБУЧЕНИЕ</a></li>
+                                <li><a class="nav__link disable" href="#">ИДЕИ</a></li>
+                                <li><a class="nav__link disable" href="#">КАРТА САЙТА</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-0">
+                    <div class="mob__account">
+                        <a class="widget__lk__info" href="#">
+                            <div class="widget__lk__img">
+                                <img src="./img/people/Avatar.svg">
+                                <div class="widget__lk__counter">12</div>
+                            </div>
+                            <div>
+                                <p>Здравствуйте,</p>
+                                <div class="widget__lk__fio">Александр Иванович</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <script>
+            let scale = document.getElementById('scale');
+            let scaleVal = document.getElementById('scaleVal');
+
+            let btnSave = document.getElementById('saveScale');
+            let cookieVal = getCookie("scale");
+
+            if (cookieVal !== "") {
+                document.body.style.zoom = cookieVal;
+                scale.value = cookieVal;
+                scaleVal.innerHTML = cookieVal;
+            } else {
+
+                if (window.devicePixelRatio <= 1.5 && window.devicePixelRatio !== 1 && document.documentElement.clientWidth >= 1097) {
+                    let scaleValue = (1 / window.devicePixelRatio);
+                    document.body.style.zoom = scaleValue;
+                    scale.value = scaleValue;
+                    scaleVal.innerHTML = scaleValue;
+                } else {
+                    if (document.documentElement.clientWidth <= 1097) {
+                        scale.value = 1;
+                        document.body.style.zoom = 1;
+                        scaleVal.innerHTML = 1;
+                    }
+                }
+            }
+
+
+            scalePlus.addEventListener("click", function (evt) {
+                let scaleVal = document.getElementById('scaleVal');
+                let scale = document.getElementById('scale');
+
+                if (Number(scale.value) < 5) {
+                    document.body.style.zoom = (Number(scale.value) + 0.1).toFixed(1);
+                    scaleVal.innerHTML = (Number(scale.value) + 0.1).toFixed(1);
+                    scale.value = (Number(scale.value) + 0.1).toFixed(1);
+                }
+            });
+
+            scaleMinus.addEventListener("click", function (evt) {
+                let scaleVal = document.getElementById('scaleVal');
+                let scale = document.getElementById('scale');
+
+                if (Number(scale.value) > 0.5) {
+                    document.body.style.zoom = (Number(scale.value) - 0.1).toFixed(1);
+                    scaleVal.innerHTML = (Number(scale.value) - 0.1).toFixed(1);
+                    scale.value = (Number(scale.value) - 0.1).toFixed(1);
+                }
+            });
+
+
+            window.onresize = function (event) {
+                let scaleVal = document.getElementById('scaleVal');
+                let scale = document.getElementById('scale');
+                if (window.devicePixelRatio <= 1.5 && window.devicePixelRatio !== 1 && document.documentElement.clientWidth >= 1097) {
+                    let scaleValue = (1 / window.devicePixelRatio);
+                    document.body.style.zoom = scaleValue;
+                    scale.value = scaleValue;
+                    scaleVal.innerHTML = scaleValue;
+                } else {
+                    if (document.documentElement.clientWidth <= 1097) {
+                        scale.value = 1;
+                        document.body.style.zoom = 1;
+                        scaleVal.innerHTML = 1;
+                    }
+                }
+            };
+
+            btnSave.addEventListener("click", function () {
+                let scale = document.getElementById('scale');
+                const currentDate = new Date();
+                currentDate.setFullYear(currentDate.getFullYear() + 5);
+                console.log(currentDate.toUTCString())
+                document.cookie = "scale=" + scale.value + ';expires=' + currentDate.toUTCString() + ';';
+
+                var scaleBoxes = document.getElementsByClassName('scale__box');
+                Array.from(scaleBoxes).forEach(function (element) {
+                    element.classList.remove('active');
+                });
+            });
+
+            function getCookie(name) {
+                var cookies = document.cookie.split(";"); // Разбиваем строку cookie на отдельные записи
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = cookies[i].trim(); // Удаляем лишние пробелы для каждой записи
+                    if (cookie.indexOf(name + "=") === 0) { // Находим запись, начинающуюся с имени, которое мы ищем
+                        return cookie.substring(name.length + 1); // Возвращаем значение cookie
+                    }
+                }
+                return ""; // Возвращаем пустую строку, если cookie с указанным именем не найдено
+            }
+        </script>
+        <div class="container">
+            <div class="row">
+                <ul class="breadcrumbs">
+                    <li>
+                        <a class="breadcrumb__home" href="#"></a>
+                    </li>
+                    <li><a class="breadcrumb" href="#">О компании</a></li>
+                    <li><a class="breadcrumb active" href="#">Карточка сотрудника</a></li>
+                </ul>
+                <div class="col-12 px-0">
+                    <div class="container__block">
+                        <div class="page">
+                            <div class="page__departament">
+                                <div class="page__departament__block">
+                                    <div class="page__departament__nav">
+                                        <p class="title">Структура</p>
+                                        <div class="comments__item__info__footer">
+                                            <a href="#bottom" class="btn">Скачать PDF</a>
+                                        </div>
+                                    </div>
+                                    <div class="folder__menu">
+                                        <p class="link header">
+                                            <a href="#" class="link__title">Генеральный директор</a>
+                                            <img class="link__img" src="./img/icon/arrow-right-circle.svg">
+                                        </p>
+                                        <ul class="two__tier__list">
+                                            <li>
+                                                <p class="link">
+
+                                                    <a href="#" class="link__title">Москва</a>
+                                                    <img class="link__img" src="./img/icon/arrow-right-circle.svg">
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p class="link parent">
+
+                                                    <a href="#" class="link__title">Москва</a>
+                                                    <img class="link__img" src="./img/icon/arrow-right-circle.svg">
+                                                </p>
+                                                <ul class="two__tier__list__col">
+                                                    <li>
+                                                        <a class="link" href="#">
+                                                            <p class="link__title">Правила</p>
+                                                            <img class="link__img"
+                                                                src="./img/icon/arrow-right-circle.svg">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link" href="#">
+                                                            <p class="link__title">Отчеты</p>
+                                                            <img class="link__img"
+                                                                src="./img/icon/arrow-right-circle.svg">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="two__tier__list">
+                                                            <li>
+                                                                <p class="link parent">
+
+                                                                    <a href="#" class="link__title">Москва</a>
+                                                                    <img class="link__img"
+                                                                        src="./img/icon/arrow-right-circle.svg">
+                                                                </p>
+                                                                <ul class="two__tier__list__col">
+                                                                    <li>
+                                                                        <a class="link" href="google.com">
+                                                                            <p class="link__title">Правила</p>
+                                                                            <img class="link__img"
+                                                                                src="./img/icon/arrow-right-circle.svg">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="link" href="#">
+                                                                            <p class="link__title">Отчеты</p>
+                                                                            <img class="link__img"
+                                                                                src="./img/icon/arrow-right-circle.svg">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <ul class="two__tier__list">
+                                                                            <li>
+                                                                                <p class="link parent">
+
+                                                                                    <a href="#"
+                                                                                        class="link__title">Москва</a>
+                                                                                    <img class="link__img"
+                                                                                        src="./img/icon/arrow-right-circle.svg">
+                                                                                </p>
+                                                                                <ul class="two__tier__list__col">
+                                                                                    <li>
+                                                                                        <a class="link" href="#">
+                                                                                            <p class="link__title">
+                                                                                                Правила</p>
+                                                                                            <img class="link__img"
+                                                                                                src="./img/icon/arrow-right-circle.svg">
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a class="link" href="#">
+                                                                                            <p class="link__title">
+                                                                                                Отчеты</p>
+                                                                                            <img class="link__img"
+                                                                                                src="./img/icon/arrow-right-circle.svg">
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <ul class="two__tier__list">
+                                                                                            <li>
+                                                                                                <p class="link parent">
+
+                                                                                                    <a href="#"
+                                                                                                        class="link__title">Москва</a>
+                                                                                                    <img class="link__img"
+                                                                                                        src="./img/icon/arrow-right-circle.svg">
+                                                                                                </p>
+                                                                                                <ul
+                                                                                                    class="two__tier__list__col">
+                                                                                                    <li>
+                                                                                                        <a class="link"
+                                                                                                            href="#">
+                                                                                                            <p
+                                                                                                                class="link__title">
+                                                                                                                Правила
+                                                                                                            </p>
+                                                                                                            <img class="link__img"
+                                                                                                                src="./img/icon/arrow-right-circle.svg">
+                                                                                                        </a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a class="link"
+                                                                                                            href="#">
+                                                                                                            <p
+                                                                                                                class="link__title">
+                                                                                                                Отчеты
+                                                                                                            </p>
+                                                                                                            <img class="link__img"
+                                                                                                                src="./img/icon/arrow-right-circle.svg">
+                                                                                                        </a>
+                                                                                                    </li>
+                                                                                                </ul>
+
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                </ul>
+
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="two__tier__list">
+                                                            <li>
+                                                                <p class="link">
+
+                                                                    <a href="#" class="link__title">Москва</a>
+                                                                    <img class="link__img"
+                                                                        src="./img/icon/arrow-right-circle.svg">
+                                                                </p>
+                                                                <ul class="two__tier__list__col">
+                                                                    <li>
+                                                                        <a class="link" href="#">
+                                                                            <p class="link__title">Правила</p>
+                                                                            <img class="link__img"
+                                                                                src="./img/icon/arrow-right-circle.svg">
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="link" href="#">
+                                                                            <p class="link__title">Отчеты</p>
+                                                                            <img class="link__img"
+                                                                                src="./img/icon/arrow-right-circle.svg">
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p class="link parent">
+
+                                                    <a href="#" class="link__title">Саратовская область</a>
+                                                    <img class="link__img" src="./img/icon/arrow-right-circle.svg">
+                                                </p>
+                                                <ul class="two__tier__list__col">
+                                                    <li>
+                                                        <a class="link" href="#">
+                                                            <p class="link__title">Правила</p>
+                                                            <img class="link__img"
+                                                                src="./img/icon/arrow-right-circle.svg">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link" href="#">
+                                                            <p class="link__title">Отчеты</p>
+                                                            <img class="link__img"
+                                                                src="./img/icon/arrow-right-circle.svg">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p class="link parent">
+
+                                                    <a href="#" class="link__title">Московская область</a>
+                                                    <img class="link__img" src="./img/icon/arrow-right-circle.svg">
+                                                </p>
+                                                <ul class="two__tier__list__col">
+                                                    <li>
+                                                        <a class="link" href="#">
+                                                            <p class="link__title">Правила</p>
+                                                            <img class="link__img"
+                                                                src="./img/icon/arrow-right-circle.svg">
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link" href="#">
+                                                            <p class="link__title">Отчеты</p>
+                                                            <img class="link__img"
+                                                                src="./img/icon/arrow-right-circle.svg">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="page__departament__block page">
+                                    <select class="departament">
+                                        <option>Генеральный директор</option>
+                                        <option>Москва</option>
+                                        <option>Москва</option>
+                                        <option>-Правила</option>
+                                        <option>-Отчеты</option>
+                                        <option>--Москва</option>
+                                        <option>---Правила</option>
+                                        <option>---Отчеты</option>
+                                        <option>----Москва</option>
+                                        <option>--Москва</option>
+                                        <option>-Правила</option>
+                                        <option>-Отчеты</option>
+                                    </select>
+                                    <div class="page__title text-red">Карточка сотрудника</div>
+                                    <div class="employee__block">
+                                        <div class="employee__header">
+                                            <div class="card employee">
+                                                <img class="card__img" src="./img/people/Avatar.svg">
+                                                <div class="card__box">
+                                                    <div class="card__header">
+                                                        <div class="inline-block">
+                                                            <div class="text text-black">Благодарности</div>
+                                                            <div class="btn__info"></div>
+                                                            <div class="text text-red">12</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <div class="inline-block">
+                                                            <div class="text">Рейтинг</div>
+                                                            <img src=".\img\icon\star-b-01.svg" alt="">
+                                                            <p class="text" style="margin-right: 8px;">12</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn btn-red">Сказать спасибо!</a>
+                                        </div>
+                                        <div class="employee__body">
+                                            <div class="employee__block">
+                                                <div class="employee__box">
+                                                    <div class="inline-block">
+                                                        <p class="text text-black" data-field="userFIO">Петрова Анна
+                                                            Александровна</p>
+                                                        <p class="text black online">Онлайн</p>
+                                                    </div>
+                                                    <div class="inline-block">
+                                                        <p class="text text-grey">День рождения</p>
+                                                    </div>
+                                                </div>
+                                                <div class="employee__box">
+                                                    <div class="inline-block">
+                                                        <p class="text text-black">Контактная информация</p>
+                                                    </div>
+                                                    <div class="inline-block">
+                                                        <p class="text text-grey">Тел.рабочий</p>
+                                                        <p class="text text-grey" data-field="userPhone">8 (900)
+                                                            123-45-67</p>
+                                                        <img src="./img/icon/copy-01.svg" class="copy-icon grey">
+                                                    </div>
+                                                    <div class="inline-block">
+                                                        <p class="text text-grey">E-mail</p>
+                                                        <p class="text text-grey text-email">petrovaaa @ m-auto.ru</p>
+                                                        <img src="./img/icon/copy-01.svg" class="copy-icon grey">
+                                                    </div>
+                                                    <div class="inline-block">
+                                                        <p class="text text-grey" style="padding-right: 15px;">Номер
+                                                            телефона родственника для экстренной связи</p>
+                                                        <p class="text text-grey">8 (900) 123-45-67</p>
+                                                    </div>
+                                                </div>
+                                                <div class="employee__box employee__box-card">
+                                                    <div class="block" style="width: 100%; margin-bottom: 10px;">
+                                                        <p class="text text-grey">Должность</p>
+                                                        <p class="text">Менеджер по планированию и маркетингу продукта
+                                                        </p>
+                                                    </div>
+                                                    <div class="block">
+                                                        <p class="text text-grey">IPN</p>
+                                                        <p class="text">MVXXXX</p>
+                                                        <img src="./img/icon/copy-01.svg" class="copy-icon grey">
+                                                    </div>
+                                                    <div class="block">
+                                                        <p class="text text-grey">Табельный номер</p>
+                                                        <p class="text">01010101</p>
+                                                    </div>
+                                                    <div class="block">
+                                                        <p class="text text-grey">Подразделение</p>
+                                                        <p class="text text-red">МАЗ Москвич/Головной офис/Аппарат
+                                                            генерального директора</p>
+                                                    </div>
+                                                </div>
+                                                <div class="employee__box">
+                                                    <div class="block">
+                                                        <p class="text text-grey">Руководитель</p>
+                                                        <p class="text text-red">Виктория Ежова</p>
+                                                    </div>
+                                                    <div class="block">
+                                                        <p class="text text-grey">HRBP</p>
+                                                        <p class="text text-red">Татьяна Иванова</p>
+                                                    </div>
+                                                    <div class="block">
+                                                        <p class="text text-grey">Коллеги</p>
+                                                        <div class="block-img">
+                                                            <img src="./img/people/Avatar-1.png">
+                                                            <img src="./img/people/Avatar-2.png">
+                                                            <img src="./img/people/Avatar-3.png">
+                                                            <img src="./img/people/Avatar-4.png">
+                                                            <img src="./img/people/Avatar-5.png">
+                                                        </div>
+                                                        <a href="#" class="link link__img text-red">Посмотреть всех <img
+                                                                src="./img/icon/chevron-down.svg"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="employee__block">
+                                                <div class="inline-block">
+                                                    <p class="text text-black">Мои достижения</p>
+                                                    <a href="#" class="link">Подробнее</a>
+                                                </div>
+                                                <div class="board__achievements owl-carousel owl-theme">
+                                                    <div class="card achievement" data-itemid="1">
+                                                        <div class="tooltip__cust">
+                                                            <div class="card__header">
+                                                                <img class="card__img"
+                                                                    src=".\img\Other\BadgeIcons.svg" />
+                                                            </div>
+                                                            <p class="tooltip__info">
+                                                                <span class="tooltip_arrow"></span>Название достижения
+                                                            </p>
+                                                        </div>
+                                                        <!-- <div class="card__body">
+                                                            <div class="card__body__box">
+                                                                <a src="#">
+                                                                    <p class="card__text">Название достижения</p>
+                                                                </a>
+                                                                <div class="btn__info"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__footer">
+                                                            <div class="card__footer__box">
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="card achievement" data-itemid="2">
+                                                        <div class="tooltip__cust">
+                                                            <div class="card__header">
+                                                                <img class="card__img"
+                                                                    src=".\img\Other\BadgeIcons-1.svg" />
+                                                            </div>
+                                                            <p class="tooltip__info">
+                                                                <span class="tooltip_arrow"></span>Название достижения
+                                                            </p>
+                                                        </div>
+                                                        <!-- <div class="card__body">
+                                                            <div class="card__body__box">
+                                                                <a src="#">
+                                                                    <p class="card__text">Название достижения</p>
+                                                                </a>
+                                                                <div class="btn__info"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__footer">
+                                                            <div class="card__footer__box">
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="card achievement" data-itemid="3">
+                                                        <div class="tooltip__cust">
+                                                            <div class="card__header">
+                                                                <img class="card__img"
+                                                                    src=".\img\Other\BadgeIcons-2.svg" />
+                                                            </div>
+                                                            <p class="tooltip__info">
+                                                                <span class="tooltip_arrow"></span>Название достижения
+                                                            </p>
+                                                        </div>
+                                                        <!-- <div class="card__body">
+                                                            <div class="card__body__box">
+                                                                <a src="#">
+                                                                    <p class="card__text">Название достижения</p>
+                                                                </a>
+                                                                <div class="btn__info"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__footer">
+                                                            <div class="card__footer__box">
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="card achievement" data-itemid="4">
+                                                        <div class="tooltip__cust">
+                                                            <div class="card__header">
+                                                                <img class="card__img"
+                                                                    src=".\img\Other\BadgeIcons-3.svg" />
+                                                            </div>
+                                                            <p class="tooltip__info">
+                                                                <span class="tooltip_arrow"></span>Название достижения
+                                                            </p>
+                                                        </div>
+                                                        <!-- <div class="card__body">
+                                                            <div class="card__body__box">
+                                                                <a src="#">
+                                                                    <p class="card__text">Название достижения</p>
+                                                                </a>
+                                                                <div class="btn__info"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__footer">
+                                                            <div class="card__footer__box">
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="card achievement disabled" data-itemid="5">
+                                                        <div class="tooltip__cust">
+                                                            <div class="card__header">
+                                                                <img class="card__img"
+                                                                    src=".\img\Other\BadgeIcons-1.svg" />
+                                                            </div>
+                                                            <p class="tooltip__info">
+                                                                <span class="tooltip_arrow"></span>Название достижения
+                                                            </p>
+                                                        </div>
+                                                        <!-- <div class="card__body">
+                                                            <div class="card__body__box">
+                                                                <a src="#">
+                                                                    <p class="card__text">Название достижения</p>
+                                                                </a>
+                                                                <div class="btn__info"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__footer">
+                                                            <div class="card__footer__box">
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="card achievement disabled" data-itemid="6">
+                                                        <div class="tooltip__cust">
+                                                            <div class="card__header">
+                                                                <img class="card__img"
+                                                                    src=".\img\Other\BadgeIcons-2.svg" />
+                                                            </div>
+
+                                                            <p class="tooltip__info">
+                                                                <span class="tooltip_arrow"></span>Название достижения
+                                                            </p>
+                                                        </div>
+                                                        <!-- <div class="card__body">
+                                                            <div class="card__body__box">
+                                                                <a src="#">
+                                                                    <p class="card__text">Название достижения</p>
+                                                                </a>
+                                                                <div class="btn__info"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__footer">
+                                                            <div class="card__footer__box">
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+                                                    <div class="card achievement disabled" data-itemid="7">
+                                                        <div class="tooltip__cust">
+                                                            <div class="card__header">
+                                                                <img class="card__img"
+                                                                    src=".\img\Other\BadgeIcons-3.svg" />
+                                                            </div>
+                                                            <p class="tooltip__info">
+                                                                <span class="tooltip_arrow"></span>Название достижения
+                                                            </p>
+                                                        </div>
+                                                        <!-- <div class="card__body">
+                                                            <div class="card__body__box">
+                                                                <a src="#">
+                                                                    <p class="card__text">Название достижения</p>
+                                                                </a>
+                                                                <div class="btn__info"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card__footer">
+                                                            <div class="card__footer__box">
+                                                            </div>
+                                                        </div> -->
+                                                    </div>
+
+                                                </div>
+                                                <p class="text text-grey">У вас есть все шансы оказаться среди
+                                                    участников Галереи достижений. Дерзайте!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__sliders owl-carousel owl-theme">
+            <div class="footer__slider first">
+                <img src=".\img\Other\Footer_graphics1.svg" />
+                <div class="footer__slider__items">
+                    <div class="footer__slider__item">
+                        <div class="board__new__img">
+                            <img class="card__img" src=".\img\Other\footer1_1.png" />
+                        </div>
+                    </div>
+                    <div class="footer__slider__item">
+                        <div class="board__new__img">
+                            <img class="card__img" src=".\img\Other\footer1_2.png" />
+                        </div>
+                    </div>
+                    <div class="footer__slider__item">
+                        <div class="board__new__img">
+                            <img class="card__img" src=".\img\Other\footer1_3.png" />
+                        </div>
+                    </div>
+                    <div class="footer__slider__item">
+                        <div class="board__new__img">
+                            <img class="card__img" src=".\img\Other\footer1_4.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__slider second">
+                <img src=".\img\Other\Footer_graphics2.svg" />
+                <img src=".\img\Other\Footer_graphics2_2.svg" />
+                <div class="footer__slider__items">
+                    <div class="footer__slider__item">
+                        <div class="board__new__img">
+                            <img class="card__img" src=".\img\Other\footer2_1.png" />
+                        </div>
+                    </div>
+                    <div class="footer__slider__item">
+                        <div class="board__new__img">
+                            <img class="card__img" src=".\img\Other\footer2_2.png" />
+                        </div>
+                    </div>
+                    <div class="footer__slider__item">
+                        <div class="board__new__img">
+                            <img class="card__img" src=".\img\Other\footer2_3.png" />
+                        </div>
+                    </div>
+                    <div class="footer__slider__item">
+                        <div class="board__new__img">
+                            <img class="card__img" src=".\img\Other\footer2_4.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col p-0">
+                    <div class="footer__content desktop">
+                        <div class="footer__items">
+                            <div class="footer__item">
+                                <a class="logo" href="https://sergey-khomyakov.github.io/MV-v50/">
+                                    <img src="./img/Other/LogoWhite.svg" class="logo__img" />
+                                </a>
+                            </div>
+                            <div class="footer__item">
+                                <p>Помощь по сайту</p>
+                                <a href="#">Руководство пользователя портала</a>
+                            </div>
+                            <div class="footer__item">
+                                <p>Описание ресурса</p>
+                                <a href="#">moskvich-auto.ru</a>
+                            </div>
+                            <div class="footer__item">
+                                <p>Описание ресурса</p>
+                                <a href="#">moskvich-auto.ru</a>
+                            </div>
+                        </div>
+                        <div class="footer__feedback">
+                            <p>Обратная связь по работе портала</p>
+                            <a href="#">Иванов Иван</a>
+                        </div>
+                    </div>
+                    <div class="footer__content tablet">
+                        <div class="footer__content left">
+                            <div class="footer__item">
+                                <a class="logo" href="https://sergey-khomyakov.github.io/MV-v50/">
+                                    <img src="./img/Other/LogoWhite.svg" class="logo__img" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__content right">
+                            <div class="footer__items">
+                                <div class="footer__item">
+                                    <p>Описание ресурса</p>
+                                    <a href="#">russainhighways.ru</a>
+                                </div>
+                                <div class="footer__item">
+                                    <p>Описание ресурса</p>
+                                    <a href="#">russainhighways.ru</a>
+                                </div>
+                            </div>
+                            <div class="footer__items">
+                                <div class="footer__feedback">
+                                    <p>Обратная связь по работе портала</p>
+                                    <a href="#">Иван Иванов</a>
+                                </div>
+                                <div class="footer__item">
+                                    <p>Помощь по сайту</p>
+                                    <a href="#">Руководство пользователя портала</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./libs/bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
+    <script src="./libs/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="./js/master.js"></script>
+    <script src="./js/mobNav.js"></script>
+</body>
+
+</html>

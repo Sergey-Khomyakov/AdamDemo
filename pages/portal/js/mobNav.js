@@ -8,7 +8,6 @@ $(document).ready(function() {
         $('body').css('zoom', scaleValue);
         const winWidth = window.innerWidth;
         const d = document.querySelector('.container').clientWidth;
-        console.log(winWidth, d);
         // if (winWidth > d) {
         //     $('meta[name="viewport"]').prop('content', 'width=device-width, initial-scale=0.9');
         // }
@@ -91,14 +90,16 @@ $(document).ready(function() {
 
     })
 
+    window.Telegram.WebApp.ready();
+
     if(window.Telegram.WebApp.initData !== "") {
         let userPhoneTG = localStorage.getItem("userPhoneTG");
 
-        window.Telegram.WebApp.ready();
         let user = window.Telegram.WebApp.initDataUnsafe.user;
         $('.widget__lk__info .widget__lk__fio, .page__departament .employee__box .text[data-field="userFIO"]').text(user.last_name + " " + user.first_name);
         if(userPhoneTG === null){
             window.Telegram.WebApp.requestContact((isAccess, res) =>{
+                debugger
                 if(isAccess){
                     localStorage.setItem("userPhoneTG", res.responseUnsafe.contact.phone_number);
                     $('.page__departament .employee__box .text[data-field="userPhone"]').text(res.responseUnsafe.contact.phone_number)

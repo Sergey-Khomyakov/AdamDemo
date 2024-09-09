@@ -82,7 +82,7 @@ $(document).ready(function() {
             navText: ["<img src='./img/icon/arrow-left.svg' />", "<img src='./img/icon/arrow-right.svg' />"]
         });
         
-    }, 10)
+    }, 100)
 
     $('.manager-says__item .manager-says__footer .show__more').on('click', function() {
         const $parent = $(this).closest('.manager-says__item');

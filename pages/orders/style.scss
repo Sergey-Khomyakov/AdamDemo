@@ -1,3 +1,6 @@
+body{
+    zoom: 0.8;
+}
 .container {
     width: auto;
     padding: 0 1rem;
@@ -12,13 +15,81 @@
     padding: 1rem;
     border-bottom: 1px solid var(--stroke-color);
     margin-bottom: 1.5rem;
-    max-height: 3.5rem;
 }
 .logo{
     display: flex;
-    width: 6.25rem;
+    width: auto;
     img{
         width: 100%;
         object-fit: cover;
+    }
+}
+
+.mob__account{
+    padding: 0 1rem;
+}
+
+p{
+    font-family: 'Montserrat';
+}
+
+.widget__lk__info {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    background: linear-gradient(120deg, #F9FAFB 93%, rgba(231, 236, 243, 0.58) 80%);
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+    padding: 8px 7px 10px 7px;
+    gap: 1rem;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 15%;
+        height: 253.81px;
+        left: 86.9%;
+        top: -100px;
+        background: linear-gradient(155.3deg, #D9DDE2 20.1%, rgba(242, 244, 247, 0) 67.17%);
+        transform: rotate(29.14deg);
+        z-index: 1;
+    }
+    p{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 12px;
+        margin-bottom: 10px;
+        color: var(--black);
+    }
+    .widget__lk__fio{
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 14px;
+        color: #404040;
+        line-height: 12px;
+    }
+    .widget__lk__img{
+        position: relative;
+        img{
+            width: 3.75rem;
+            height: 3.75rem;
+            overflow: hidden;
+            border-radius: 2px;
+            object-fit: cover;
+        }
+    }
+    .widget__lk__counter{
+        font-family: "Montserrat";
+        text-align: center;
+        background: var(--primary);
+        border-radius: 50%;
+        color: var(--white);
+        position: absolute;
+        cursor: default;
+        top: 2.5rem;
+        right: -0.5rem;
+        width: 26px;
+        height: 26px;
+        padding-top: 5px;
     }
 }

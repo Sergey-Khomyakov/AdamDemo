@@ -52,19 +52,7 @@ $(document).ready(function() {
         $(this).toggleClass('active');
         return false;
     });
-    let owlfooter = $('.footer__sliders.owl-carousel');
-
-    owlfooter.owlCarousel({
-        items: 1,
-        loop: true,
-        center: true,
-        nav: false,
-        dots: false,
-        margin: 10,
-        autoplay: false,
-        autoplayTimeout: 3000,
-    });
-
+    
     $('.choice__block .checkmark').on('click', function() {
         $(this).parent().children('input').prop('checked', true);
     });

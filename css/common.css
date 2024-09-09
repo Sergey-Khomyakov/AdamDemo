@@ -114,6 +114,10 @@ ul {
     margin-bottom: 20px;
 }
 
+a {
+    text-decoration: unset;
+}
+
 blockquote,
 q {
     quotes: none;

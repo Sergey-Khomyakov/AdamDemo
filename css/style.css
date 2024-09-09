@@ -19,10 +19,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: .125rem solid #f1f3f6;
     border-radius: .25rem;
     padding: 1rem;
     flex-direction: column;
+    box-shadow: 4px 5px 5px rgba(38, 71, 90, 0.19);
 }
 
 .card:hover {

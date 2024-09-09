@@ -91,4 +91,24 @@ $(document).ready(function() {
 
     })
 
+    if(window.Telegram.WebApp.initData !== "") {
+        let userPhoneTG = localStorage.getItem("userPhoneTG");
+
+        window.Telegram.WebApp.ready();
+        let user = window.Telegram.WebApp.initDataUnsafe.user;
+        $('.widget__lk__info .widget__lk__fio, .page__departament .employee__box .text[data-field="userFIO"]').text(user.last_name + " " + user.first_name);
+        if(userPhoneTG === null){
+            window.Telegram.WebApp.requestContact((isAccess, res) =>{
+                if(isAccess){
+                    localStorage.setItem("userPhoneTG", res.responseUnsafe.contact.phone_number);
+                    $('.page__departament .employee__box .text[data-field="userPhone"]').text(res.responseUnsafe.contact.phone_number)
+                }else{
+                    // Запросить разрешение на получение контакта
+                }
+            });
+        }else{
+            $('.page__departament .employee__box .text[data-field="userPhone"]').text(userPhoneTG)
+        }
+    }
+    
 });

@@ -93,5 +93,11 @@ $(document).ready(function() {
             $parent.removeClass('manager-says__item_active');
             $parent.find('.manager-says__description').css({'height': '85px'});
         }
-    })
+    });
+
+    const userContacts = window.Telegram.Utils.sessionStorageGet("userContacts");
+
+    if(userContacts === null){
+        $('.widget__lk__info .widget__lk__fio, .page__departament .employee__box .text[data-field="userFIO"]').text(user.last_name + " " + user.first_name);
+    }
 })

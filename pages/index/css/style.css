@@ -5,7 +5,8 @@
 }
 
 body {
-    background: #fff;
+    zoom: 0.8;
+    background: var(--white);
 }
 
 .cards {
@@ -43,10 +44,18 @@ body {
 
 .logo {
     display: flex;
-    width: auto;
+    width: 7.25rem;
 }
 
 .logo img {
     width: 100%;
     object-fit: cover;
+}
+
+.text {
+    color: var(--black);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
 }

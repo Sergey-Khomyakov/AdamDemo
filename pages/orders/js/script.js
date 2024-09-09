@@ -1,10 +1,5 @@
 $(document).ready(function() {
-    const userContacts = window.Telegram.Utils.sessionStorageGet("userContacts");
 
-    if(userContacts !== null){
-        $('.widget__lk__info .widget__lk__fio, .page__departament .employee__box .text[data-field="userFIO"]').text(userContacts.responseUnsafe.contact.last_name + " " + userContacts.responseUnsafe.contact.first_name);
-        $('.page__departament .employee__box .text[data-field="userPhone"]').text(userContacts.responseUnsafe.contact.phone_number)
-    }
 
     const $items = $(`<div class="cards"> </div>`);
     data.forEach(item => {
@@ -44,4 +39,17 @@ $(document).ready(function() {
 
     $('main .container').append($items);
 
+    const userContacts = window.Telegram.Utils.sessionStorageGet("userContacts");
+
+    window.Telegram.WebApp.BackButton.show();
+
+    window.Telegram.WebApp.BackButton.OnClick(function() {
+        window.Telegram.WebApp.showAlert("BackButton clicked");
+        window.Telegram.WebApp.BackButton.hide();
+    });
+
+    if(userContacts !== null){
+        $('.widget__lk__info .widget__lk__fio, .page__departament .employee__box .text[data-field="userFIO"]').text((userContacts.responseUnsafe.contact.last_name !== undefined ? userContacts.responseUnsafe.contact.last_name : "") + " " + (userContacts.responseUnsafe.contact.last_name !== undefined ? userContacts.responseUnsafe.contact.first_name : ""));
+        $('.page__departament .employee__box .text[data-field="userPhone"]').text(userContacts.responseUnsafe.contact.phone_number)
+    }
 })

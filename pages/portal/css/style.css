@@ -1451,7 +1451,7 @@ input[type=submit] {
     width: 20px;
     height: 20px;
     margin-right: 5px;
-    filter: invert(25%) sepia(96%) saturate(4286%) hue-rotate(350deg) brightness(88%) contrast(98%);
+    filter: var(--filter-blue);
 }
 
 @media (max-width: 959px) {
@@ -1553,7 +1553,7 @@ input[type=submit] {
     width: 20px;
     height: 20px;
     margin-right: 5px;
-    filter: invert(25%) sepia(96%) saturate(4286%) hue-rotate(350deg) brightness(88%) contrast(98%);
+    filter: var(--filter-blue);
 }
 
 @media (max-width: 959px) {
@@ -4030,7 +4030,7 @@ input[name=datepicker] {
 }
 
 .link:hover .link__img {
-    filter: brightness(0) saturate(100%) invert(14%) sepia(76%) saturate(3528%) hue-rotate(351deg) brightness(98%) contrast(99%);
+    filter: var(--filter-blue);
 }
 
 .link__counter {
@@ -12629,7 +12629,7 @@ input:not(:checked):focus~#helper-text {
 }
 
 .page__departament__block .link:hover .link__img {
-    filter: invert(18%) sepia(80%) saturate(5419%) hue-rotate(343deg) brightness(78%) contrast(120%);
+    filter: var(--filter-blue);
 }
 
 .page__departament__block .link__img,

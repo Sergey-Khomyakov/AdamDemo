@@ -23,6 +23,10 @@ a:hover {
     color: var(--primary) !important;
 }
 
+P {
+    margin: 0;
+}
+
 a.logo {
     display: flex;
     width: 207px;

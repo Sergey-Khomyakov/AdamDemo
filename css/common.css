@@ -132,10 +132,92 @@ table {
     border-spacing: 0;
 }
 
+@font-face {
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+    font-family: "Montserrat";
+    font-weight: 100;
+}
+
+@font-face {
+    src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+    font-family: "Montserrat";
+    font-weight: 300;
+}
+
+@font-face {
+    src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+@font-face {
+    src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
 :root {
-    --primary: #1d4f9b;
+    --primary: #1D4F9B;
+    --blue-2-color: #0064ff;
+    --blue-3-color: #1b4dbb;
+    --blue-4-color: #3a7ad4;
+    --light-blue-color: #0f6ce6;
     --white: #fff;
-    --black: #111;
+    --black: #111111;
+    --grey-color: #667085;
+    --green-color: #00b050;
+    --green-2-color: #71BF4C;
+    --green-3-color: #00b050;
+    --green-4-color: #01cf2b;
+    --green-5-color: #008b48;
+    --green-6-color: #4CD5A3;
+    --red-color: #FF5555;
+    --red-2-color: #EE4646;
+    --violet-color: #7030a0;
+    --violet-2-color: #7800d2;
+    --violet-3-color: #7f56d9;
+    --light-violet-color: #BCA2FD;
+    --yellow-color: #FFDA55;
+    --yellow-2-color: #e28000;
+    --turquoise-color: #40CBD4;
+    --orange-color: #FEE0BF;
+    --pink-color: #FEBDE7;
+    --white-linght-color: #F9FAFB;
+    --bg-white-color: #F1F3F6;
+    --bg-chart-tab-color: #f7fafd;
+    --stroke-color: #e3ecf5;
+    --gradient-grey: linear-gradient(135deg, #eaecf09d 6.41%, #EAECF0 95.89%);
+    --gradient-violet: linear-gradient(135deg, #F4EDFE 6.41%, #AE90FC 95.89%);
+    --gradient-violet-2: linear-gradient(135deg, #f4edfe 0%, #e5dbff 100%);
+    --gradient-orange: linear-gradient(135deg, #FEF5F0 6.41%, #FDDBB5 95.89%);
+    --gradient-blue: linear-gradient(135deg, #F1F9FF 6.41%, #B7E1FE 95.89%);
+    --gradient-blue-2: linear-gradient(135deg, #f1f9ff 0%, #b7e1fe 100%);
+    --gradient-blue-3: linear-gradient(139deg, #1946a4 0%, #447ad2 71.5%, #166db7 100%);
+    --gradient-blue-4: linear-gradient(94deg, rgb(60 91 160) 0%, rgb(10 60 236) 67%, rgb(0 88 255) 100%);
+    --gradient-turquoise: linear-gradient(135deg, #F2FEF7 6.41%, #B7F8FE 95.89%);
+    --gradient-green: linear-gradient(135deg, #F4FFF4 6.41%, #B7FFDC 95.89%);
+    --gradient-green-2: linear-gradient(135deg, #defff3 6.41%, #f0ffb6 95.89%);
+    --gradient-pink: linear-gradient(135deg, #FEF2FE 6.41%, #FDB2E2 95.89%);
+    --gradient-navy-blue: linear-gradient(135deg, #EDF1FF 6.41%, #5B81D6 95.89%);
+    --gradient-yellow: linear-gradient(135deg, #fff5c3 0%, #fffbeb 100%);
+    --gradient-red: linear-gradient(135deg, #ffe5e5 0%, #ffe5e5 100%);
+    --gradient-gold: linear-gradient(135deg, #fff384 0%, #ffd98f 100%);
+    --filter-green: brightness(0) saturate(100%) invert(85%) sepia(4%) saturate(5401%) hue-rotate(99deg) brightness(88%) contrast(90%);
+    --filter-green-2: brightness(0) saturate(100%) invert(27%) sepia(84%) saturate(1910%) hue-rotate(137deg) brightness(94%) contrast(100%);
+    --filter-yellow: brightness(0) saturate(100%) invert(46%) sepia(95%) saturate(903%) hue-rotate(6deg) brightness(95%) contrast(100%);
+    --filter-blue: brightness(0) saturate(100%) invert(23%) sepia(94%) saturate(1402%) hue-rotate(205deg) brightness(96%) contrast(100%);
+    --filter-blue-2: brightness(0) saturate(100%) invert(40%) sepia(99%) saturate(1017%) hue-rotate(206deg) brightness(101%) contrast(97%);
+    --filter-violet: brightness(0) saturate(100%) invert(39%) sepia(25%) saturate(1689%) hue-rotate(219deg) brightness(98%) contrast(95%);
+    --filter-red: brightness(0) saturate(100%) invert(39%) sepia(27%) saturate(3586%) hue-rotate(331deg) brightness(94%) contrast(99%);
+    --transition-duration: 0.3s;
+    --adamweb-grey-2: #d0d5dd;
+    --moskivich-color: #231f20;
+    --moskivich-color-2: #808082;
+    --moskivich-color-3: #e4e5e7;
+    --moskivich-color-4: #d5001c;
+    --adamweb-grey-1: #f7fafd;
+    --adamweb-grey-3: #808082;
+    --meteors-height-y: -500px;
 }
 
 * {

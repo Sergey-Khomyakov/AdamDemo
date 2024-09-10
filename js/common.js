@@ -23,3 +23,30 @@ function setItemToStorage(key, value) {
         });
     }).catch()
 }
+
+function removeItemFromStorage(key) {
+    return new Promise((resolve, reject) => {
+        window.Telegram.WebApp.CloudStorage.removeItem(
+            key,
+            (err, data) => {
+                if (!err) {
+                    resolve(data);
+                } else {
+                    reject(err);
+                }
+            })
+    }).catch()
+}
+
+function getKeysFromStorage() {
+    return new Promise((resolve, reject) => {
+        window.Telegram.WebApp.CloudStorage.removeItem(
+            (err, data) => {
+                if (!err) {
+                    resolve(data);
+                } else {
+                    reject(err);
+                }
+            })
+    }).catch()
+}

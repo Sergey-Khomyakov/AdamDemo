@@ -1,3 +1,8 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 .accordion__item {
   padding: 0.25rem 1rem;
   border-radius: 0.5rem;
@@ -13,6 +18,14 @@
 }
 .accordion__content {
   visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.accordion__content .item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 .accordion__header {
   display: flex;

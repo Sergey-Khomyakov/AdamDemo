@@ -11,7 +11,6 @@ $(document).ready(function() {
             body.css({"height": "0px"});
             $item.removeClass('accordion__active');
         }else{
-            //body.css({"height": body.outerHeight(true) + "px"});
             const paddingSize = 16;
             const height = $item.find('.accordion__content').outerHeight(true) + paddingSize;
             body.css({"height": height + "px"});

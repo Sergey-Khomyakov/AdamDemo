@@ -50,3 +50,17 @@ function getKeysFromStorage() {
             })
     }).catch()
 }
+
+function showScanQrPopup(text) {
+    return new Promise((resolve, reject) => {
+        window.Telegram.WebApp.showScanQrPopup(
+            text,
+            (err, data) => {
+                if (!err) {
+                    resolve(data);
+                } else {
+                    reject(err);
+                }
+            })
+    }).catch()
+}

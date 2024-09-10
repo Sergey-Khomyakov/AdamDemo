@@ -280,6 +280,13 @@ p {
   display: none;
   background: unset;
 }
+.btn.btn__icon {
+  cursor: pointer;
+  border: unset;
+}
+.btn.btn__icon img {
+  filter: var(--filter-blue);
+}
 
 .footer {
   display: flex;
@@ -363,5 +370,13 @@ p {
 .page__bank .container {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 1rem;
+}
+
+.block__btns {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--bg-white-color);
+  display: flex;
+  gap: 0.25rem;
 }/*# sourceMappingURL=style.css.map */

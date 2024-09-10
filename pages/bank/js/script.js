@@ -31,6 +31,7 @@ $(document).ready(function() {
         const firstName = window.Telegram.WebApp.initDataUnsafe?.user?.first_name || "";
         $('.widget__lk__info .widget__lk__fio, .page__departament .employee__box .text[data-field="userFIO"]').text(lastName + " " + firstName);
         $('.card.card__bank .text.text-fio').text(lastName + " " + firstName);
+        $()
     }
 
     window.Telegram.WebApp.BackButton.show();
@@ -38,6 +39,11 @@ $(document).ready(function() {
     Telegram.WebApp.onEvent('backButtonClicked', function(){
         window.location.href= document.referrer;
     });
+    $('.btn.btn__icon[data-btn="qrScan"]').on('click', function(){
+        showScanQrPopup("text").then((res) => {
+            console.dir(res);
+        });
+    })
 })
 
 function getRandomNumber() {

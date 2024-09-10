@@ -229,6 +229,13 @@ p{
         display: none;
         background: unset;
     }
+    &.btn__icon{
+        cursor: pointer;
+        border: unset;
+        img{
+            filter: var(--filter-blue);
+        }
+    }
 }
 
 
@@ -318,6 +325,14 @@ p{
     .container{
         display: flex;
         flex-direction: column;
-        gap: 4rem;
+        gap: 1rem;
     }
+}
+
+.block__btns{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background: var(--bg-white-color);
+    display: flex;
+    gap: 0.25rem;
 }

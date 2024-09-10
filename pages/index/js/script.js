@@ -32,7 +32,7 @@ $(document).ready( async function() {
             });
         }else{
             window.Telegram.WebApp.BiometricManager.requestAccess(null, (data) => {
-                window.Telegram.WebApp.showAlert(data);
+                //window.Telegram.WebApp.showAlert(data);
             })
         }
     } catch (e) {

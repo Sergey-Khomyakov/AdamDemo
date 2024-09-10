@@ -40,9 +40,10 @@ $(document).ready(function() {
         window.location.href= document.referrer;
     });
     $('.btn.btn__icon[data-btn="qrScan"]').on('click', function(){
-        showScanQrPopup("Сканируй").then((res) => {
-            console.dir(res);
-        });
+        // showScanQrPopup("QR").then((res) => {
+        //     console.dir(res);
+        // });
+        window.Telegram.WebApp.sendData("text")
     })
 })
 

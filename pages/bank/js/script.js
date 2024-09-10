@@ -4,15 +4,15 @@ $(document).ready(function() {
     $(".card.card__bank .card__footer .text.text-card-data").text(getRandomDate());
 
 
-    $('.accordion .accordion__item').on('click', '.accordion__btn', function(){
-        const parent = $(this).closest('.accordion__item');
-        const body = parent.find('.accordion__body');
-        if(parent.hasClass('accordion__active')){
+    $('.accordion').on('click', '.accordion__item', function(){
+        const $item = $(this);
+        const body = $item.find('.accordion__body');
+        if($item.hasClass('accordion__active')){
             body.css({"height": "0px"});
-            parent.removeClass('accordion__active');
+            $item.removeClass('accordion__active');
         }else{
             body.css({"height": body[0].scrollHeight + "px"});
-            parent.addClass('accordion__active');
+            $item.addClass('accordion__active');
         }
 
     });

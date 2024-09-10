@@ -30,6 +30,10 @@ $(document).ready( async function() {
             window.Telegram.WebApp.BiometricManager.init((data) => {
                 window.Telegram.WebApp.showAlert(data);
             });
+        }else{
+            window.Telegram.WebApp.BiometricManager.requestAccess(null, (data) => {
+                window.Telegram.WebApp.showAlert(data);
+            })
         }
     } catch (e) {
         console.log(e)

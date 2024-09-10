@@ -49,7 +49,8 @@ $(document).ready(function() {
           }, function (result) {
             if (result) {
               // Обработка результата сканирования
-              Telegram.WebApp.sendData(result);
+              //Telegram.WebApp.sendData(result);
+              window.Telegram.WebApp.showAlert(result);
             } else {
               console.log('Сканирование отменено или не удалось.');
             }

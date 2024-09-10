@@ -13,4 +13,5 @@ $(document).ready(function() {
             }
         });
     }
+    window.Telegram.WebApp.BackButton.hide();
 });

@@ -39,11 +39,18 @@ $(document).ready(function() {
 
     $('main .container').append($items);
 
-    const userContacts = window.Telegram.Utils.sessionStorageGet("userContacts");
-    
-    if(userContacts !== null){
-        $('.widget__lk__info .widget__lk__fio, .page__departament .employee__box .text[data-field="userFIO"]').text((userContacts.responseUnsafe.contact.last_name !== undefined ? userContacts.responseUnsafe.contact.last_name : "") + " " + (userContacts.responseUnsafe.contact.last_name !== undefined ? userContacts.responseUnsafe.contact.first_name : ""));
-        $('.page__departament .employee__box .text[data-field="userPhone"]').text(userContacts.responseUnsafe.contact.phone_number)
+    getItemFromStorage('userPhone')
+    .then((res) => {
+        if (res) {
+            $('.page__departament .employee__box .text[data-field="userPhone"]').text(res)
+        }
+    });
+
+    if(window.Telegram.WebApp.initDataUnsafe !== null){
+        const lastName = window.Telegram.WebApp.initDataUnsafe?.user?.last_name || "";
+        const firstName = window.Telegram.WebApp.initDataUnsafe?.user?.first_name || "";
+        $('.widget__lk__info .widget__lk__fio, .page__departament .employee__box .text[data-field="userFIO"]').text(lastName + " " + firstName);
+        
     }
 
     window.Telegram.WebApp.BackButton.show();

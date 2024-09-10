@@ -2,7 +2,6 @@ $(document).ready( async function() {
     try {
         window.Telegram.WebApp.expand();
         window.Telegram.WebApp.ready();
-        debugger
         getItemFromStorage('userPhone')
         .then((data) => {
             if (!data) {

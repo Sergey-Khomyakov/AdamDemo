@@ -43,7 +43,17 @@ $(document).ready(function() {
         // showScanQrPopup("QR").then((res) => {
         //     console.dir(res);
         // });
-        window.Telegram.WebApp.sendData("text")
+        //window.Telegram.WebApp.sendData("text")
+        Telegram.WebApp.showScanQrPopup({
+            text: 'Сканируйте QR-код',
+          }, function (result) {
+            if (result) {
+              // Обработка результата сканирования
+              Telegram.WebApp.sendData(result);
+            } else {
+              console.log('Сканирование отменено или не удалось.');
+            }
+          });
     })
 })
 

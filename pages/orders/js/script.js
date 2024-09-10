@@ -56,6 +56,6 @@ $(document).ready(function() {
     window.Telegram.WebApp.BackButton.show();
 
     Telegram.WebApp.onEvent('backButtonClicked', function(){
-        window.history.back()
+        window.history.go(-1);
     });
 })

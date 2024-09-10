@@ -11,7 +11,7 @@ $(document).ready(function() {
             body.css({"height": "0px"});
             $item.removeClass('accordion__active');
         }else{
-            body.css({"height": body.height() + "px"});
+            body.css({"height": body.outerHeight(true) + "px"});
             $item.addClass('accordion__active');
         }
 

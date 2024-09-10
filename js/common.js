@@ -40,7 +40,7 @@ function removeItemFromStorage(key) {
 
 function getKeysFromStorage() {
     return new Promise((resolve, reject) => {
-        window.Telegram.WebApp.CloudStorage.removeItem(
+        window.Telegram.WebApp.CloudStorage.getKeys(
             (err, data) => {
                 if (!err) {
                     resolve(data);

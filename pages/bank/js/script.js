@@ -6,12 +6,15 @@ $(document).ready(function() {
 
     $('.accordion').on('click', '.accordion__item', function(){
         const $item = $(this);
-        const body = $item.find('.accordion__content');
+        const body = $item.find('.accordion__body');
         if($item.hasClass('accordion__active')){
             body.css({"height": "0px"});
             $item.removeClass('accordion__active');
         }else{
-            body.css({"height": body.outerHeight(true) + "px"});
+            //body.css({"height": body.outerHeight(true) + "px"});
+            const paddingSize = 16;
+            const height = $item.find('.accordion__content').outerHeight(true) + paddingSize;
+            body.css({"height": height + "px"});
             $item.addClass('accordion__active');
         }
 

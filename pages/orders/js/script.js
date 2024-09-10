@@ -55,6 +55,6 @@ $(document).ready(function() {
     window.Telegram.WebApp.BackButton.show();
 
     Telegram.WebApp.onEvent('backButtonClicked', function(){
-        window.history.go(-1);
+        window.location.href= document.referrer;
     });
 })

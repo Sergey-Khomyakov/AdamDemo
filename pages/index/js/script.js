@@ -2,6 +2,7 @@ $(document).ready( async function() {
     try {
         window.Telegram.WebApp.expand();
         window.Telegram.WebApp.ready();
+        window.Telegram.WebApp.BackButton.hide();
         getItemFromStorage('userPhone')
         .then((data) => {
             if (!data) {

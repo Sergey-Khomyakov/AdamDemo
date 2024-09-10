@@ -40,7 +40,7 @@ $(document).ready(function() {
         window.location.href= document.referrer;
     });
     $('.btn.btn__icon[data-btn="qrScan"]').on('click', function(){
-        showScanQrPopup("text").then((res) => {
+        showScanQrPopup("Сканируй").then((res) => {
             console.dir(res);
         });
     })

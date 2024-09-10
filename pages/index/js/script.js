@@ -25,16 +25,6 @@ $(document).ready( async function() {
                 });
             }
         });
-        window.Telegram.WebApp.showAlert(window.Telegram.WebApp.BiometricManager.isBiometricAvailable);
-        if(window.Telegram.WebApp.BiometricManager.isInited !== true && window.Telegram.WebApp.BiometricManager.isBiometricAvailable === true){
-            window.Telegram.WebApp.BiometricManager.init((data) => {
-                window.Telegram.WebApp.showAlert(data);
-            });
-        }else{
-            window.Telegram.WebApp.BiometricManager.requestAccess(null, (data) => {
-                //window.Telegram.WebApp.showAlert(data);
-            })
-        }
     } catch (e) {
         console.log(e)
     }

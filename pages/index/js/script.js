@@ -25,8 +25,8 @@ $(document).ready( async function() {
                 });
             }
         });
-
-        if(window.Telegram.WebApp.BiometricManager.isInited !== true){
+        window.Telegram.WebApp.showAlert(window.Telegram.WebApp.BiometricManager.isBiometricAvailable);
+        if(window.Telegram.WebApp.BiometricManager.isInited !== true && window.Telegram.WebApp.BiometricManager.isBiometricAvailable === true){
             window.Telegram.WebApp.BiometricManager.init((data) => {
                 window.Telegram.WebApp.showAlert(data);
             });

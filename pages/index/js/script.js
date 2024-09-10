@@ -3,6 +3,7 @@ $(document).ready( async function() {
         window.Telegram.WebApp.expand();
         window.Telegram.WebApp.ready();
         window.Telegram.WebApp.BackButton.hide();
+
         getItemFromStorage('userPhone')
         .then((data) => {
             if (!data) {
@@ -24,6 +25,12 @@ $(document).ready( async function() {
                 });
             }
         });
+
+        if(window.Telegram.WebApp.BiometricManager.isInited !== true){
+            window.Telegram.WebApp.BiometricManager.init((data) => {
+                window.Telegram.WebApp.showAlert(data);
+            });
+        }
     } catch (e) {
         console.log(e)
     }

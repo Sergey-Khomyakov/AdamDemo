@@ -40,12 +40,8 @@ $(document).ready(function() {
         window.location.href= document.referrer;
     });
     $('.btn.btn__icon[data-btn="qrScan"]').on('click', function(){
-        // showScanQrPopup("QR").then((res) => {
-        //     console.dir(res);
-        // });
-        //window.Telegram.WebApp.sendData("text")
         Telegram.WebApp.showScanQrPopup({
-            text: 'Сканируйте QR-код',
+            text: 'текст',
           }, function (result) {
             if (result) {
               // Обработка результата сканирования

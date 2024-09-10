@@ -48,11 +48,7 @@ $(document).ready(function() {
 
     window.Telegram.WebApp.BackButton.show();
 
-    // window.Telegram.WebApp.BackButton.OnClick(function() {
-    //     window.Telegram.WebApp.showAlert("BackButton clicked");
-    //     window.Telegram.WebApp.BackButton.hide();
-    // });
     Telegram.WebApp.onEvent('backButtonClicked', function(){
-        window.Telegram.WebApp.showAlert("BackButton clicked");
-    })
+        window.history.back()
+    });
 })

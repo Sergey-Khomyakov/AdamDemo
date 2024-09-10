@@ -2,12 +2,12 @@ $(document).ready(function() {
 
     window.Telegram.WebApp.ready();
 
-    const userContacts = window.Telegram.Utils.sessionStorageGet("userContacts");
+    const userContacts = window.Telegram.WebApp.CloudStorage.getItem("userContacts");
 
     if(userContacts === null){
         window.Telegram.WebApp.requestContact((isAccess, res) =>{
             if(isAccess){
-                window.Telegram.Utils.sessionStorageSet("userContacts", res);
+                window.Telegram.WebApp.CloudStorage.setItem("userContacts", res);
             }else{
                 // Запросить разрешение на получение контакта
             }

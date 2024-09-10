@@ -6,12 +6,12 @@ $(document).ready(function() {
 
     $('.accordion').on('click', '.accordion__item', function(){
         const $item = $(this);
-        const body = $item.find('.accordion__body');
+        const body = $item.find('.accordion__content');
         if($item.hasClass('accordion__active')){
             body.css({"height": "0px"});
             $item.removeClass('accordion__active');
         }else{
-            body.css({"height": body[0].scrollHeight + "px"});
+            body.css({"height": body.height() + "px"});
             $item.addClass('accordion__active');
         }
 

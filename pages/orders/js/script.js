@@ -52,5 +52,7 @@ $(document).ready(function() {
     //     window.Telegram.WebApp.showAlert("BackButton clicked");
     //     window.Telegram.WebApp.BackButton.hide();
     // });
-
+    Telegram.WebApp.onEvent('backButtonClicked', function(){
+        window.Telegram.WebApp.showAlert("BackButton clicked");
+    })
 })

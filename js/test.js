@@ -1,9 +1,6 @@
 $(document).ready( async function() {
     try {
-        window.Telegram.WebApp.BackButton.show();
-        window.Telegram.WebApp.MainButton.show();
-        window.Telegram.WebApp.SecondaryButton.show();
-        window.Telegram.WebApp.SettingsButton.show();
+        window.Telegram.WebApp.shareToStory("https://adamweb.ru/local/templates/adam/img/other/carousel__design/Screen4.png")
     } catch (e) {
         console.log(e)
     }

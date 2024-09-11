@@ -35,7 +35,7 @@ $(document).ready(function() {
     }
 
     window.Telegram.WebApp.BackButton.show();
-
+    window.Telegram.WebApp.disableVerticalSwipes();
     Telegram.WebApp.onEvent('backButtonClicked', function(){
         window.location.href= document.referrer;
     });

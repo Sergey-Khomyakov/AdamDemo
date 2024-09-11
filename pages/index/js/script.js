@@ -3,7 +3,7 @@ $(document).ready( async function() {
         window.Telegram.WebApp.expand();
         window.Telegram.WebApp.ready();
         window.Telegram.WebApp.BackButton.hide();
-
+        window.Telegram.WebApp.disableVerticalSwipes();
 
         if (window.Telegram?.WebApp?.initDataUnsafe) {
             const initData = window.Telegram?.WebApp?.initData;

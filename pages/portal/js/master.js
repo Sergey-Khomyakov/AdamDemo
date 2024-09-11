@@ -110,7 +110,7 @@ $(document).ready(function() {
     }
 
     window.Telegram.WebApp.BackButton.show();
-
+    window.Telegram.WebApp.disableVerticalSwipes();
     Telegram.WebApp.onEvent('backButtonClicked', function(){
         if(window.location.pathname === "/AdamDemo/PortalIndex.html"){
             window.location.href= "https://sergey-khomyakov.github.io/AdamDemo/"

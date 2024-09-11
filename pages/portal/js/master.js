@@ -112,6 +112,10 @@ $(document).ready(function() {
     window.Telegram.WebApp.BackButton.show();
 
     Telegram.WebApp.onEvent('backButtonClicked', function(){
-        window.location.href= document.referrer;
+        if(window.location.pathname === "/AdamDemo/PortalIndex.html"){
+            window.location.href= "https://sergey-khomyakov.github.io/AdamDemo/"
+        }else{
+            window.location.href= document.referrer;
+        }
     });
 })

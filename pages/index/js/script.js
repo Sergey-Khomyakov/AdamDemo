@@ -8,7 +8,7 @@ $(document).ready( async function() {
         if (window.Telegram?.WebApp?.initDataUnsafe) {
             const initData = window.Telegram?.WebApp?.initData;
 
-            fetch('https://192.168.0.101:3000/api/verify', {
+            fetch('https://192.168.0.101:3030/api/verify', {
                 method: 'POST',
                 body: JSON.stringify({
                     initData: initData

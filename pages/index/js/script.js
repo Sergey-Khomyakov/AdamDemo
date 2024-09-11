@@ -10,9 +10,7 @@ $(document).ready( async function() {
 
             fetch('https://192.168.0.101:3030/api/verify', {
                 method: 'POST',
-                body: JSON.stringify({
-                    initData: initData
-                }),
+                body: JSON.stringify({ initData: initData }),
                 headers: {
                     'Content-Type': 'application/json',
                 }

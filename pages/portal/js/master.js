@@ -124,6 +124,7 @@ $(document).ready(function() {
         body: JSON.stringify({ userId: window.Telegram.WebApp.initDataUnsafe?.user?.id }),
         headers: {
             'Content-Type': 'application/json',
+            'Accept': 'application/json',
         }
     }).then((res) => {
         if (res.ok) {

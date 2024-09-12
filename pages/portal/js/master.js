@@ -119,12 +119,10 @@ $(document).ready(function() {
         }
     });
 
-    fetch('https://192.168.0.101:3030/api/getUserPhotoBase64', {
-        method: 'POST',
-        body: JSON.stringify({ userId: window.Telegram.WebApp.initDataUnsafe?.user?.id }),
+    fetch('https://192.168.0.101:3030/api/getUserPhotoBase64?userId=' + window.Telegram.WebApp.initDataUnsafe?.user?.id + '', {
+        method: 'GET',
         headers: {
             'Content-Type': 'application/json',
-            'Accept': 'application/json',
         }
     }).then((res) => {
         if (res.ok) {

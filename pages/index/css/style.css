@@ -1,78 +1,89 @@
+dialog {
+  border: unset;
+  top: 5%;
+  right: 10%;
+  left: unset;
+  margin: 0;
+  max-width: 15rem;
+  border-radius: 0.5rem;
+}
+dialog .modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+dialog .list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .container {
-    width: auto;
-    padding: 1rem;
-    height: 100vh;
+  width: auto;
+  padding: 1rem;
+  height: 100vh;
 }
 
 body {
-    zoom: 0.8;
-    background: var(--white);
+  zoom: 0.8;
+  background: var(--white);
 }
 
 .cards {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .card {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: .25rem;
-    padding: 1rem;
-    flex-direction: column;
-    text-align: center;
-    box-shadow: 4px 5px 5px rgba(38, 71, 90, 0.19);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 4px 5px 5px rgba(38, 71, 90, 0.19);
 }
-
 .card:hover {
-    background: linear-gradient(140deg, rgb(255, 255, 255) 0%, rgb(238, 245, 252) 67%, rgb(204, 222, 255) 100%);
+  background: linear-gradient(140deg, rgb(255, 255, 255) 0%, rgb(238, 245, 252) 67%, rgb(204, 222, 255) 100%);
 }
 
 .header {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    border-bottom: 1px solid var(--stroke-color);
-    margin-bottom: 1.5rem;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--stroke-color);
+  margin-bottom: 1.5rem;
 }
 
 .logo {
-    display: flex;
-    width: 7.25rem;
+  display: flex;
+  width: 7.25rem;
 }
-
 .logo img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .text {
-    color: var(--black);
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.25rem;
+  color: var(--black);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
 }
 
-dialog {
-    border: unset;
-    top: 5%;
-    right: 10%;
-    left: unset;
-    margin: 0;
-    max-width: 15rem;
-    border-radius: 0.5rem;
+.link {
+  font-family: "Montserrat";
+  color: var(--black);
 }
 
-dialog .modal-body {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
+.link:hover {
+  color: var(--primary);
+}/*# sourceMappingURL=style.css.map */

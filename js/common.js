@@ -2,15 +2,16 @@
 $(document).ready( async function() {
     try {
         window.Telegram.WebApp.SettingsButton.show();
-        const dialog = document.getElementById('popupSettings');
+        const $dialog = $('#popupSettings');
 
         if(window.Telegram.WebApp.platform === 'tdesktop'){
-            dialog.querySelector('.list').appendChild(`
+            $dialog.find('.list').append(`
                 <div class="list__item">
                     <a href="#" id="getAppShortcut" class="link">Создать ярлык</a>
                 </div>
                 `);
-            dialog.querySelector('#getAppShortcut').addEventListener('click', (event) => {
+
+            $('#popupSettings').find('#getAppShortcut').on('click', function(){
                 fetch('https://192.168.0.101:3030/api/getApplicationShortcut', {
                     method: 'GET',
                     headers: {

@@ -11,11 +11,17 @@ dialog .modal-body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  padding: 0;
 }
 dialog .list {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+#popupSettings .modal-dialog {
+  max-width: none;
+  width: auto;
 }
 
 .container {

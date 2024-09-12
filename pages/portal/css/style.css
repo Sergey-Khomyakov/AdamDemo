@@ -14623,3 +14623,8 @@ dialog .list {
     flex-direction: column;
     gap: 0.5rem;
 }
+
+#popupSettings .modal-dialog {
+    max-width: none;
+    width: auto;
+}

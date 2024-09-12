@@ -118,4 +118,17 @@ $(document).ready(function() {
             window.location.href= document.referrer;
         }
     });
+
+    fetch('https://192.168.0.101:3030/api/getUserPhotoBase64', {
+        method: 'POST',
+        body: JSON.stringify({ userId: window.Telegram.WebApp.initDataUnsafe?.user?.id }),
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    }).then((res) => {
+        if (res.ok) {
+            const result = JSON.parse(res.body);
+            $('.widget__lk__info .widget__lk__img img, .page__departament .card.employee .card__img').attr('src', "data:image/png;base64, " + result.photo);
+        }
+    })
 })

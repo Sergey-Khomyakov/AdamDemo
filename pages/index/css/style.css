@@ -60,3 +60,19 @@ body {
     font-weight: 400;
     font-size: 1.25rem;
 }
+
+dialog {
+    border: unset;
+    top: 5%;
+    right: 10%;
+    left: unset;
+    margin: 0;
+    max-width: 15rem;
+    border-radius: 0.5rem;
+}
+
+dialog .modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}

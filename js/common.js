@@ -26,14 +26,14 @@ $(document).ready( async function() {
 
 
         Telegram.WebApp.onEvent('settingsButtonClicked', () => {
-            dialog.showModal();
+            $dialog.show();
         })
         // Закрытие диалога по клику вне его
-        window.addEventListener('click', (event) => {
-            if (event.target === dialog) {
-                dialog.close(); // Закрытие, если кликнули на фон
+        $(document).on('click', function(event) {
+            if (event.target === $dialog[0]) {
+              $dialog.hide();
             }
-        });
+          });
     } catch (e) {
         console.log(e)
     }

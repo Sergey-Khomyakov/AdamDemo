@@ -26,7 +26,7 @@ $(document).ready( async function() {
 
 
         Telegram.WebApp.onEvent('settingsButtonClicked', () => {
-            $dialog.show();
+            $dialog.dialog('open');
         })
         // Закрытие диалога по клику вне его
         $(document).on('click', function(event) {

@@ -26,12 +26,12 @@ $(document).ready( async function() {
 
 
         Telegram.WebApp.onEvent('settingsButtonClicked', () => {
-            $dialog.dialog('open');
+            window.popupSettings.showModal()
         })
         // Закрытие диалога по клику вне его
         $(document).on('click', function(event) {
             if (event.target === $dialog[0]) {
-              $dialog.hide();
+                window.popupSettings.close()
             }
           });
     } catch (e) {

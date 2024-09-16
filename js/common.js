@@ -19,8 +19,32 @@ $(document).ready( async function() {
                     }
                 }).then((res) => {
                     if (res.ok) {
+                        return res.blob(); // Parse the response as a blob
+                    } else {
+                        throw new Error('Network response was not ok');
                     }
-                })
+                }).then((blob) => {
+                    // Create a temporary URL for the blob
+                    const url = URL.createObjectURL(blob);
+                    
+                    // Create a temporary link element
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.setAttribute('download', 'AdamWebTG.url');
+                    
+                    // Append the link to the document body
+                    document.body.appendChild(link);
+                    
+                    // Click the link to initiate the download
+                    link.click();
+                    
+                    // Clean up by removing the link and revoking the object URL
+                    document.body.removeChild(link);
+                    URL.revokeObjectURL(url);
+                }).catch((error) => {
+                    console.error('There has been a problem with your fetch operation:', error);
+                });
+            });
             });
         }
 

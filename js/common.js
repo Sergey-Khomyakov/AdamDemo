@@ -48,26 +48,30 @@ $(document).ready( async function() {
         }
 
         const initData = window.Telegram?.WebApp?.initData;
+        if(initData !== ""){
 
-        fetch('https://adamwebdemo.duckdns.org/api/verify', {
-            method: 'POST',
-            body: JSON.stringify({ initData: initData }),
-            headers: {
-                'Content-Type': 'application/json',
-            }
-        }).then((res) => {
-            if (res.ok) {
-                return res.json(); // Correctly parse the JSON response
-            } else {
-                throw new Error('Network response was not ok');
-            }
-        }).then((result) => {
-            if(result === false){
-                window.location.href = "www.google.com";
-            }
-        }).catch((error) => {
-            console.error('Error: ', error);
-        });
+            fetch('https://adamwebdemo.duckdns.org/api/verify', {
+                method: 'POST',
+                body: JSON.stringify({ initData: initData }),
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            }).then((res) => {
+                if (res.ok) {
+                    return res.json(); // Correctly parse the JSON response
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            }).then((result) => {
+                if(result === false){
+                    window.location.href = "www.google.com";
+                }
+            }).catch((error) => {
+                console.error('Error: ', error);
+            });
+        }else{
+            window.location.href = "www.google.com";
+        }
 
         Telegram.WebApp.onEvent('settingsButtonClicked', () => {
             window.popupSettings.showModal()

@@ -12,7 +12,7 @@ $(document).ready( async function() {
                 `);
 
             $('#popupSettings').find('#getAppShortcut').on('click', function(){
-                fetch('https://192.168.0.101:3030/api/getApplicationShortcut', {
+                fetch('https://adamwebdemo.duckdns.org/api/getApplicationShortcut', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',

@@ -119,7 +119,7 @@ $(document).ready(function() {
         }
     });
 
-    fetch('https://192.168.0.101:3030/api/getUserPhotoBase64?userId=' + window.Telegram.WebApp.initDataUnsafe?.user?.id + '', {
+    fetch('https://adamwebdemo.duckdns.org/api/getUserPhotoBase64?userId=' + window.Telegram.WebApp.initDataUnsafe?.user?.id + '', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',

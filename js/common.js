@@ -64,13 +64,13 @@ $(document).ready( async function() {
                 }
             }).then((result) => {
                 if(result === false){
-                    window.location.href = "www.google.com";
+                    window.location.href = "https://www.google.com";
                 }
             }).catch((error) => {
                 console.error('Error: ', error);
             });
         }else{
-            window.location.href = "www.google.com";
+            window.location.href = "https://www.google.com";
         }
 
         Telegram.WebApp.onEvent('settingsButtonClicked', () => {

@@ -92,7 +92,7 @@ $(document).ready(function() {
                             message: "В чат отправлена геолокация"
                         });
                         $card.find('.btn.btn-primary').addClass("hidden");
-                        $card.find('.text-status').removeClass("text-grey").addClass("text-violet").html("<span>• </span> Принят").text("Принят");
+                        $card.find('.text-status').removeClass("text-grey").addClass("text-violet").html("<span>• </span> Принят");
                     }
                 }).catch((error) => {
                     console.error('There has been a problem with your fetch operation:', error);

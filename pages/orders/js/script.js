@@ -70,7 +70,8 @@ $(document).ready(function() {
         });
 
         $('.card').on('click', '.btn.btn-primary[data-type="accept"]', function(){
-            const itemId = $(this).closest(".card").attr("data-itemId");
+            const $card = $(this).closest(".card")
+            const itemId = $card .attr("data-itemId");
             const item = data.find(item => item.id == itemId);
             if(item !== undefined){
                 fetch('https://adamwebdemo.duckdns.org/api/getOrderLocation?userId=' + window.Telegram.WebApp.initDataUnsafe?.user?.id + '&orderId=' + itemId + '', {
@@ -89,7 +90,9 @@ $(document).ready(function() {
                         window.Telegram.WebApp.showPopup({
                             title: 'Заказ принят',
                             message: "В чат отправлена геолокация"
-                        })
+                        });
+                        $card.find('.btn.btn-primary').addClass("hidden");
+                        $card.fin('.text-status').removeClass("text-grey").addClass("text-violet").text("Принят");
                     }
                 }).catch((error) => {
                     console.error('There has been a problem with your fetch operation:', error);

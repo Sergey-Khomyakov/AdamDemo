@@ -70,7 +70,7 @@ $(document).ready(function() {
         });
 
         $('.card').on('click', '.btn.btn-primary[data-type="accept"]', function(){
-            const itemId = $(this).closest(".card").data('itemId');
+            const itemId = $(this).closest(".card").attr("data-itemId");
             const item = data.find(item => item.id == itemId);
             if(item !== undefined){
                 fetch('https://adamwebdemo.duckdns.org/api/getOrderLocation?userId=' + window.Telegram.WebApp.initDataUnsafe?.user?.id + '&orderId=' + itemId + '', {

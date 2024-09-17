@@ -74,7 +74,7 @@ $(document).ready(function() {
             const itemId = $card .attr("data-itemId");
             const item = data.find(item => item.id == itemId);
             if(item !== undefined){
-                fetch('https://adamwebdemo.duckdns.org/api/getOrderLocation?userId=' + window.Telegram.WebApp.initDataUnsafe?.user?.id + '&orderId=' + itemId + '', {
+                fetch('https://adamwebdemo.duckdns.org/api/getOrderLocation?userId=' + window.Telegram.WebApp.initDataUnsafe?.user?.id + '&orderId=' + Number(itemId) + '', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
@@ -92,7 +92,7 @@ $(document).ready(function() {
                             message: "В чат отправлена геолокация"
                         });
                         $card.find('.btn.btn-primary').addClass("hidden");
-                        $card.fin('.text-status').removeClass("text-grey").addClass("text-violet").text("Принят");
+                        $card.find('.text-status').removeClass("text-grey").addClass("text-violet").text("Принят");
                     }
                 }).catch((error) => {
                     console.error('There has been a problem with your fetch operation:', error);

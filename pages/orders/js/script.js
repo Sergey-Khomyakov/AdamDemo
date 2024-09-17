@@ -69,7 +69,7 @@ $(document).ready(function() {
             console.error('There has been a problem with your fetch operation:', error);
         });
 
-        $('.card').on('click', '.btn.btn-primary[data-type="accept"]', function(){
+        $('.card').one('click', '.btn.btn-primary[data-type="accept"]', function(){
             const $card = $(this).closest(".card")
             const itemId = $card .attr("data-itemId");
             const item = data.find(item => item.id == itemId);

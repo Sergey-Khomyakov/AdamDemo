@@ -85,7 +85,12 @@ $(document).ready(function() {
                         throw new Error('Network response was not ok');
                     }
                 }).then((result) => {
-                    console.dir("+");
+                    if(result.status === true){
+                        window.Telegram.WebApp.showPopup({
+                            title: 'Заказ принят',
+                            message: "В чат отправлена геолокация"
+                        })
+                    }
                 }).catch((error) => {
                     console.error('There has been a problem with your fetch operation:', error);
                 });

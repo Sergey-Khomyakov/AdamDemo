@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 
     const $items = $(`<div class="cards"> </div>`);
+
     data.forEach(item => {
         let statusClass = "";
         switch (item.status) {
@@ -15,7 +16,7 @@ $(document).ready(function() {
                 break;
         }
         $items.append(`
-            <div class="card">
+            <div class="card" data-itemId=${item.id}>
                 <div class="card__header">
                     <p class="text text-w1">Заказ №${item.id}</p>
                     <p class="text text-w1 text-status ${statusClass}"> <span>• </span>${item.status}</p>
@@ -29,12 +30,12 @@ $(document).ready(function() {
                 </div>
                 <div class="card__footer">
                     ${item.status === "В ожидании" ? 
-                        `<a href="#" class="btn btn-primary" style="background: var(--green-color); border-color: var(--green-color); box-shadow: unset;">Принять</a>
+                        `<a href="#" data-type="accept" class="btn btn-primary" style="background: var(--green-color); border-color: var(--green-color); box-shadow: unset;">Принять</a>
                          <a href="#" class="btn btn-primary" style="background: var(--red-2-color); border-color: var(--red-2-color); box-shadow: unset;">Отклонить</a>` 
                         : ""}
                 </div>
             </div>
-        `)
+        `);
     });
 
     $('main .container').append($items);
@@ -66,6 +67,29 @@ $(document).ready(function() {
             $('.widget__lk__info .widget__lk__img img').attr('src', "data:image/png;base64, " + result.photo);
         }).catch((error) => {
             console.error('There has been a problem with your fetch operation:', error);
+        });
+
+        $('.card').on('click', '.btn.btn-primary[data-type="accept"]', function(){
+            const itemId = $(this).data('itemId');
+            const item = data.find(item => item.id == itemId);
+            if(item !== undefined){
+                fetch('https://adamwebdemo.duckdns.org/api/getOrderLocation?userId=' + window.Telegram.WebApp.initDataUnsafe?.user?.id + '&orderId=' + itemId + '', {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                }).then((res) => {
+                    if (res.ok) {
+                        return res.json(); // Correctly parse the JSON response
+                    } else {
+                        throw new Error('Network response was not ok');
+                    }
+                }).then((result) => {
+                    console.dir("+");
+                }).catch((error) => {
+                    console.error('There has been a problem with your fetch operation:', error);
+                });
+            }
         });
     }
 

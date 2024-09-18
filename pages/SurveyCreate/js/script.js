@@ -5,9 +5,9 @@ $(document).ready(function() {
         if(countOptions < 10){
             const $item = $(`
                 <div class="survey__item">
-                    <p class="survey__item__title">Варианты ответа</p>
+                    <p class="survey__item__title">Вариант ответа</p>
                     <input class="survey__item__input" type="text" data-item="option" required
-                        placeholder="Варианты ответа" maxlength="100">
+                        placeholder="Вариант ответа" maxlength="100">
                     <button class="btn" type="button" data-item="remove">Удалить вариант</button>
                 </div>`)
 
@@ -77,11 +77,10 @@ $(document).ready(function() {
                             buttons: [
                                 {
                                     text: 'Ок',
-                                    action: function() {
-                                        window.location.href= "https://sergey-khomyakov.github.io/AdamDemo/Survey.html"
-                                    }
                                 }
                             ]
+                        }, function(){
+                            window.location.href= "https://sergey-khomyakov.github.io/AdamDemo/Survey.html"
                         });
                     }
                 }).catch((error) => {

@@ -56,7 +56,7 @@ $(document).ready(function() {
                 fetch('https://adamwebdemo.duckdns.org/api/sendPollUsers', {
                     method: 'POST',
                     body: JSON.stringify({
-                        userId: window.Telegram.WebApp.initDataUnsafe?.user?.id, // заглушка, отправка опроса для пользователя который создавал опрос
+                        usersId: [window.Telegram.WebApp.initDataUnsafe?.user?.id] , // заглушка, отправка опроса для пользователя который создавал опрос
                         question: question, 
                         options: options, 
                         isAnonymous: anonymous}),

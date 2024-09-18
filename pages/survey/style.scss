@@ -313,7 +313,9 @@ p{
         gap: 1rem;
     }
     &__item{
-
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
     }
     &__question{
         font-size: 1.25rem;
@@ -324,10 +326,21 @@ p{
         gap: 0.5rem;
     }
     &__answer__text{
-
+        font-family: "Montserrat";
+        font-size: 1rem;
     }
     &__answer__count{
-
-    
+        font-family: "Montserrat";
+        font-size: 1rem;
+    }
+    &__answer__bar {
+        background-color: #e0e0e0; /* Цвет фона шкалы */
+        border-radius: 5px;
+        height: 20px; /* Высота шкалы */
+    }
+    &__answer__fill {
+        background-color: #76c7c0; /* Цвет заполнения шкалы */
+        height: 100%;
+        border-radius: 5px;
     }
 }

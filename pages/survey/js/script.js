@@ -3,18 +3,23 @@ $(document).ready(function() {
     if(data.length > 0){
         let html = '';
         data.forEach((item) => {
+            const totalVotes = item.answers.reduce((sum, answer) => sum + answer.count, 0); // Суммируем все голоса
             html += 
                 `<div class="survey__item">
                     <div class="survey__question">${item.question}</div>
                     <div class="survey__answers">
                         ${item.answers.map((answer) => {
+                            const percentage = totalVotes > 0 ? (answer.count / totalVotes * 100).toFixed(2) : 0; // Рассчитываем процент
                             return `<div class="survey__answer">
                                 <div class="survey__answer__text">${answer.text}</div>
                                 <div class="survey__answer__count">${answer.count}</div>
-                            </div>`
+                                <div class="survey__answer__bar">
+                                    <div class="survey__answer__fill" style="width: ${percentage}%;"></div> <!-- Заполнение шкалы -->
+                                </div>
+                            </div>`;
                         }).join('')}
                     </div>
-                </div>`
+                </div>`;
         });
         $('.survey__items').html(html);
     }

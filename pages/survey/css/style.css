@@ -327,4 +327,20 @@ p {
 
 .survey__container {
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.survey__items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.survey__question {
+  font-size: 1.25rem;
+}
+.survey__answers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

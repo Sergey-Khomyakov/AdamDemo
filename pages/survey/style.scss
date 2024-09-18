@@ -299,6 +299,35 @@ p{
     }
 }
 
-.survey__container{
-    margin-top: 2rem;
+
+.survey{
+    &__container{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    &__items{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    &__item{
+
+    }
+    &__question{
+        font-size: 1.25rem;
+    }
+    &__answers{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    &__answer__text{
+
+    }
+    &__answer__count{
+
+    
+    }
 }

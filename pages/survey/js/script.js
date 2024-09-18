@@ -1,5 +1,24 @@
 $(document).ready(function() {
 
+    if(data.length > 0){
+        let html = '';
+        data.forEach((item) => {
+            html += 
+                `<div class="survey__item">
+                    <div class="survey__question">${item.question}</div>
+                    <div class="survey__answers">
+                        ${item.answers.map((answer) => {
+                            return `<div class="survey__answer">
+                                <div class="survey__answer__text">${answer.text}</div>
+                                <div class="survey__answer__count">${answer.count}</div>
+                            </div>`
+                        }).join('')}
+                    </div>
+                </div>`
+        });
+        $('.survey__items').html(html);
+    }
+
     if(window.Telegram.WebApp.initDataUnsafe !== null){
         const lastName = window.Telegram.WebApp.initDataUnsafe?.user?.last_name || "";
         const firstName = window.Telegram.WebApp.initDataUnsafe?.user?.first_name || "";

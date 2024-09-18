@@ -28,6 +28,6 @@ $(document).ready(function() {
     window.Telegram.WebApp.disableVerticalSwipes();
 
     Telegram.WebApp.onEvent('backButtonClicked', function(){
-        window.location.href= document.referrer;
+        window.location.href= "https://sergey-khomyakov.github.io/AdamDemo/"
     });
 })

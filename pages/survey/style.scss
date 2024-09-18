@@ -327,11 +327,11 @@ p{
         gap: 0.5rem;
     }
     &__answer{
-        display: grid;
+        display: flex;
         gap: 1rem;
-        grid-template-columns: 78% 20%;
         position: relative;
         padding: 0.25rem 0.5rem;
+        justify-content: space-between;
     }
     &__answer__text{
         font-family: "Montserrat";
@@ -352,7 +352,7 @@ p{
         height: 100%;
     }
     &__answer__fill {
-        background-color: #76c7c0; /* Цвет заполнения шкалы */
+        background: var(--gradient-blue-3);
         height: 100%;
         border-radius: 5px;
     }

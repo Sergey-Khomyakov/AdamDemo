@@ -329,6 +329,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-top: 2rem;
 }
 .survey__header {
   display: flex;
@@ -347,15 +348,64 @@ p {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  position: relative;
+}
+.survey__item__input {
+  display: flex;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  align-items: flex-start;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #1D4F9B;
+  color: #667085;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.survey__item__title {
+  font-size: 1.125rem;
 }
 .survey__footer {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 2rem;
 }
 .survey__footer .survey__item {
+  align-items: end;
   flex-direction: row;
   align-items: center;
   gap: 1rem;
   align-items: end;
+}
+
+button[data-item=remove] {
+  border: unset;
+  background: url();
+  color: var(--red-2-color);
+  width: fit-content;
+  height: 1.3rem;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 0.75rem;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+button[data-item=addItem] {
+  border: unset;
+  background: unset;
+  justify-content: center;
+  width: 100%;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  width: auto;
 }/*# sourceMappingURL=style.css.map */

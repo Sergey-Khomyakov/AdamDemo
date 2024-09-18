@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('[data-item="addItem"]').on('click', function(){
+    $('button[data-item="addItem"]').on('click', function(){
         const countOptions = $(".survey__item__input[data-item=\"option\"]").length;
         if(countOptions < 10){
             const $item = $(`
@@ -14,13 +14,67 @@ $(document).ready(function() {
             $item.find('[data-item="remove"]').on('click', function(){
                 $item.remove();
             });
-            
+
             $(".survey__container .survey__body").append($item);
         }else{
             window.Telegram.WebApp.showPopup({
                 title: 'Информация',
                 message: "Максимальное количество вариантов ответа - 10"
             });
+        }
+    });
+
+    $('button[data-action="create"]').on('click', function(){
+        const question = $(".survey__item__input[data-item=\"question\"]").val();
+        if(!question){
+            window.Telegram.WebApp.showPopup({
+                title: 'Информация',
+                message: "Необходимо заполнить вопрос"
+            });
+            return false;
+        }else{
+            const options = [];
+            let emptyfield = false;
+            $(".survey__item__input[data-item=\"option\"]").each(function(){
+                if($(this).val() == ""){
+                    emptyfield = true;
+                    $(this).addClass("btn-error");
+                    return false;
+                }
+                options.push({
+                    text: $(this).val(),
+                });
+            });
+            const anonymous = $('input[type="checkbox"][data-item="anonymous"]').is(':checked');
+            if(emptyfield){
+                window.Telegram.WebApp.showPopup({
+                    title: 'Информация',
+                    message: "Необходимо заполнить все варианты ответа"
+                });
+                return false;
+            }else{
+                fetch('https://adamwebdemo.duckdns.org/api/sendPollUsers', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        userId: window.Telegram.WebApp.initDataUnsafe?.user?.id,
+                        question: question, 
+                        options: options, 
+                        isAnonymous: anonymous}),
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                }).then((res) => {
+                    if (res.ok) {
+                        return res.json(); // Correctly parse the JSON response
+                    } else {
+                        throw new Error('Network response was not ok');
+                    }
+                }).then((result) => {
+                    console.log(result);
+                }).catch((error) => {
+                    console.error('Error: ', error);
+                });
+            }
         }
     });
 

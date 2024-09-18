@@ -229,6 +229,9 @@ p{
         display: none;
         background: unset;
     }
+    &.btn-error{
+        border-color: var(--red-color);
+    }
 }
 
 .cards{

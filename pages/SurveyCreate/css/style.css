@@ -256,6 +256,9 @@ p {
   display: none;
   background: unset;
 }
+.btn.btn-error {
+  border-color: var(--red-color);
+}
 
 .cards {
   display: flex;

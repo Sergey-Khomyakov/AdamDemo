@@ -78,7 +78,7 @@ $(document).ready(function() {
                                 {
                                     text: 'Ок',
                                     action: function() {
-                                        window.location.href= document.referrer;
+                                        window.location.href= "https://sergey-khomyakov.github.io/AdamDemo/Survey.html"
                                     }
                                 }
                             ]

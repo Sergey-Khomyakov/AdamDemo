@@ -56,7 +56,7 @@ $(document).ready(function() {
                 fetch('https://adamwebdemo.duckdns.org/api/sendPollUsers', {
                     method: 'POST',
                     body: JSON.stringify({
-                        userId: window.Telegram.WebApp.initDataUnsafe?.user?.id,
+                        userId: window.Telegram.WebApp.initDataUnsafe?.user?.id, // заглушка, отправка опроса для пользователя который создавал опрос
                         question: question, 
                         options: options, 
                         isAnonymous: anonymous}),
@@ -70,7 +70,20 @@ $(document).ready(function() {
                         throw new Error('Network response was not ok');
                     }
                 }).then((result) => {
-                    console.log(result);
+                    if(result){
+                        window.Telegram.WebApp.showPopup({
+                            title: 'Информация',
+                            message: "Опрос создан",
+                            buttons: [
+                                {
+                                    text: 'Ок',
+                                    action: function() {
+                                        window.location.href= document.referrer;
+                                    }
+                                }
+                            ]
+                        });
+                    }
                 }).catch((error) => {
                     console.error('Error: ', error);
                 });

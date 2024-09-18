@@ -343,12 +343,20 @@ p {
   flex-direction: column;
 }
 .survey__question {
-  font-size: 1.25rem;
+  font-family: "Montserrat";
+  font-size: 1.125rem;
 }
 .survey__answers {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+.survey__answer {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 78% 20%;
+  position: relative;
+  padding: 0.25rem 0.5rem;
 }
 .survey__answer__text {
   font-family: "Montserrat";
@@ -359,9 +367,14 @@ p {
   font-size: 1rem;
 }
 .survey__answer__bar {
-  background-color: #e0e0e0; /* Цвет фона шкалы */
+  background-color: #e0e0e0;
   border-radius: 5px;
-  height: 20px; /* Высота шкалы */
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
 }
 .survey__answer__fill {
   background-color: #76c7c0; /* Цвет заполнения шкалы */

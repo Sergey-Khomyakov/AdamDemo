@@ -352,12 +352,11 @@ p{
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        align-items: end;
         .survey__item{
-            align-items: end;
             flex-direction: row;
-            align-items: center;
             gap: 1rem;
-            align-items: end;
+            align-items: center;
         }
     }
 }

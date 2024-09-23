@@ -5,10 +5,7 @@ $(document).ready( async function() {
         window.Telegram.WebApp.BackButton.hide();
         window.Telegram.WebApp.disableVerticalSwipes();
         if(!window.Telegram.WebApp.isVersionAtLeast("7.10")){
-            window.Telegram.WebApp.showAlert({
-                title: 'Внимание!',
-                message: 'Ваша версия телеграма устарела. Пожалуйста, обновите телеграм.'
-            });
+            window.Telegram.WebApp.showAlert('Ваша версия телеграма устарела. Пожалуйста, обновите телеграм.');
         }
     } catch (e) {
         console.log(e)

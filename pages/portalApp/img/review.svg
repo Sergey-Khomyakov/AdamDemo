@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="46" height="46" x="1" y="1" stroke="#A6A6A6" stroke-width="2" rx="4"/>
+        <path fill="#A6A6A6" d="M2 12h44v2H2z"/>
+        <path stroke="#A6A6A6" stroke-width="2" d="M40.607 19.393a3 3 0 0 0-4.243 0L21.022 34.736l-1.061 5.303 5.303-1.06 15.343-15.343a3 3 0 0 0 0-4.243z"/>
+        <path fill="#A6A6A6" d="M35.657 21.515l2.828 2.828-1.414 1.414-2.828-2.828zM24.343 32.828l2.829 2.829-1.415 1.414-2.828-2.828z"/>
+        <circle cx="7" cy="7" r="1" fill="#A6A6A6"/>
+        <circle cx="12" cy="7" r="1" fill="#A6A6A6"/>
+        <circle cx="17" cy="7" r="1" fill="#A6A6A6"/>
+        <rect width="9" height="2" x="33" y="6" fill="#A6A6A6" rx="1"/>
+        <rect width="17" height="2" x="6" y="21" fill="#A6A6A6" rx="1"/>
+        <rect width="11" height="2" x="6" y="29" fill="#A6A6A6" rx="1"/>
+        <rect width="8" height="2" x="6" y="37" fill="#A6A6A6" rx="1"/>
+    </g>
+</svg>

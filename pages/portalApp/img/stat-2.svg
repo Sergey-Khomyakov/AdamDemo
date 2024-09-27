@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+    <defs>
+        <rect id="b" width="450" height="222" rx="10"/>
+        <filter id="a" width="110%" height="120.3%" x="-5%" y="-8.8%" filterUnits="objectBoundingBox">
+            <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="7"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" d="M-474-338h1920v1437H-474z"/>
+        <g transform="translate(-114 -24)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#FFF" xlink:href="#b"/>
+        </g>
+        <path fill="#FFF" fill-rule="nonzero" stroke="#FF4D35" stroke-width="2" d="M16.932 27.202L9.366 40.307l4.666-.301a2 2 0 0 1 1.922 1.11l2.072 4.19 7.566-13.104-8.66-5z"/>
+        <path fill="#FFF" fill-rule="nonzero" stroke="#FF4D35" stroke-width="2" d="M25.366 32.202l7.566 13.105 2.072-4.192a2 2 0 0 1 1.922-1.11l4.666.302-7.566-13.105-8.66 5z"/>
+        <path fill="#FFF" fill-rule="nonzero" stroke="#FF4D35" stroke-width="2" d="M24.386 36.08l-.662.443a2 2 0 0 1-2.778-.553l-.442-.663a2 2 0 0 0-2.057-.852l-.782.156a2 2 0 0 1-2.355-1.573l-.154-.782a2 2 0 0 0-1.575-1.575l-.782-.155a2 2 0 0 1-1.574-2.355l.157-.781a2 2 0 0 0-.853-2.058l-.663-.442a2 2 0 0 1-.553-2.778l.444-.662a2 2 0 0 0 0-2.227l-.444-.662a2 2 0 0 1 .553-2.778l.663-.442a2 2 0 0 0 .853-2.058l-.157-.781a2 2 0 0 1 1.574-2.356l.782-.154a2 2 0 0 0 1.575-1.575l.154-.782a2 2 0 0 1 2.355-1.574l.782.157a2 2 0 0 0 2.057-.852l.442-.664a2 2 0 0 1 2.778-.552l.662.444a2 2 0 0 0 2.228 0l.662-.444a2 2 0 0 1 2.778.552l.442.664a2 2 0 0 0 2.057.852l.782-.157a2 2 0 0 1 2.355 1.574l.154.782a2 2 0 0 0 1.575 1.575l.782.154a2 2 0 0 1 1.574 2.356l-.157.781a2 2 0 0 0 .853 2.058l.663.442a2 2 0 0 1 .553 2.778l-.444.662a2 2 0 0 0 0 2.227l.444.662a2 2 0 0 1-.553 2.778l-.663.442a2 2 0 0 0-.853 2.058l.157.781a2 2 0 0 1-1.574 2.355l-.782.155a2 2 0 0 0-1.575 1.575l-.154.782a2 2 0 0 1-2.355 1.573l-.782-.156a2 2 0 0 0-2.057.852l-.442.663a2 2 0 0 1-2.778.553l-.662-.444a2 2 0 0 0-2.228 0z"/>
+        <text fill="#FF4D35" font-family="Roboto-Bold, Roboto" font-size="18" font-weight="bold" transform="translate(8 3)">
+            <tspan x="12" y="22.836">2</tspan>
+        </text>
+        <g transform="translate(35 2)">
+            <circle cx="8" cy="8" r="8" fill="#12A454"/>
+            <path fill="#FFF" fill-rule="nonzero" d="M12.82 5.104l-.878-.915A.585.585 0 0 0 11.503 4a.585.585 0 0 0-.438.189L6.832 8.613 4.935 6.626a.585.585 0 0 0-.438-.188.585.585 0 0 0-.439.188l-.877.916A.638.638 0 0 0 3 8c0 .18.06.332.18.458l2.336 2.438.878.915c.12.126.266.189.438.189a.585.585 0 0 0 .439-.189l.877-.915L12.82 6.02A.638.638 0 0 0 13 5.562c0-.18-.06-.332-.18-.458z"/>
+        </g>
+    </g>
+</svg>

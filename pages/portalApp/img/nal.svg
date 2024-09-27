@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" d="M-360-263h1920V817H-360z"/>
+        <g transform="translate(1)">
+            <path stroke="#FF4D35" stroke-width="2" d="M5 41h31V2a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v39z"/>
+            <rect width="5" height="5" x="9" y="23" stroke="#FF4D35" stroke-width="2" rx="2"/>
+            <rect width="5" height="5" x="18" y="23" stroke="#FF4D35" stroke-width="2" rx="2"/>
+            <rect width="5" height="5" x="27" y="23" stroke="#FF4D35" stroke-width="2" rx="2"/>
+            <rect width="5" height="5" x="9" y="14" stroke="#FF4D35" stroke-width="2" rx="2"/>
+            <rect width="5" height="5" x="18" y="14" stroke="#FF4D35" stroke-width="2" rx="2"/>
+            <rect width="5" height="5" x="27" y="14" stroke="#FF4D35" stroke-width="2" rx="2"/>
+            <rect width="5" height="5" x="9" y="5" stroke="#FF4D35" stroke-width="2" rx="2"/>
+            <rect width="5" height="5" x="18" y="5" stroke="#FF4D35" stroke-width="2" rx="2"/>
+            <rect width="5" height="5" x="27" y="5" stroke="#FF4D35" stroke-width="2" rx="2"/>
+            <path stroke="#FF4D35" stroke-width="2" d="M16 41h9v-8a1 1 0 0 0-1-1h-7a1 1 0 0 0-1 1v8z"/>
+            <rect width="41" height="2" y="40" fill="#FF4D35" rx="1"/>
+        </g>
+    </g>
+</svg>

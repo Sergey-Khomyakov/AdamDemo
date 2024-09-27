@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" d="M-549-530h1920v1815H-549z"/>
+        <g transform="translate(-189 -12)">
+            <rect width="219" height="41" x=".5" y=".5" stroke="#D9D9D9" rx="5"/>
+            <g stroke="#A6A6A6" transform="translate(190 13)">
+                <rect width="14" height="12.333" x=".5" y="2.167" rx="2"/>
+                <rect width="1" height="2.333" x="3.833" y=".5" rx=".5"/>
+                <rect width="1" height="2.333" x="10.5" y=".5" rx=".5"/>
+                <rect width="1" height="1" x="3.833" y="5.5" rx=".5"/>
+                <rect width="1" height="1" x="7.167" y="5.5" rx=".5"/>
+                <rect width="1" height="1" x="10.5" y="5.5" rx=".5"/>
+                <rect width="1" height="1" x="3.833" y="8" rx=".5"/>
+                <rect width="1" height="1" x="7.167" y="8" rx=".5"/>
+                <rect width="1" height="1" x="10.5" y="8" rx=".5"/>
+                <rect width="1" height="1" x="3.833" y="10.5" rx=".5"/>
+                <rect width="1" height="1" x="7.167" y="10.5" rx=".5"/>
+                <rect width="1" height="1" x="10.5" y="10.5" rx=".5"/>
+            </g>
+        </g>
+    </g>
+</svg>

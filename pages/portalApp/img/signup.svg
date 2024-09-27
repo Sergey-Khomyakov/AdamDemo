@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>signup</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header-logout" transform="translate(-1042.000000, -11.000000)" fill="#A6A6A6">
+            <g id="Group-7" transform="translate(976.000000, 8.000000)">
+                <g id="Group-13" transform="translate(66.000000, 3.000000)">
+                    <path d="M10,11.9146471 C9.41740381,11.7087289 9,11.1531094 9,10.5 C9,9.67157288 9.67157288,9 10.5,9 C11.3284271,9 12,9.67157288 12,10.5 C12,11.1531094 11.5825962,11.7087289 11,11.9146471 L11,14 L10,14 L10,11.9146471 Z M15,6 C16.6568542,6 18,7.34314575 18,9 L18,14 C18,15.6568542 16.6568542,17 15,17 L6,17 C4.34314575,17 3,15.6568542 3,14 L3,9 C3,7.34314575 4.34314575,6 6,6 L6,4.5 C6,2.01471863 8.01471863,4.56538782e-16 10.5,0 C12.9852814,-4.56538782e-16 15,2.01471863 15,4.5 L15,6 Z M6,7 C4.8954305,7 4,7.8954305 4,9 L4,14 C4,15.1045695 4.8954305,16 6,16 L15,16 C16.1045695,16 17,15.1045695 17,14 L17,9 C17,7.8954305 16.1045695,7 15,7 L6,7 Z M10.5,1 C8.56700338,1 7,2.56700338 7,4.5 L7,6 L14,6 L14,4.5 C14,2.56700338 12.4329966,1 10.5,1 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

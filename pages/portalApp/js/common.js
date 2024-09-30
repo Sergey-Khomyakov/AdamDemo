@@ -49,7 +49,7 @@ $(function() {
 	if(window.Telegram.WebApp.initDataUnsafe !== null){
         const lastName = window.Telegram.WebApp.initDataUnsafe?.user?.last_name || "";
         const firstName = window.Telegram.WebApp.initDataUnsafe?.user?.first_name || "";
-        $('.widget__lk__info .widget__lk__fio, .page__departament .employee__box .text[data-field="userFIO"]').text(lastName + " " + firstName);
+        $('.enter-box .tt a').text(lastName + " " + firstName);
 
         fetch('https://adamwebdemo.duckdns.org/api/getUserPhotoBase64?userId=' + window.Telegram.WebApp.initDataUnsafe?.user?.id + '', {
             method: 'GET',

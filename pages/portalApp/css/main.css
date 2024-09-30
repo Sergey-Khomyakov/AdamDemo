@@ -2741,6 +2741,7 @@ a:hover {
 	background: #fff;
 	box-shadow: 0 3px 14px 0 rgba(0, 0, 0, 0.1);
 	justify-content: space-between;
+	align-items: center;
 }
 
 .menu__nav__item {
@@ -2755,4 +2756,8 @@ a:hover {
 	align-items: center;
 	text-decoration: none;
 	color: #111;
+}
+
+.menu__nav__link img {
+	width: 2rem;
 }

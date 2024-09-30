@@ -8,43 +8,6 @@ $(function() {
 		}
 	} catch(err) {};
 
-	/* при адаптиве навигация переходит в дропдайун "Еще" */
-	function rerender() {
-	  var nav = document.getElementById('nav'),
-	    // преобразование коллекции в массив
-	    li = [].slice.call(document.querySelectorAll('#nav > li:not(#drop)')),
-	    drop = document.getElementById('drop');
-	  var count = 0,
-	    arrWidth = li.map(function(elem) {
-	      elem.style.display = "";
-	      count += elem.offsetWidth;
-	      return elem.offsetWidth;
-	    });
-	  drop.innerHTML = "Ещё<ul></ul>";
-	  if (count >= (nav.offsetWidth - 3)) {
-	    drop.style.display = "inline-block";
-	    count -= drop.offsetWidth;
-	    var navWidth = nav.offsetWidth - drop.offsetWidth;
-	    console.log(navWidth);
-	    while (count >= navWidth) {
-
-	      var i = arrWidth.pop();
-	      console.log(i);
-	      count -= i;
-	    };
-	    console.log("", arrWidth, count, "end", "\n", li, nav.offsetWidth);
-	    var toHide = li.slice(arrWidth.length - 1);
-	    toHide.forEach(function(el) {
-	      var s = el.cloneNode(true);
-	      drop.firstElementChild.appendChild(s);
-	      el.style.display = "none";
-	    });
-	  } else
-	    drop.style.display = "none";
-	}
-	rerender();
-	onresize = rerender;
-	/* дропдайун "Еще" !КОНЕЦ! */
 
 	$(".toggle_mnu").click(function() {
 		$(".sandwich").toggleClass("active");
@@ -71,7 +34,8 @@ $(function() {
 		return false;
 	});
 
-	$('.enter-box .name a').on('click', function(){
+	$('.enter-box .name a').on('click', function(e){
+		e.preventDefault();
 		$('.drop-links').show();
 		$(this).addClass('act');
 		return false;

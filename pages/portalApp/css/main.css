@@ -2766,3 +2766,8 @@ a:hover {
 .menu__nav__link:hover {
 	color: #41a744;
 }
+
+a:focus {
+	outline: unset;
+	text-decoration: none;
+}

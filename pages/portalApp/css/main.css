@@ -2761,3 +2761,7 @@ a:hover {
 .menu__nav__link img {
 	width: 2rem;
 }
+
+.menu__nav__link:hover {
+	color: #41a744;
+}

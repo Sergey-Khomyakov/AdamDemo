@@ -63,7 +63,7 @@ $(function() {
                 throw new Error('Network response was not ok');
             }
         }).then((result) => {
-            $('.widget__lk__info .widget__lk__img img').attr('src', "data:image/png;base64, " + result.photo);
+            $('.enter-box .img img').attr('src', "data:image/png;base64, " + result.photo);
         }).catch((error) => {
             console.error('There has been a problem with your fetch operation:', error);
         });

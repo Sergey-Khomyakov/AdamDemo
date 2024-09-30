@@ -192,6 +192,7 @@ ul {
 	border-left: 1px solid #e6e6e6;
 	display: inline-block;
 	vertical-align: middle;
+	width: 100%;
 }
 
 .enter-box .img {

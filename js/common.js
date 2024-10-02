@@ -56,16 +56,6 @@ $(document).ready( async function() {
                 headers: {
                     'Content-Type': 'application/json',
                 }
-            }).then((res) => {
-                if (res.ok) {
-                    return res.json(); // Correctly parse the JSON response
-                } else {
-                    throw new Error('Network response was not ok');
-                }
-            }).then((result) => {
-                if(result === false){
-                    window.location.href = "https://www.google.com";
-                }
             }).catch((error) => {
                 console.error('Error: ', error);
             });

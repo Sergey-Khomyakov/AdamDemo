@@ -2159,7 +2159,7 @@ button.dt-button {
   }
 
   .xs\:grid-cols-full {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
   }
 
   .xs\:flex-col {

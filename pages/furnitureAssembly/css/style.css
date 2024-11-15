@@ -1240,6 +1240,10 @@ button.dt-button {
   width: 60rem;
 }
 
+.w-\[89vw\] {
+  width: 89vw;
+}
+
 .w-auto {
   width: auto;
 }

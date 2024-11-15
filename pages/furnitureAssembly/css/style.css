@@ -1244,10 +1244,6 @@ button.dt-button {
   width: 89vw;
 }
 
-.w-auto {
-  width: auto;
-}
-
 .w-full {
   width: 100%;
 }
@@ -1381,10 +1377,6 @@ button.dt-button {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-0 {
-  gap: 0;
 }
 
 .gap-1 {
@@ -2202,6 +2194,10 @@ button.dt-button {
 }
 
 @media (min-width: 20rem) {
+  .xs\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
   .xs\:flex {
     display: flex;
   }
@@ -2320,6 +2316,10 @@ button.dt-button {
 }
 
 @media (min-width: 92.5rem) {
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .lg\:h-44 {
     height: 11rem;
   }

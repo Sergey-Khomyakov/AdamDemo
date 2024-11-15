@@ -1383,6 +1383,10 @@ button.dt-button {
   justify-content: space-between;
 }
 
+.gap-0 {
+  gap: 0;
+}
+
 .gap-1 {
   gap: 0.25rem;
 }

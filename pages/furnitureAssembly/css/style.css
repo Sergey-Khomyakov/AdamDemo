@@ -581,16 +581,6 @@ video {
   width: 100%;
 }
 
-@media (min-width: 64rem) {
-  .\!container {
-    max-width: 64rem !important;
-  }
-
-  .container {
-    max-width: 64rem;
-  }
-}
-
 @media (min-width: 90rem) {
   .\!container {
     max-width: 90rem !important;
@@ -2158,6 +2148,10 @@ button.dt-button {
     display: flex;
   }
 
+  .xs\:h-full {
+    height: 100%;
+  }
+
   .xs\:grid-cols-full {
     grid-template-columns: 100%;
   }
@@ -2172,6 +2166,10 @@ button.dt-button {
 
   .xs\:justify-end {
     justify-content: flex-end;
+  }
+
+  .xs\:justify-center {
+    justify-content: center;
   }
 
   .xs\:gap-4 {
@@ -2189,7 +2187,7 @@ button.dt-button {
   }
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 48rem) {
   .sm\:flex-nowrap {
     flex-wrap: nowrap;
   }
@@ -2207,6 +2205,10 @@ button.dt-button {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-12 {
+    height: 3rem;
   }
 
   .md\:grid-cols-3 {
@@ -2235,7 +2237,11 @@ button.dt-button {
   }
 }
 
-@media (min-width: 90rem) {
+@media (min-width: 92.5rem) {
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
+
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;

@@ -64,7 +64,7 @@ $(document).ready(function() {
     if(window.Telegram.WebApp.initDataUnsafe !== null){
         const lastName = window.Telegram.WebApp.initDataUnsafe?.user?.last_name || "";
         const firstName = window.Telegram.WebApp.initDataUnsafe?.user?.first_name || "";
-        $('p[userCardTitle]').text(lastName + " " + firstName);
+        $('a[userCardTitle]').text(lastName + " " + firstName);
 
         fetch('https://adamwebdemo.duckdns.org/api/getUserPhotoBase64?userId=' + window.Telegram.WebApp.initDataUnsafe?.user?.id + '', {
             method: 'GET',

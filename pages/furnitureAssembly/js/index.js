@@ -59,4 +59,34 @@ $(document).ready(function() {
             $parent.find('div[data-tab_block="' + btnNumber + '"] div[data-orderid]').removeClass('!hidden');
         }, 1000)
     })
+
+
+    if(window.Telegram.WebApp.initDataUnsafe !== null){
+        const lastName = window.Telegram.WebApp.initDataUnsafe?.user?.last_name || "";
+        const firstName = window.Telegram.WebApp.initDataUnsafe?.user?.first_name || "";
+        $('p[userCardTitle]').text(lastName + " " + firstName);
+
+        fetch('https://adamwebdemo.duckdns.org/api/getUserPhotoBase64?userId=' + window.Telegram.WebApp.initDataUnsafe?.user?.id + '', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        }).then((res) => {
+            if (res.ok) {
+                return res.json(); // Correctly parse the JSON response
+            } else {
+                throw new Error('Network response was not ok');
+            }
+        }).then((result) => {
+            $('img[userCardImg]').attr('src', "data:image/png;base64, " + result.photo);
+        }).catch((error) => {
+            console.error('There has been a problem with your fetch operation:', error);
+        });
+    }
+
+    window.Telegram.WebApp.BackButton.show();
+
+    Telegram.WebApp.onEvent('backButtonClicked', function(){
+        window.location.href= document.referrer;
+    });
 });

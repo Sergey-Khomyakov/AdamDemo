@@ -90,12 +90,16 @@ $(document).ready(function() {
     Telegram.WebApp.onEvent('backButtonClicked', function(){
         window.location.href= document.referrer;
     });
+    window.Telegram.WebApp.checkHomeScreenStatus((status) => {
+        $('div[Info]').append(`status: ${status}`);
+    })
+
     window.Telegram.WebApp.LocationManager.init(() => {
 
         window.Telegram.WebApp.LocationManager.getLocation(
             (location) => {
                 console.log(location);
-                $('div[Info]').append(`location: latitude - ${location.latitude} ; longitude - ${location.longitude}`)
+                //$('div[Info]').append(`location: latitude - ${location.latitude} ; longitude - ${location.longitude}`)
                 if(location !== undefined){
 
                     //$('p[location]').text('широта: ' + location.latitude + 'долгота: ' + location.longitude);
@@ -106,16 +110,16 @@ $(document).ready(function() {
                             if (!response.ok) {
                                 throw new Error('Network response was not ok');
                             }
-                            $('div[Info]').append(`API status ok: ${response.ok}`);
+                            //$('div[Info]').append(`API status ok: ${response.ok}`);
                             return response.json();
                         })
                         .then(data => {
-                            $('div[Info]').append(`UserAdress: ${data.display_name}`);
+                            //$('div[Info]').append(`UserAdress: ${data.display_name}`);
                             $('p[location]').text('Address:' + data.display_name);
                         })
                         .catch(error => {
                             console.error('Error:', error);
-                            $('div[Info]').append(`Error API get Adress: ${error}`);
+                            //$('div[Info]').append(`Error API get Adress: ${error}`);
                         });
                 }else{
                     $('p[location]').parent().hide();

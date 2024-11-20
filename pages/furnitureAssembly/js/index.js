@@ -110,8 +110,8 @@ $(document).ready(function() {
                             return response.json();
                         })
                         .then(data => {
-                            console.log('Address:', data.display_name);
-                            $('p[location]').text('Address:', data.display_name);
+                            $('div[Info]').append(`UserAdress: ${data.display_name}`);
+                            $('p[location]').text('Address:' + data.display_name);
                         })
                         .catch(error => {
                             console.error('Error:', error);

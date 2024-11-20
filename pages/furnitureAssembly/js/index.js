@@ -117,6 +117,8 @@ $(document).ready(function() {
                             console.error('Error:', error);
                             $('div[Info]').append(`Error API get Adress: ${error}`);
                         });
+                }else{
+                    $('p[location]').parent().hide();
                 }
             }
         );

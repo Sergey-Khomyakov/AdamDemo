@@ -93,13 +93,13 @@ $(document).ready(function() {
     window.Telegram.WebApp.checkHomeScreenStatus((status) => {
         $('div[Info]').append(`status: ${status}`);
         if(status === 'unknown' || status === 'missed'){
-            const btnAddHomeScreen = $(`
-                <img class="w-4 h-4 object-contain" src="./img/icon/Plus.svg"/>`);
-                btnAddHomeScreen.on('click', function(){
-                    const item = window.Telegram.WebApp.addToHomeScreen();
-                    $('div[Info]').append(`add homeScreen: ${item}`);
-                })
-            $('div[usercard]').append(btnAddHomeScreen);
+            // const btnAddHomeScreen = $(`
+            //     <img class="w-4 h-4 object-contain" src="./img/icon/Plus.svg"/>`);
+            //     btnAddHomeScreen.on('click', function(){
+            //         const item = window.Telegram.WebApp.addToHomeScreen();
+            //         $('div[Info]').append(`add homeScreen: ${item}`);
+            //     })
+            // $('div[usercard]').append(btnAddHomeScreen);
         }
     })
 

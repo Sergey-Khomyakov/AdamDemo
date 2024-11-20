@@ -55,7 +55,7 @@ try {
                     </div>
                 `);
                 $('#popupSettings').find('#getAppShortcut').on('click', function(){
-                    window.Telegram.WebApp.addToHomeScreen();
+                    //window.Telegram.WebApp.addToHomeScreen();
                 });
             }
         })

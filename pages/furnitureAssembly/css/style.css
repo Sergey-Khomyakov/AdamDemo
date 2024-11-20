@@ -2342,3 +2342,31 @@ button.dt-button {
     line-height: 1.5rem;
   }
 }
+
+dialog {
+  border: unset;
+  top: 5%;
+  right: 10%;
+  left: unset;
+  margin: 0;
+  max-width: 15rem;
+  border-radius: 0.5rem;
+}
+
+dialog .modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+dialog .list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#popupSettings .modal-dialog {
+  max-width: none;
+  width: auto;
+}

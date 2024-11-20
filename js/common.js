@@ -2,13 +2,14 @@ try {
     window.Telegram.WebApp.SettingsButton.show();
     const $dialog = $('#popupSettings');
 
+    
     if(window.Telegram.WebApp.platform === 'tdesktop'){
         $dialog.find('.list').append(`
             <div class="list__item">
                 <a href="#" id="getAppShortcut" class="link">Создать ярлык</a>
             </div>
             `);
-
+        
         $('#popupSettings').find('#getAppShortcut').on('click', function(){
             fetch('https://adamwebdemo.duckdns.org/api/getApplicationShortcut', {
                 method: 'GET',
@@ -43,6 +44,21 @@ try {
                 console.error('There has been a problem with your fetch operation:', error);
             });
         });
+    }else{
+
+        window.Telegram.WebApp.checkHomeScreenStatus().then((status) => {
+            if (status === 'unknown' || status === 'missed') {
+                // Добавление ярлыка
+                $dialog.find('.list').append(`
+                    <div class="list__item">
+                        <a href="#" id="getAppShortcut" class="link">Создать ярлык</a>
+                    </div>
+                `);
+                $('#popupSettings').find('#getAppShortcut').on('click', function(){
+                    window.Telegram.WebApp.addToHomeScreen();
+                });
+            }
+        })
     }
 
     const initData = window.Telegram?.WebApp?.initData;

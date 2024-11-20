@@ -90,10 +90,12 @@ $(document).ready(function() {
     window.Telegram.WebApp.LocationManager.getLocation(
         (location) => {
             console.log(location);
+            $('div[Info]').append(location)
         }
     );
     window.Telegram.WebApp.BackButton.show();
 
+    $('div[Info]').append(``)
     Telegram.WebApp.onEvent('backButtonClicked', function(){
         window.location.href= document.referrer;
     });

@@ -96,12 +96,28 @@ $(document).ready(function() {
         window.Telegram.WebApp.LocationManager.getLocation(
             (location) => {
                 console.log(location);
-                $('p[location]').text('широта: ' + location.latitude + 'долгота: ' + location.longitude);
-                $('div[Info]').append(`${location}`)
+                if(location !== undefined){
+
+                    //$('p[location]').text('широта: ' + location.latitude + 'долгота: ' + location.longitude);
+                    const url = `https://nominatim.openstreetmap.org/reverse?lat=${location.latitude}&lon=${location.longitude}&format=json`;
+    
+                    fetch(url)
+                        .then(response => {
+                            if (response.ok) {
+                                throw new Error('Network response was not ok');
+                            }
+                            return response.json();
+                        })
+                        .then(data => {
+                            console.log('Address:', data.display_name);
+                            $('p[location]').text('Address:', data.display_name);
+                        })
+                        .catch(error => {
+                            console.error('Error:', error);
+                        });
+                }
             }
         );
     });
 
-
-    $('div[Info]').append(``)
 });

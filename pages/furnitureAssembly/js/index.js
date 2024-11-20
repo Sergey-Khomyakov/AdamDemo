@@ -95,7 +95,7 @@ $(document).ready(function() {
         window.Telegram.WebApp.LocationManager.getLocation(
             (location) => {
                 console.log(location);
-                $('div[Info]').append(`${location}`)
+                $('div[Info]').append(`location ${location}`)
                 if(location !== undefined){
 
                     //$('p[location]').text('широта: ' + location.latitude + 'долгота: ' + location.longitude);

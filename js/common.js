@@ -1,5 +1,6 @@
 try {
     window.Telegram.WebApp.SettingsButton.show();
+    window.Telegram.WebApp.addToHomeScreen();
     const $dialog = $('#popupSettings');
 
     

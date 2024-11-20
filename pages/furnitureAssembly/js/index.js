@@ -90,6 +90,7 @@ $(document).ready(function() {
     Telegram.WebApp.onEvent('backButtonClicked', function(){
         window.location.href= document.referrer;
     });
+    window.Telegram.WebApp.LocationManager.init();
     
     window.Telegram.WebApp.LocationManager.getLocation(
         (location) => {

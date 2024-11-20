@@ -90,15 +90,17 @@ $(document).ready(function() {
     Telegram.WebApp.onEvent('backButtonClicked', function(){
         window.location.href= document.referrer;
     });
-    window.Telegram.WebApp.LocationManager.init();
-    
-    window.Telegram.WebApp.LocationManager.getLocation(
-        (location) => {
-            console.log(location);
-            $('p[location]').text('широта: ' + location.latitude + 'долгота: ' + location.longitude);
-            $('div[Info]').append(`${location}`)
-        }
-    );
+    window.Telegram.WebApp.LocationManager.init((data) => {
+        console.log(data);
+        window.Telegram.WebApp.LocationManager.getLocation(
+            (location) => {
+                console.log(location);
+                $('p[location]').text('широта: ' + location.latitude + 'долгота: ' + location.longitude);
+                $('div[Info]').append(`${location}`)
+            }
+        );
+    });
+
 
     $('div[Info]').append(``)
 });

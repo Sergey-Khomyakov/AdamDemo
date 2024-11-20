@@ -103,9 +103,10 @@ $(document).ready(function() {
     
                     fetch(url)
                         .then(response => {
-                            if (response.ok) {
+                            if (!response.ok) {
                                 throw new Error('Network response was not ok');
                             }
+                            $('div[Info]').append(`API status ok: ${response.ok}`);
                             return response.json();
                         })
                         .then(data => {
@@ -114,6 +115,7 @@ $(document).ready(function() {
                         })
                         .catch(error => {
                             console.error('Error:', error);
+                            $('div[Info]').append(`Error API get Adress: ${error}`);
                         });
                 }
             }

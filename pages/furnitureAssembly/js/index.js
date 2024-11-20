@@ -96,7 +96,8 @@ $(document).ready(function() {
             const btnAddHomeScreen = $(`
                 <img class="w-4 h-4 object-contain" src="./img/icon/Plus.svg"/>`);
                 btnAddHomeScreen.on('click', function(){
-                    window.Telegram.WebApp.addToHomeScreen();
+                    const item = window.Telegram.WebApp.addToHomeScreen();
+                    $('div[Info]').append(`add homeScreen: ${item}`);
                 })
             $('div[usercard]').append(btnAddHomeScreen);
         }

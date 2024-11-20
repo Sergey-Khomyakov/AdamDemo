@@ -4,6 +4,7 @@ $(document).ready( async function() {
         window.Telegram.WebApp.ready();
         window.Telegram.WebApp.BackButton.hide();
         window.Telegram.WebApp.disableVerticalSwipes();
+        window.Telegram.WebApp.LocationManager.init();
         if(!window.Telegram.WebApp.isVersionAtLeast("8.0")){
             window.Telegram.WebApp.showAlert('Ваша версия телеграма устарела. Пожалуйста, обновите телеграм.');
         }

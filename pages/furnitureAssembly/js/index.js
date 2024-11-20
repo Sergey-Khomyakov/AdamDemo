@@ -85,7 +85,6 @@ $(document).ready(function() {
         //     console.error('There has been a problem with your fetch operation:', error);
         // });
     }
-    window.Telegram.WebApp.LocationManager.init();
 
     window.Telegram.WebApp.LocationManager.getLocation(
         (location) => {

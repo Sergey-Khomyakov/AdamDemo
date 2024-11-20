@@ -64,24 +64,26 @@ $(document).ready(function() {
     if(window.Telegram.WebApp.initDataUnsafe !== null){
         const lastName = window.Telegram.WebApp.initDataUnsafe?.user?.last_name || "";
         const firstName = window.Telegram.WebApp.initDataUnsafe?.user?.first_name || "";
+        const userPhoto = window.Telegram.WebApp.initDataUnsafe?.user?.photo_url || "";
         $('a[userCardTitle]').text(lastName + " " + firstName);
+        $('img[userCardImg]').attr('src', userPhoto);
 
-        fetch('https://adamwebdemo.duckdns.org/api/getUserPhotoBase64?userId=' + window.Telegram.WebApp.initDataUnsafe?.user?.id + '', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            }
-        }).then((res) => {
-            if (res.ok) {
-                return res.json(); // Correctly parse the JSON response
-            } else {
-                throw new Error('Network response was not ok');
-            }
-        }).then((result) => {
-            $('img[userCardImg]').attr('src', "data:image/png;base64, " + result.photo);
-        }).catch((error) => {
-            console.error('There has been a problem with your fetch operation:', error);
-        });
+        // fetch('https://adamwebdemo.duckdns.org/api/getUserPhotoBase64?userId=' + window.Telegram.WebApp.initDataUnsafe?.user?.id + '', {
+        //     method: 'GET',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //     }
+        // }).then((res) => {
+        //     if (res.ok) {
+        //         return res.json(); // Correctly parse the JSON response
+        //     } else {
+        //         throw new Error('Network response was not ok');
+        //     }
+        // }).then((result) => {
+        //     $('img[userCardImg]').attr('src', "data:image/png;base64, " + result.photo);
+        // }).catch((error) => {
+        //     console.error('There has been a problem with your fetch operation:', error);
+        // });
     }
 
     window.Telegram.WebApp.BackButton.show();

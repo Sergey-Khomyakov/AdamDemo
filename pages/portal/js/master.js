@@ -119,24 +119,26 @@ $(document).ready(function() {
         }
     });
 
-    fetch('https://adamwebdemo.duckdns.org/api/getUserPhotoBase64?userId=' + window.Telegram.WebApp.initDataUnsafe?.user?.id + '', {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json',
-        }
-    }).then((res) => {
-        // if (res.ok) {
-        //     const result = JSON.parse(res.body);
-        //     $('.widget__lk__info .widget__lk__img img, .page__departament .card.employee .card__img').attr('src', "data:image/png;base64, " + result.photo);
-        // }
-        if (res.ok) {
-            return res.json(); // Correctly parse the JSON response
-        } else {
-            throw new Error('Network response was not ok');
-        }
-    }).then((result) => {
-        $('.widget__lk__info .widget__lk__img img, .page__departament .card.employee .card__img').attr('src', "data:image/png;base64, " + result.photo);
-    }).catch((error) => {
-        console.error('There has been a problem with your fetch operation:', error);
-    });
+    const userPhoto = window.Telegram.WebApp.initDataUnsafe?.user?.photo_url || "";
+    $('.widget__lk__info .widget__lk__img img, .page__departament .card.employee .card__img').attr('src', userPhoto);
+    // fetch('https://adamwebdemo.duckdns.org/api/getUserPhotoBase64?userId=' + window.Telegram.WebApp.initDataUnsafe?.user?.id + '', {
+    //     method: 'GET',
+    //     headers: {
+    //         'Content-Type': 'application/json',
+    //     }
+    // }).then((res) => {
+    //     // if (res.ok) {
+    //     //     const result = JSON.parse(res.body);
+    //     //     $('.widget__lk__info .widget__lk__img img, .page__departament .card.employee .card__img').attr('src', "data:image/png;base64, " + result.photo);
+    //     // }
+    //     if (res.ok) {
+    //         return res.json(); // Correctly parse the JSON response
+    //     } else {
+    //         throw new Error('Network response was not ok');
+    //     }
+    // }).then((result) => {
+    //     $('.widget__lk__info .widget__lk__img img, .page__departament .card.employee .card__img').attr('src', "data:image/png;base64, " + result.photo);
+    // }).catch((error) => {
+    //     console.error('There has been a problem with your fetch operation:', error);
+    // });
 })

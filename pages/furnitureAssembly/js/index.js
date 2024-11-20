@@ -92,6 +92,14 @@ $(document).ready(function() {
     });
     window.Telegram.WebApp.checkHomeScreenStatus((status) => {
         $('div[Info]').append(`status: ${status}`);
+        if(status === 'unknown' || status === 'missed'){
+            const btnAddHomeScreen = $(`
+                <img class="w-4 h-4 object-contain" src="./img/icon/Plus.svg"/>`);
+                btnAddHomeScreen.on('click', function(){
+                    window.Telegram.WebApp.addToHomeScreen();
+                })
+            $('div[usercard]').append(btnAddHomeScreen);
+        }
     })
 
     window.Telegram.WebApp.LocationManager.init(() => {

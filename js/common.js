@@ -54,6 +54,9 @@ try {
                         <a href="#" id="getAppShortcut" class="link">Создать ярлык</a>
                     </div>
                 `);
+                $('#popupSettings').find('#getAppShortcut').on('click', function(){
+                    window.Telegram.WebApp.addToHomeScreen();
+                });
             }
         })
     }

@@ -91,7 +91,8 @@ $(document).ready(function() {
         window.location.href= document.referrer;
     });
     window.Telegram.WebApp.LocationManager.init((data) => {
-        console.log(data);
+
+        $('div[Info]').append(`${data}`)
         window.Telegram.WebApp.LocationManager.getLocation(
             (location) => {
                 console.log(location);

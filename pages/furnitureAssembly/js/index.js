@@ -90,12 +90,12 @@ $(document).ready(function() {
     Telegram.WebApp.onEvent('backButtonClicked', function(){
         window.location.href= document.referrer;
     });
-    window.Telegram.WebApp.LocationManager.init((data) => {
+    window.Telegram.WebApp.LocationManager.init(() => {
 
-        $('div[Info]').append(`${data}`)
         window.Telegram.WebApp.LocationManager.getLocation(
             (location) => {
                 console.log(location);
+                $('div[Info]').append(`${location}`)
                 if(location !== undefined){
 
                     //$('p[location]').text('широта: ' + location.latitude + 'долгота: ' + location.longitude);

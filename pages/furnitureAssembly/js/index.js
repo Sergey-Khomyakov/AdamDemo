@@ -68,6 +68,16 @@ $(document).ready(function() {
         $('a[userCardTitle]').text(lastName + " " + firstName);
         $('img[userCardImg]').attr('src', userPhoto);
 
+
+        $('#downloadDoc').on('click', function(){
+            window.Telegram.WebApp.downloadFile({
+                url: "https://img.freepik.com/free-vector/image-folder-concept-illustration_114360-114.jpg",
+                file_name: 'file'
+            }, (item) => {
+                $('div[Info]').append(`donwload file : ${item}`);
+            })
+        })
+
         // fetch('https://adamwebdemo.duckdns.org/api/getUserPhotoBase64?userId=' + window.Telegram.WebApp.initDataUnsafe?.user?.id + '', {
         //     method: 'GET',
         //     headers: {

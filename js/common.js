@@ -63,7 +63,7 @@ try {
     Telegram.WebApp.onEvent('settingsButtonClicked', () => {
         window.popupSettings.showModal()
     })
-    
+
     const initData = window.Telegram?.WebApp?.initData;
     if(initData !== ""){
 

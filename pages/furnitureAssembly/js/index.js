@@ -72,7 +72,7 @@ $(document).ready(function() {
         $('a[downloaddoc]').on('click', function(){
             window.Telegram.WebApp.downloadFile({
                 url: "https://img.freepik.com/free-vector/image-folder-concept-illustration_114360-114.jpg",
-                file_name: 'file'
+                file_name: 'file.jpg'
             }, (item) => {
                 $('div[Info]').append(`donwload file : ${item}`);
             })

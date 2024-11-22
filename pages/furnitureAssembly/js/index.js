@@ -69,7 +69,7 @@ $(document).ready(function() {
         $('img[userCardImg]').attr('src', userPhoto);
 
 
-        $('#downloadDoc').on('click', function(){
+        $('#downloaddoc').on('click', function(){
             window.Telegram.WebApp.downloadFile({
                 url: "https://img.freepik.com/free-vector/image-folder-concept-illustration_114360-114.jpg",
                 file_name: 'file'

@@ -60,7 +60,10 @@ try {
             }
         })
     }
-
+    Telegram.WebApp.onEvent('settingsButtonClicked', () => {
+        window.popupSettings.showModal()
+    })
+    
     const initData = window.Telegram?.WebApp?.initData;
     if(initData !== ""){
 
@@ -77,9 +80,6 @@ try {
         window.location.href = "https://www.google.com";
     }
 
-    Telegram.WebApp.onEvent('settingsButtonClicked', () => {
-        window.popupSettings.showModal()
-    })
     // Закрытие диалога по клику вне его
     $(document).on('click', function(event) {
         if (event.target === $dialog[0]) {

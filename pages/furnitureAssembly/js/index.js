@@ -78,6 +78,10 @@ $(document).ready(function() {
             })
         })
 
+        $('a[label]').on('click', function(){
+            window.Telegram.WebApp.addToHomeScreen();
+        })
+
         // fetch('https://adamwebdemo.duckdns.org/api/getUserPhotoBase64?userId=' + window.Telegram.WebApp.initDataUnsafe?.user?.id + '', {
         //     method: 'GET',
         //     headers: {

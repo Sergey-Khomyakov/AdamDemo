@@ -8,6 +8,7 @@ $(document).ready(function() {
     const $GyroscopeX = $('[data-block="GyroscopeX"]');
     const $GyroscopeY = $('[data-block="GyroscopeY"]');
     const $GyroscopeZ = $('[data-block="GyroscopeZ"]');
+    window.Telegram?.WebApp?.unlockOrientation()
     window.Telegram?.WebApp?.Accelerometer.start();
     window.Telegram?.WebApp?.DeviceOrientation.start();
     window.Telegram?.WebApp?.Gyroscope.start();

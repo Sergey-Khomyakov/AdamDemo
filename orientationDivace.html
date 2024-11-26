@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pages/orientationDivace/css/style.css">
+</head>
+
+<body>
+    <main style="display: flex; flex-direction: column; gap:2rem;">
+        <div class="box">
+            <p class="text text__title">Акселерометр</p>
+            <div class="block" data-block="AccelerometerX">
+                <p class="text">Текущее ускорение по оси X</p>
+                <p class="text text__result"></p>
+            </div>
+            <div class="block" data-block="AccelerometerY">
+                <p class="text">Текущее ускорение по оси Y</p>
+                <p class="text text__result"></p>
+            </div>
+            <div class="block" data-block="AccelerometerZ">
+                <p class="text">Текущее ускорение по оси Z</p>
+                <p class="text text__result"></p>
+            </div>
+        </div>
+        <div class="box">
+            <p class="text text__title">Ориентация устройства</p>
+            <div class="block" data-block="DeviceOrientationX">
+                <p class="text">Вращение вокруг оси X</p>
+                <p class="text text__result"></p>
+            </div>
+            <div class="block" data-block="DeviceOrientationY">
+                <p class="text">Вращение вокруг оси Y</p>
+                <p class="text text__result"></p>
+            </div>
+            <div class="block" data-block="DeviceOrientationZ">
+                <p class="text">Вращение вокруг оси Z</p>
+                <p class="text text__result"></p>
+            </div>
+        </div>
+        <div class="box">
+            <p class="text text__title">Гироскоп</p>
+            <div class="block" data-block="GyroscopeX">
+                <p class="text">Текущая скорость вращения вокруг оси X</p>
+                <p class="text text__result"></p>
+            </div>
+            <div class="block" data-block="GyroscopeY">
+                <p class="text">Текущая скорость вращения вокруг оси Y</p>
+                <p class="text text__result"></p>
+            </div>
+            <div class="block" data-block="GyroscopeZ">
+                <p class="text">Текущая скорость вращения вокруг оси Z</p>
+                <p class="text text__result"></p>
+            </div>
+        </div>
+    </main>
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./pages/orientationDivace/js/index.js?v=1"></script>
+</body>
+
+</html>

@@ -21,5 +21,5 @@ $(document).ready(function() {
         $GyroscopeX.find('.text__result').text(window.Telegram?.WebApp?.Gyroscope.x);
         $GyroscopeY.find('.text__result').text(window.Telegram?.WebApp?.Gyroscope.y);
         $GyroscopeZ.find('.text__result').text(window.Telegram?.WebApp?.Gyroscope.z);
-    }, 100);
+    }, 0);
 });

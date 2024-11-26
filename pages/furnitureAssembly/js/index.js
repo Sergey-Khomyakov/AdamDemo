@@ -82,6 +82,11 @@ $(document).ready(function() {
             window.Telegram.WebApp.addToHomeScreen();
         })
 
+        $('a[Shared]').on('click', function(){
+
+            window.Telegram.WebApp.shareMessage('',(res) => console.log(res));
+        })
+
         // fetch('https://adamwebdemo.duckdns.org/api/getUserPhotoBase64?userId=' + window.Telegram.WebApp.initDataUnsafe?.user?.id + '', {
         //     method: 'GET',
         //     headers: {

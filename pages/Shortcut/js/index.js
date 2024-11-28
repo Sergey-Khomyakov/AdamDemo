@@ -6,10 +6,16 @@ $(document).ready(function() {
         const userPhoto = window.Telegram.WebApp.initDataUnsafe?.user?.photo_url || "";
         $('a[userCardTitle]').text(lastName + " " + firstName);
         $('img[userCardImg]').attr('src', userPhoto);
-
-        $('a[label]').on('click', function(){
-            window.Telegram.WebApp.addToHomeScreen();
-        })
+        if(  window.Telegram.WebApp.platform === "tdesktop"){
+            $('a[label]').on('click', function(){
+                window.Telegram.WebApp.addToHomeScreen();
+            })
+        }else{
+            $('a[label]').remove();
+            $('.container > div').append(`
+                <p class="font-monserrat text-center text-base text-black">Функционал доступен только в Telegran Mobile</p>
+                `)
+        }
     }
     
     window.Telegram.WebApp.BackButton.show();

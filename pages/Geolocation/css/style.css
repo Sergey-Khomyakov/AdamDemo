@@ -2443,4 +2443,18 @@ button.dt-button {
     }
 }
 
+.logo {
+    display: flex;
+    width: 7.25rem;
+}
+
+.logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+body {
+    background: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */

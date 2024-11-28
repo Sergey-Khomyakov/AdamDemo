@@ -6,7 +6,7 @@ $(document).ready(function() {
         const userPhoto = window.Telegram.WebApp.initDataUnsafe?.user?.photo_url || "";
         $('a[userCardTitle]').text(lastName + " " + firstName);
         $('img[userCardImg]').attr('src', userPhoto);
-        if(  window.Telegram.WebApp.platform === "tdesktop"){
+        if(  window.Telegram.WebApp.platform !== "tdesktop"){
             $('a[label]').on('click', function(){
                 window.Telegram.WebApp.addToHomeScreen();
             })

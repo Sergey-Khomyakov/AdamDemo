@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="./css/common.css?v=3">
+    <link rel="stylesheet" href="./pages/Geolocation/css/style.css?v=4">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a class="logo" href="#">
+                <img src="./img/Other/logo/Logo2.webp" class="logo__img__mob" />
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="flex items-center justify-between gap-2 xs:py-2 lg:py-0">
+                <div class="flex gap-2 items-center">
+                    <img src="./img/icon/NavigationArrow.svg" alt="иконка" class="w-4 h-4 object-contain">
+                    <p location="" class="font-montserrat font-semibold text-sm text-gray-600"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <dialog id="popupSettings">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="list">
+                        <div class="list__item">
+                            <a href="https://sergey-khomyakov.github.io/AdamDemo/" class="link">На главную страницу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./js/common.js?v=8"></script>
+    <script src="./pages/Geolocation/js/index.js?v=15"></script>
+</body>
+
+</html>

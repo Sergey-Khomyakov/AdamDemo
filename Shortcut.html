@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="./css/common.css?v=3">
+    <link rel="stylesheet" href="./pages/Shortcut/css/style.css?v=4">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a class="logo" href="#">
+                <img src="./img/Other/logo/Logo2.webp" class="logo__img__mob" />
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="flex items-center justify-between gap-2 xs:py-2 lg:py-0">
+                <a label="" class="flex flex-col gap-0 items-center hover:bg-white rounded-xl p-2 w-full" href="#"><img
+                        class="w-6 h-6 object-contain filter-gray-600" src="./img/icon/FileArrowDown.svg" alt="иконка">
+                    <p class="ont-montserrat font-semibold text-sm text-gray-600">Добавить mini app на рабочий стол</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <dialog id="popupSettings">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="list">
+                        <div class="list__item">
+                            <a href="https://sergey-khomyakov.github.io/AdamDemo/" class="link">На главную страницу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./js/common.js?v=8"></script>
+    <script src="./pages/Shortcut/js/index.js?v=15"></script>
+</body>
+
+</html>

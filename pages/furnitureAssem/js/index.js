@@ -4,7 +4,7 @@ $(document).ready(function() {
         const lastName = window.Telegram.WebApp.initDataUnsafe?.user?.last_name || "";
         const firstName = window.Telegram.WebApp.initDataUnsafe?.user?.first_name || "";
         const userPhoto = window.Telegram.WebApp.initDataUnsafe?.user?.photo_url || "";
-        $('p[userCardTitle]').text(lastName + " " + firstName);
+        $('[userCardTitle]').text(lastName + " " + firstName);
         $('img[userCardImg]').attr('src', userPhoto);
 
 

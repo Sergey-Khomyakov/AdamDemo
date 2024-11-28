@@ -187,8 +187,8 @@ $(document).ready(function() {
         });
     })
 
-    $('header').on('mouseover', 'div[dropdowns]', function(){
-        var $this = $(this).find('div[dropdownsList]');
+    $('div[tooltip]').on('mouseover', function(){
+        var $this = $(this).find('div[tooltipBox]');
         if($this.length > 0){
           var offset = $this.offset();
           var width = $this.width();
@@ -201,4 +201,5 @@ $(document).ready(function() {
           }
         }
       });
+    
 });

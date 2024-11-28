@@ -12,6 +12,10 @@ $(document).ready(function() {
     window.Telegram?.WebApp?.Accelerometer.start();
     window.Telegram?.WebApp?.DeviceOrientation.start();
     window.Telegram?.WebApp?.Gyroscope.start();
+    window.Telegram.WebApp.BackButton.show();
+    Telegram.WebApp.onEvent('backButtonClicked', function(){
+        window.location.href= document.referrer;
+    });
     setInterval(() =>{
         $AccelerometerX.find('.text__result').text(window.Telegram?.WebApp?.Accelerometer.x);
         $AccelerometerY.find('.text__result').text(window.Telegram?.WebApp?.Accelerometer.y);

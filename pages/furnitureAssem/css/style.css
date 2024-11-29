@@ -562,7 +562,7 @@ video {
 
   font-weight: 600;
 
-  src: url(./../fonts/Montserrat-SemiBold.ttf) format('truetype');
+  src: url(./../../../fonts/Montserrat-SemiBold.ttf) format('truetype');
 }
 
 @font-face {
@@ -570,7 +570,7 @@ video {
 
   font-weight: 500;
 
-  src: url(./../fonts/Montserrat-Medium.ttf) format('truetype');
+  src: url(./../../../fonts/Montserrat-Medium.ttf) format('truetype');
 }
 
 .\!container {

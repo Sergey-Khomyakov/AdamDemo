@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('div[docId"]').on('click', '[docDonwload]', function(){
+    $('div[docId]').on('click', '[docDonwload]', function(){
         const $btn = $(this);
         const $parent = $btn.closest('div[docId]');
         const docId = $parent.attr('docId');

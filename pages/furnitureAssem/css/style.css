@@ -1716,6 +1716,12 @@ button.dt-button {
   padding: 1.5rem;
 }
 
+
+.xs\:py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1751,7 +1757,7 @@ button.dt-button {
   padding-bottom: 0.5rem;
 }
 
-.py-20 {
+.md\:py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }

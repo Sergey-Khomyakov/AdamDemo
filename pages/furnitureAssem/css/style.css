@@ -2410,6 +2410,10 @@ button.dt-button {
     grid-template-columns: 49% 49%;
   }
 
+  .md\:grid-cols-auto-1fr {
+    grid-template-columns: auto 1fr;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }

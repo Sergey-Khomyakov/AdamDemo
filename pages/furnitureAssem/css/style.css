@@ -1288,6 +1288,10 @@ button.dt-button {
   max-width: 18rem;
 }
 
+.max-w-\[35rem\] {
+  max-width: 35rem;
+}
+
 .shrink {
   flex-shrink: 1;
 }
@@ -2233,6 +2237,10 @@ button.dt-button {
     order: 2;
   }
 
+  .xs\:ml-auto {
+    margin-left: auto;
+  }
+
   .xs\:flex {
     display: flex;
   }
@@ -2296,6 +2304,10 @@ button.dt-button {
 
   .xs\:gap-1 {
     gap: 0.25rem;
+  }
+
+  .xs\:gap-2 {
+    gap: 0.5rem;
   }
 
   .xs\:gap-3 {
@@ -2378,6 +2390,10 @@ button.dt-button {
 }
 
 @media (min-width: 64rem) {
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
+
   .md\:grid {
     display: grid;
   }
@@ -2396,6 +2412,10 @@ button.dt-button {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:grid-cols-1fr-1-5fr {
+    grid-template-columns: 1fr 1.5fr;
   }
 
   .md\:grid-cols-2 {
@@ -2448,6 +2468,11 @@ button.dt-button {
 
   .md\:overflow-x-visible {
     overflow-x: visible;
+  }
+
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:py-20 {

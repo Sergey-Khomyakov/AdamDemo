@@ -91,4 +91,9 @@ $(document).ready(function() {
     }
 
     calendar.init();
+
+    window.Telegram.WebApp.BackButton.show();
+    Telegram.WebApp.onEvent('backButtonClicked', function(){
+        window.location.href= "https://sergey-khomyakov.github.io/AdamDemo/furnitureAssemMain.html";
+    });
 });

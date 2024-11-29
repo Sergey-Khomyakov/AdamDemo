@@ -59,4 +59,9 @@ $(document).ready(function() {
             $parent.find('div[data-tab_block="' + btnNumber + '"] div[data-orderid]').removeClass('!hidden');
         }, 1000)
     })
+
+    window.Telegram.WebApp.BackButton.show();
+    Telegram.WebApp.onEvent('backButtonClicked', function(){
+        window.location.href= "https://sergey-khomyakov.github.io/AdamDemo/furnitureAssemMain.html";
+    });
 });

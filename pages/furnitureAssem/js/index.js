@@ -27,11 +27,6 @@ $(document).ready(function() {
         // })
 
     }
-    
-    window.Telegram.WebApp.BackButton.show();
-    Telegram.WebApp.onEvent('backButtonClicked', function(){
-        window.location.href= document.referrer;
-    });
     // window.Telegram.WebApp.checkHomeScreenStatus((status) => {
     //     $('div[Info]').append(`status: ${status}`);
     //     if(status === 'unknown' || status === 'missed'){

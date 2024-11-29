@@ -44,19 +44,19 @@ $(document).ready(function() {
             // Здесь можно добавить логику для загрузки файла на сервер
         }
     }
-    $('div[data-tab_block]:not(div[data-tab_block="1"]) div[data-orderid]').addClass('hidden');
+    $('div[data-tab_block]:not(div[data-tab_block="1"]) div[data-orderid]').addClass('!hidden');
     // алгоритм скрывает загрузку
     $('div[data-tabs]').on('click', 'div[data-tab_item]', function(){
         var $parent = $(this).closest('div[data-tabs]');
         var $btn = $(this);
         var btnNumber = $(this).attr('data-tab_item');
 
-        $parent.find('div[data-tab_block] div[loadingItem]').removeClass('hidden');
-        $parent.find('div[data-tab_block]:not(div[data-tab_block="1"]) div[data-orderid]').addClass('hidden');
+        $parent.find('div[data-tab_block] div[loadingItem]').removeClass('!hidden');
+        $parent.find('div[data-tab_block]:not(div[data-tab_block="1"]) div[data-orderid]').addClass('!hidden');
 
         setTimeout(function(){
-            $parent.find('div[data-tab_block="' + btnNumber + '"] div[loadingItem]').addClass('hidden');
-            $parent.find('div[data-tab_block="' + btnNumber + '"] div[data-orderid]').removeClass('hidden');
+            $parent.find('div[data-tab_block="' + btnNumber + '"] div[loadingItem]').addClass('!hidden');
+            $parent.find('div[data-tab_block="' + btnNumber + '"] div[data-orderid]').removeClass('!hidden');
         }, 1000)
     })
 });

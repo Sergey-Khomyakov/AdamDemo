@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="./pages/furnitureAssem/css/style.css?v=3">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/other/favicon.ico" type="image/x-icon" />
+    <title>Мои график - сборка мебели</title>
+    <meta name="description" content="" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+
+<body class="overflow-x-hidden bg-white">
+    <div id="content-wrapper">
+        <header class="mt-11">
+            <div class="container px-2 lg:px-0 mx-auto">
+                <div class="flex flex-col gap-8">
+                    <div class="flex items-center justify-between">
+                        <div class="w-32 h-10"><img class="w-full h-full object-cover" src="./img/Other/logo/Logo2.webp"
+                                alt="лого" />
+                        </div>
+                        <div class="flex gap-8 items-center">
+                            <div class="xs:hidden sm:block">
+                                <p class="font-montserrat font-semibold text-xl text-black">Телефон диспетчера +7 926
+                                    000 00 02</p>
+                            </div>
+                            <div class="flex gap-4"><a class="w-12  h-12 cursor-pointer"><img userCardImg=""
+                                        class="w-full h-full object-contain rounded-full"
+                                        src="./img/people/Avatar_1.png" /></a>
+                                <div class="flex flex-col gap-2">
+                                    <p class="font-montserrat font-semibold text-base leading-4">Здравствуйте,</p><a
+                                        userCardTitle=""
+                                        class="font-montserrat font-semibold cursor-pointer text-base leading-4 text-black hover:text-[#7a5bca]">Иванов
+                                        Иван</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav
+                        class="xs:fixed xs:bottom-4 xs:z-10 xs:bg-[#f3f4f6] lg:bg-white xs:px-4 xs:py-2 xs:rounded-lg xs:left-2 lg:left-0 xs:w-[calc(100%-1rem)] lg:w-full lg:rounded-none lg:relative lg:p-0 flex xs:gap-1 lg:gap-2 justify-between">
+                        <div class="relative" dropdowns="">
+                            <div class="flex gap-2"><a
+                                    class="xs:flex xs:flex-col xs:gap-1 lg:block xs:items-center group cursor-pointer xs:hover:bg-white xs:p-1 lg:p-0 xs:rounded-md lg:rounded-none"
+                                    href="https://sergey-khomyakov.github.io/AdamDemo/furniturekartochka-sotrudnika.html"><img
+                                        class="w-6 h-6 object-contain lg:hidden" src="./img/icon/UserCircle.svg"
+                                        alt="иконка" />
+                                    <p
+                                        class="font-montserrat font-semibold xs:text-xs lg:text-base text-black cursor-default group-hover:text-primary xs:text-center lg:text-start">
+                                        Профиль</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="relative" dropdowns="">
+                            <div class="flex gap-2"><a
+                                    class="xs:flex xs:flex-col xs:gap-1 lg:block xs:items-center group cursor-pointer xs:hover:bg-white xs:p-1 lg:p-0 xs:rounded-md lg:rounded-none"
+                                    href="https://sergey-khomyakov.github.io/AdamDemo/furnitureAnketa.html"><img
+                                        class="w-6 h-6 object-contain lg:hidden" src="./img/icon/ClipboardText.svg"
+                                        alt="иконка" />
+                                    <p
+                                        class="font-montserrat font-semibold xs:text-xs lg:text-base text-black cursor-default group-hover:text-primary xs:text-center lg:text-start">
+                                        Анкетa</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="relative" dropdowns="">
+                            <div class="flex gap-2"><a
+                                    class="xs:flex xs:flex-col xs:gap-1 lg:block xs:items-center group cursor-pointer xs:hover:bg-white xs:p-1 lg:p-0 xs:rounded-md lg:rounded-none"
+                                    href="https://sergey-khomyakov.github.io/AdamDemo/furnitureStatus.html"><img
+                                        class="w-6 h-6 object-contain lg:hidden" src="./img/icon/Bank.svg"
+                                        alt="иконка" />
+                                    <p
+                                        class="font-montserrat font-semibold xs:text-xs lg:text-base text-black cursor-default group-hover:text-primary xs:text-center lg:text-start">
+                                        Юр статус</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="relative" dropdowns="">
+                            <div class="flex gap-2"><a
+                                    class="xs:flex xs:flex-col xs:gap-1 lg:block xs:items-center group cursor-pointer xs:hover:bg-white xs:p-1 lg:p-0 xs:rounded-md lg:rounded-none"
+                                    href="https://sergey-khomyakov.github.io/AdamDemo/furnituremoi-zakazy.html"><img
+                                        class="w-6 h-6 object-contain lg:hidden" src="./img/icon/Package.svg"
+                                        alt="иконка" />
+                                    <p
+                                        class="font-montserrat font-semibold xs:text-xs lg:text-base text-black cursor-default group-hover:text-primary xs:text-center lg:text-start">
+                                        Мои заказы</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="relative" dropdowns="">
+                            <div class="flex gap-2"><a
+                                    class="xs:flex xs:flex-col xs:gap-1 lg:block xs:items-center group cursor-pointer xs:hover:bg-white xs:p-1 lg:p-0 xs:rounded-md lg:rounded-none"
+                                    href="https://sergey-khomyakov.github.io/AdamDemo/furnituremoi-grafik.html"><img
+                                        class="w-6 h-6 object-contain lg:hidden" src="./img/icon/Calendar.svg"
+                                        alt="иконка" />
+                                    <p
+                                        class="font-montserrat font-semibold xs:text-xs lg:text-base text-black cursor-default group-hover:text-primary xs:text-center lg:text-start">
+                                        График</p>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="py-20">
+            <div class="container xs:px-4 lg:mx-auto grid grid-cols-full gap-7">
+                <div class="flex flex-col gap-8">
+                    <div class="flex gap-2">
+                        <div class="flex gap-1"><a class="font-montserrat font-semibold text-base hover:text-primary"
+                                href="#">Главная</a>
+                            <p class="font-montserrat font-semibold text-base">/</p>
+                        </div>
+                        <div class="flex gap-1"><a class="font-montserrat font-semibold text-base hover:text-primary"
+                                href="#">Личный кабинет</a>
+                            <p class="font-montserrat font-semibold text-base">/</p>
+                        </div>
+                        <div class="flex gap-1"><a class="font-montserrat font-semibold text-base text-gray-400">Иванов
+                                Иван</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-10">
+                        <div class="flex flex-col gap-4">
+                            <h2 class="font-montserrat font-semibold text-black text-4xl">Мои график</h2>
+                            <div class="flex flex-col gap-4" calendar="">
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex flex-col gap-2">
+                                        <p class="font-montserrat font-semibold text-gray-600 text-base">Можно назначать
+                                            выходной не ранее чем через 3 дня от текущей даты.</p>
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <div class="flex gap-1 items-center">
+                                            <div class="w-4 h-4 border border-black bg-white rounded-sm"></div>
+                                            <p class="font-montserrat font-semibold text-gray-600 text-base">- Рабочий
+                                                день</p>
+                                        </div>
+                                        <div class="flex gap-1 items-center">
+                                            <div class="w-4 h-4 border border-black bg-green-300 rounded-sm"></div>
+                                            <p class="font-montserrat font-semibold text-gray-600 text-base">- Выходной
+                                                день</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-end w-full">
+                                        <button
+                                            class="flex gap-2 font-montserrat font-semibold xs:text-sm xs:justify-center lg:justify-start lg:text-base  px-4 py-2 rounded-md border-[#FFFFFF] items-center text-[#fff] bg-primary w-max"
+                                            data-btn="save">Сохранить<img
+                                                class="w-6 h-6 object-contain filter invert sepia-0 saturate-0 hue-rotate-[94deg] brightness-[1.06] contrast-[20]"
+                                                src="./img/icon/FloppyDisk.svg" alt="иконка" />
+                                        </button>
+                                    </div>
+                                    <div class="flex flex-col xs:overflow-x-scroll lg:overflow-x-auto">
+                                        <div class="grid grid-cols-7 items-center xs:w-[64rem] md:w-full"
+                                            calendarheader="">
+                                            <div
+                                                class="w-full shrink-0 h-8 flex justify-center items-center border-2 border-b-0 border-[#f8f8fa] font-montserrat font-semibold text-base text-black rounded-t-lg bg-white">
+                                                Пн.</div>
+                                            <div
+                                                class="w-full shrink-0 h-8 flex justify-center items-center border-2 border-b-0 border-[#f8f8fa] font-montserrat font-semibold text-base text-black rounded-t-lg bg-white">
+                                                Вт.</div>
+                                            <div
+                                                class="w-full shrink-0 h-8 flex justify-center items-center border-2 border-b-0 border-[#f8f8fa] font-montserrat font-semibold text-base text-black rounded-t-lg bg-white">
+                                                Ср.</div>
+                                            <div
+                                                class="w-full shrink-0 h-8 flex justify-center items-center border-2 border-b-0 border-[#f8f8fa] font-montserrat font-semibold text-base text-black rounded-t-lg bg-white">
+                                                Чт.</div>
+                                            <div
+                                                class="w-full shrink-0 h-8 flex justify-center items-center border-2 border-b-0 border-[#f8f8fa] font-montserrat font-semibold text-base text-black rounded-t-lg bg-white">
+                                                Пт.</div>
+                                            <div
+                                                class="w-full shrink-0 h-8 flex justify-center items-center border-2 border-b-0 border-[#f8f8fa] font-montserrat font-semibold text-base text-black rounded-t-lg bg-white">
+                                                Сб.</div>
+                                            <div
+                                                class="w-full shrink-0 h-8 flex justify-center items-center border-2 border-b-0 border-[#f8f8fa] font-montserrat font-semibold text-base text-black rounded-t-lg bg-white">
+                                                Вс.</div>
+                                        </div>
+                                        <div class="grid grid-cols-7 items-center xs:w-[64rem] md:w-full"
+                                            calendarBody=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-black mt-auto">
+            <div class="container mx-auto flex items-center justify-between p-5">
+                <div class="w-32 h-10"><img class="w-full h-full object-cover" src="./img/Other/logo/Logo2.webp"
+                        alt="лого"></div>
+            </div>
+        </footer>
+    </div>
+
+    <dialog id="popupSettings">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="list">
+                        <div class="list__item">
+                            <a href="https://sergey-khomyakov.github.io/AdamDemo/" class="link">На главную страницу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./pages/furnitureAssem/js/common.js"></script>
+    <script src="./pages/furnitureAssem/js/index.js"></script>
+    <script src="./pages/furnitureAssem/js/moi-grafik/data.js"></script>
+    <script src="./pages/furnitureAssem/js/moi-grafik/index.js"></script>
+</body>
+
+</html>

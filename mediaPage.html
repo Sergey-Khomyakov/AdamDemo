@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Медиагалерея</title>
+    <link rel="stylesheet" href="./css/common.css?v=3">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="./libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./pages/portal/css/style.css?v=2">
+</head>
+
+<body>
+    <header>
+        <div class="container mob">
+            <div class="row">
+                <div class="col p-0">
+                    <div class="header__mob__box">
+                        <a class="logo" href="https://sergey-khomyakov.github.io/AdamDemo/PortalIndex.html">
+                            <img src="./img/Other/logo/AdamPortal.png" class="logo__img__mob" />
+                        </a>
+                        <div class="header__group_btn">
+                            <a class="search__btn" href="#"></a>
+                            <a class="header__btn__menu" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="header__group__menu">
+                        <div class="menu">
+                            <div class="searchbox">
+                                <div class="searchbox__input">
+                                    <img src="./img/icon/MagnifyingGlass.svg" />
+                                    <input type="text" id="searchPeople" class="active"
+                                        placeholder="Поиск по сотруднику" />
+                                    <input type="text" id="searchDocument" placeholder="Поиск по документам" />
+                                </div>
+                                <div class="searchbox__btns">
+                                    <div class="searchbox__btn active">
+                                        <img src="./img/icon/UserCircleHeader.svg" class="searchbox__icon" />
+                                        <p class="searchbox__text">Сотрудники</p>
+                                    </div>
+                                    <div class="searchbox__btn">
+                                        <img src="./img/icon/FileHeader.svg" class="searchbox__icon" />
+                                        <p class="searchbox__text">Документы</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="nav">
+                                <li>
+                                    <a class="nav__link disable" href="#">О КОМПАНИИ</a>
+                                </li>
+                                <li><a class="nav__link disable" href="#">ЖИЗНЬ</a></li>
+                                <li><a class="nav__link disable" href="#">HR СОТРУДНИКИ</a></li>
+                                <li><a class="nav__link disable" href="#">СЕРВИСЫ</a></li>
+                                <li><a class="nav__link" href="#">БАЗА ЗНАНИЙ<img
+                                            src="./img/icon/chevron-down.svg" /></a>
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/layout-bottom.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Составление отчетов</p>
+                                                    <p class="dropdown__block__description">Статистика и метрики</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/cube-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Командная сеть</p>
+                                                    <p class="dropdown__block__description">Мониторинг команд</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/play-circle.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Сегментация по отчетам</p>
+                                                    <p class="dropdown__block__description">Проверка скрытых трендов</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/file-code-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Групповая аналитика</p>
+                                                    <p class="dropdown__block__description">Подсчет в B2B сегменте</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/life-buoy-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Конвертация</p>
+                                                    <p class="dropdown__block__description">Learn, fix a problem, and
+                                                        get ansers to your questions.</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav__link disable" href="#">ДОКУМЕНТЫ</a></li>
+                                <li><a class="nav__link disable" href="#">ОБУЧЕНИЕ</a></li>
+                                <li><a class="nav__link disable" href="#">ИДЕИ</a></li>
+                                <li><a class="nav__link disable" href="#">КАРТА САЙТА</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-0">
+                    <div class="mob__account">
+                        <a class="widget__lk__info"
+                            href="https://sergey-khomyakov.github.io/AdamDemo/PortalEmployeeCard.html">
+                            <div class="widget__lk__img">
+                                <img src="./img/Other/stub.png">
+                                <div class="widget__lk__counter">12</div>
+                            </div>
+                            <div>
+                                <p>Здравствуйте,</p>
+                                <div class="widget__lk__fio">Александр Иванович</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <ul class="breadcrumbs">
+                    <li>
+                        <a class="breadcrumb__home" href="#"></a>
+                    </li>
+                    <li><a class="breadcrumb" href="#">Медиагалерея</a></li>
+                    <li><a class="breadcrumb active" href="#">Название события</a></li>
+                </ul>
+                <div class="col-9 px-0">
+                    <div class="container__block">
+                        <div class="page">
+                            <div class="page__block">
+                                <h2 class="page__title">Название события</h2>
+                                <p class="page__description"></p>
+                            </div>
+                            <div class="page__media">
+                                <div class="page__nav">
+                                    <div class="btn__group">
+                                        <div class="btn__panel like active">
+                                            <div class="btn__panel bg__img">
+                                                <img src="./img/icon/Likes.svg" />
+                                            </div>
+                                            <p class="btn__panel number">235</p>
+                                        </div>
+                                        <div class="btn__panel comment">
+                                            <div class="btn__panel bg__img">
+                                                <img src="./img/icon/ChatCentered.svg" />
+                                            </div>
+                                            <p class="btn__panel number">20</p>
+                                        </div>
+                                    </div>
+                                    <div class="tags">
+                                        <div class="tag">
+                                            <p class="tag__text">Бизнес</p>
+                                        </div>
+                                        <div class="tag">
+                                            <p class="tag__text">Развлечение</p>
+                                        </div>
+                                    </div>
+                                    <select class="mob">
+                                        <optgroup label="Теги">
+                                            <option>Крмпания</option>
+                                            <option>Мероприятия</option>
+                                            <option>Офис</option>
+                                            <option>Проекты</option>
+                                        </optgroup>
+                                    </select>
+                                    <p class="text data red ms-auto">16.02.2023</p>
+                                </div>
+                                <div class="page__media__content">
+                                    <div class="carousel">
+                                        <div class="carousel desktop">
+                                            <div class="carousel__top owl-carousel owl-theme">
+                                                <div class="carousel__item" data-hash="img0">
+                                                    <div class="board__new__img">
+                                                        <img src="./img/Other/dane-deaner-500.jpg" />
+                                                    </div>
+                                                    <div class="carousel__item__block">
+
+                                                    </div>
+                                                </div>
+                                                <div class="carousel__item" data-hash="img1">
+                                                    <div class="board__new__img">
+                                                        <img src="./img/Other/berkeley-c500.jpg" />
+                                                    </div>
+                                                    <div class="carousel__item__block">
+
+                                                    </div>
+                                                </div>
+                                                <div class="carousel__item" data-hash="img2">
+                                                    <div class="board__new__img">
+                                                        <img src="./img/Other/dane-deaner-500.jpg" />
+                                                    </div>
+                                                    <div class="carousel__item__block">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel__bottom">
+                                                <div class="carousel__bottom__items">
+                                                    <a class="carousel__link" href="#img0">
+                                                        <img src="./img/Other/dane-deaner-500.jpg" />
+                                                    </a>
+                                                    <a class="carousel__link" href="#img1">
+                                                        <img src="./img/Other/berkeley-c500.jpg" />
+                                                    </a>
+                                                    <a class="carousel__link" href="#img2">
+                                                        <img src="./img/Other/dane-deaner-500.jpg" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel mob">
+                                            <div class="carousel__box owl-carousel owl-theme">
+                                                <div class="carousel__item">
+                                                    <img src="./img/Other/dane-deaner-500.jpg" />
+                                                </div>
+                                                <div class="carousel__item">
+                                                    <img src="./img/Other/berkeley-c500.jpg" />
+                                                </div>
+                                                <div class="carousel__item">
+                                                    <img src="./img/Other/dane-deaner-500.jpg" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="page__media__text">
+                                        <p class="text" style="margin-bottom: 40px;">4 апреля 2023 года Московский
+                                            автомобильный завод «Москвич» в присутствии Мэра Москвы Сергея Собянина
+                                            подписал соглашение с ООО «Флот» (подразделение Яндекса, которое
+                                            обеспечивает поставки автомобилей для такси
+                                            и каршеринга) о поставке 2 тысяч электромобилей Москвичи 3e для
+                                            таксопарков-партнёров Яндекс.Такси. Это крупнейший в мире контракт на
+                                            поставку электромобилей в сервисы такси и каршеринга в этом году.</p>
+                                        <p class="text" style="font-weight: 300;">В феврале 2023 года «Москвич» и
+                                            «Яндекс» подписали соглашение о намерениях о поставке для такси и каршеринга
+                                            3 тысяч кроссоверов Москвич 3. Первые 50 автомобилей <span
+                                                class="red">Москвич 3</span> с бензиновым турбомотором
+                                            пополнили один из московских таксопарков-партнеров Яндекс.Такси в апреле.
+                                            <br /> <br />Городской кроссовер Москвич 3 и электромобиль Москвич 3е
+                                            обеспечат необходимый уровень комфорта как для водителей, так и для
+                                            пассажиров такси. Водители оценят их практичность: дорожный просвет и
+                                            хорошую обзорность. А вместительный багажник моделей позволит без труда
+                                            разместить сумки, большие чемоданы, детские кресле и другие необходимые
+                                            в поездке вещи. Для пассажиров предусмотрены удобные подлокотники с
+                                            подстаканниками, <span class="red">USB-разъемы</span> для зарядки
+                                            электронных устройств, крепления для детских автокресел и много
+                                            пространства,
+                                            чтобы с комфортом разместиться на заднем сидении.
+                                        </p>
+                                    </div>
+                                    <div class="page__block__video">
+                                        <video class="video" src="./video/video.mp4" controls></video>
+                                    </div>
+                                    <div class="gallery__image">
+                                        <div class="gallery__image__items desktop">
+                                            <a href="#" class="gallery__image__container" data-bs-toggle="modal"
+                                                data-bs-target="#popUpGallery">
+                                                <div class="gallery__image__item"
+                                                    style="background: url('./img/Other/dane-deaner-500.jpg')  no-repeat center center / cover;">
+                                                    <div class="btn__group">
+                                                        <div class="btn__panel like active">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Likes.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">235</p>
+                                                        </div>
+                                                        <div class="btn__panel comment">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Comment.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">20</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="gallery__image__container" data-bs-toggle="modal"
+                                                data-bs-target="#popUpGallery">
+                                                <div class="gallery__image__item big"
+                                                    style="background: url('./img/Other/berkeley-c500.jpg') no-repeat center center / cover;">
+                                                    <div class="btn__group">
+                                                        <div class="btn__panel like">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Likes.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">235</p>
+                                                        </div>
+                                                        <div class="btn__panel comment">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Comment.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">20</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="gallery__image__container" data-bs-toggle="modal"
+                                                data-bs-target="#popUpGallery">
+                                                <div class="gallery__image__item"
+                                                    style="background: url('./img/Other/dane-deaner-500.jpg') no-repeat center center / cover;">
+                                                    <div class="btn__group">
+                                                        <div class="btn__panel like">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Likes.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">235</p>
+                                                        </div>
+                                                        <div class="btn__panel comment">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Comment.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">20</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="gallery__image__container" data-bs-toggle="modal"
+                                                data-bs-target="#popUpGallery">
+                                                <div class="gallery__image__item"
+                                                    style="background: url('./img/Other/berkeley-c500.jpg') no-repeat center center / cover;">
+                                                    <div class="btn__group">
+                                                        <div class="btn__panel like active">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Likes.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">235</p>
+                                                        </div>
+                                                        <div class="btn__panel comment">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Comment.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">20</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="gallery__image__container" data-bs-toggle="modal"
+                                                data-bs-target="#popUpGallery">
+                                                <div class="gallery__image__item"
+                                                    style="background: url('./img/Other/dane-deaner-500.jpg') no-repeat center center / cover;">
+                                                    <div class="btn__group">
+                                                        <div class="btn__panel like">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Likes.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">235</p>
+                                                        </div>
+                                                        <div class="btn__panel comment">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Comment.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">20</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="gallery__image__container" data-bs-toggle="modal"
+                                                data-bs-target="#popUpGallery">
+                                                <div class="gallery__image__item big"
+                                                    style="background: url('./img/Other/berkeley-c500.jpg') no-repeat center center / cover;">
+                                                    <div class="btn__group">
+                                                        <div class="btn__panel like active">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Likes.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">235</p>
+                                                        </div>
+                                                        <div class="btn__panel comment">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Comment.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">20</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="gallery__image__container" data-bs-toggle="modal"
+                                                data-bs-target="#popUpGallery">
+                                                <div class="gallery__image__item"
+                                                    style="background: url('./img/Other/dane-deaner-500.jpg') no-repeat center center / cover;">
+                                                    <div class="btn__group">
+                                                        <div class="btn__panel like active">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Likes.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">235</p>
+                                                        </div>
+                                                        <div class="btn__panel comment">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Comment.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">20</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="gallery__image__items mob">
+                                            <a href="#" class="gallery__image__container" data-bs-toggle="modal"
+                                                data-bs-target="#popUpGallery">
+                                                <div class="gallery__image__item"
+                                                    style="background: url('./img/Other/dane-deaner-500.jpg')  no-repeat center center / cover;">
+                                                    <div class="page__bar__block__btn">
+                                                        <div class="btn__panel like active">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Likes.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">235</p>
+                                                        </div>
+                                                        <div class="btn__panel comment">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Comment.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">20</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="gallery__image__container" data-bs-toggle="modal"
+                                                data-bs-target="#popUpGallery">
+                                                <div class="gallery__image__item big"
+                                                    style="background: url('./img/Other/berkeley-c500.jpg') no-repeat center center / cover;">
+                                                    <div class="page__bar__block__btn">
+                                                        <div class="btn__panel like">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Likes.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">235</p>
+                                                        </div>
+                                                        <div class="btn__panel comment">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Comment.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">20</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="gallery__image__container" data-bs-toggle="modal"
+                                                data-bs-target="#popUpGallery">
+                                                <div class="gallery__image__item"
+                                                    style="background: url('./img/Other/dane-deaner-500.jpg') no-repeat center center / cover;">
+                                                    <div class="page__bar__block__btn">
+                                                        <div class="btn__panel like">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Likes.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">235</p>
+                                                        </div>
+                                                        <div class="btn__panel comment">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Comment.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">20</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="gallery__image__container" data-bs-toggle="modal"
+                                                data-bs-target="#popUpGallery">
+                                                <div class="gallery__image__item"
+                                                    style="background: url('./img/Other/berkeley-c500.jpg') no-repeat center center / cover;">
+                                                    <div class="page__bar__block__btn">
+                                                        <div class="btn__panel like active">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Likes.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">235</p>
+                                                        </div>
+                                                        <div class="btn__panel comment">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Comment.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">20</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="gallery__image__container" data-bs-toggle="modal"
+                                                data-bs-target="#popUpGallery">
+                                                <div class="gallery__image__item"
+                                                    style="background: url('./img/Other/dane-deaner-500.jpg') no-repeat center center / cover;">
+                                                    <div class="page__bar__block__btn">
+                                                        <div class="btn__panel like">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Likes.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">235</p>
+                                                        </div>
+                                                        <div class="btn__panel comment">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Comment.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">20</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="gallery__image__container" data-bs-toggle="modal"
+                                                data-bs-target="#popUpGallery">
+                                                <div class="gallery__image__item big"
+                                                    style="background: url('./img/Other/berkeley-c500.jpg') no-repeat center center / cover;">
+                                                    <div class="page__bar__block__btn">
+                                                        <div class="btn__panel like active">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Likes.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">235</p>
+                                                        </div>
+                                                        <div class="btn__panel comment">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Comment.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">20</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="gallery__image__container" data-bs-toggle="modal"
+                                                data-bs-target="#popUpGallery">
+                                                <div class="gallery__image__item"
+                                                    style="background: url('./img/Other/dane-deaner-500.jpg') no-repeat center center / cover;">
+                                                    <div class="page__bar__block__btn">
+                                                        <div class="btn__panel like active">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Likes.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">235</p>
+                                                        </div>
+                                                        <div class="btn__panel comment">
+                                                            <div class="btn__panel bg__img">
+                                                                <img src="./img/icon/Comment.svg" />
+                                                            </div>
+                                                            <p class="btn__panel number">20</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page__pagination">
+                                    <a class="btn left disable" href="#">Предыдущая</a>
+                                    <div class="pagination">
+                                        <a href="#" class="pagination__item active">1</a>
+                                        <a href="#" class="pagination__item">2</a>
+                                        <a href="#" class="pagination__item">3</a>
+                                        <a href="#" class="pagination__item">...</a>
+                                        <a href="#" class="pagination__item">8</a>
+                                        <a href="#" class="pagination__item">9</a>
+                                        <a href="#" class="pagination__item">10</a>
+                                    </div>
+                                    <div class="pagination__mob">
+                                        <p>Страница 1 из 10 </p>
+                                    </div>
+                                    <a class="btn right" href="#">Следующая</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal image fade media" id="popUpGallery" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img class="img active" src="./img/Other/moskvich-3.jpg" />
+                                    <img class="img" src="./img/Other/Media-9.png" />
+                                    <img class="img" src="./img/Other/Media-10.png" />
+                                    <img class="img" src="./img/Other/Media-11.png" />
+                                    <img class="img" src="./img/Other/Media-12.png" />
+                                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                                    <div class="modal-close" data-bs-dismiss="modal" aria-label="Close"><span></span>
+                                    </div>
+                                    <div class="modal-nav">
+                                        <a class="modal-nav__btn prev" href="#"><img
+                                                src="./img/icon/ArrowPrev.svg" /></a>
+                                        <a class="modal-nav__btn next" href="#"><img
+                                                src="./img/icon/ArrowNext.svg" /></a>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="page__bar__block__btn">
+                                        <div class="btn__panel like active">
+                                            <div class="btn__panel bg__img">
+                                                <img src="./img/icon/Likes.svg">
+                                            </div>
+                                            <p class="btn__panel number">235</p>
+                                        </div>
+                                    </div>
+                                    <div class="counter">
+                                        <span>4</span>
+                                        <span>/20</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 px-0">
+                    <div class="widget__container" style="margin-top: 70px;">
+                        <div class="widget__archive__media box mb-0">
+                            <h2 class="widget__title">Архив</h2>
+                            <a class="link" href="#">
+                                <p>Март</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Февраль</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Январь</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Декабрь 2022</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Ноябрь 2022</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Октябрь 2022</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container ">
+            <div class="footer">
+                <div class="footer__col">
+                    <div class="footer__item ">
+                        <a class="logo " href="# ">
+                            <img src="./img/Other/logo/AdamPortal.png" class="logo__img " />
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__items ">
+                        <div class="footer__item ">
+                            <p>Описание ресурса</p>
+                            <a href="# " class="link">https://adamweb.ru/</a>
+                        </div>
+                    </div>
+                    <div class="footer__items ">
+                        <div class="footer__item ">
+                            <p>Обратная связь по работе портала</p>
+                            <a href="# " class="link">Никита Богданов</a>
+                        </div>
+                        <div class="footer__item ">
+                            <p>Помощь по сайту</p>
+                            <a href="# " class="link">Руководство пользователя портала</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <dialog id="popupSettings">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="list">
+                        <div class="list__item">
+                            <a href="https://sergey-khomyakov.github.io/AdamDemo/" class="link">На главную страницу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./libs/bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
+    <script src="./libs/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
+    <script src="./libs/masonry/js/masonry.pkgd.min.js"></script>
+    <script src="./js/common.js?v=8"></script>
+    <script src="./pages/portal/js/mobNav.js?v=5"></script>
+    <script src="./pages/portal/js/mediaPage.js"></script>
+</body>
+
+</html>

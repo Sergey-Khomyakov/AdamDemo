@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Дни рождения</title>
+    <link rel="stylesheet" href="./css/common.css?v=3">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="./libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./pages/portal/css/style.css?v=2">
+</head>
+
+<body>
+    <header>
+        <div class="container mob">
+            <div class="row">
+                <div class="col p-0">
+                    <div class="header__mob__box">
+                        <a class="logo" href="https://sergey-khomyakov.github.io/AdamDemo/PortalIndex.html">
+                            <img src="./img/Other/logo/AdamPortal.png" class="logo__img__mob" />
+                        </a>
+                        <div class="header__group_btn">
+                            <a class="search__btn" href="#"></a>
+                            <a class="header__btn__menu" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="header__group__menu">
+                        <div class="menu">
+                            <div class="searchbox">
+                                <div class="searchbox__input">
+                                    <img src="./img/icon/MagnifyingGlass.svg" />
+                                    <input type="text" id="searchPeople" class="active"
+                                        placeholder="Поиск по сотруднику" />
+                                    <input type="text" id="searchDocument" placeholder="Поиск по документам" />
+                                </div>
+                                <div class="searchbox__btns">
+                                    <div class="searchbox__btn active">
+                                        <img src="./img/icon/UserCircleHeader.svg" class="searchbox__icon" />
+                                        <p class="searchbox__text">Сотрудники</p>
+                                    </div>
+                                    <div class="searchbox__btn">
+                                        <img src="./img/icon/FileHeader.svg" class="searchbox__icon" />
+                                        <p class="searchbox__text">Документы</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="nav">
+                                <li>
+                                    <a class="nav__link disable" href="#">О КОМПАНИИ</a>
+                                </li>
+                                <li><a class="nav__link disable" href="#">ЖИЗНЬ</a></li>
+                                <li><a class="nav__link disable" href="#">HR СОТРУДНИКИ</a></li>
+                                <li><a class="nav__link disable" href="#">СЕРВИСЫ</a></li>
+                                <li><a class="nav__link" href="#">БАЗА ЗНАНИЙ<img
+                                            src="./img/icon/chevron-down.svg" /></a>
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/layout-bottom.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Составление отчетов</p>
+                                                    <p class="dropdown__block__description">Статистика и метрики</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/cube-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Командная сеть</p>
+                                                    <p class="dropdown__block__description">Мониторинг команд</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/play-circle.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Сегментация по отчетам</p>
+                                                    <p class="dropdown__block__description">Проверка скрытых трендов</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/file-code-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Групповая аналитика</p>
+                                                    <p class="dropdown__block__description">Подсчет в B2B сегменте</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/life-buoy-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Конвертация</p>
+                                                    <p class="dropdown__block__description">Learn, fix a problem, and
+                                                        get ansers to your questions.</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav__link disable" href="#">ДОКУМЕНТЫ</a></li>
+                                <li><a class="nav__link disable" href="#">ОБУЧЕНИЕ</a></li>
+                                <li><a class="nav__link disable" href="#">ИДЕИ</a></li>
+                                <li><a class="nav__link disable" href="#">КАРТА САЙТА</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-0">
+                    <div class="mob__account">
+                        <a class="widget__lk__info"
+                            href="https://sergey-khomyakov.github.io/AdamDemo/PortalEmployeeCard.html">
+                            <div class="widget__lk__img">
+                                <img src="./img/Other/stub.png">
+                                <div class="widget__lk__counter">12</div>
+                            </div>
+                            <div>
+                                <p>Здравствуйте,</p>
+                                <div class="widget__lk__fio">Александр Иванович</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <ul class="breadcrumbs">
+                    <li>
+                        <a class="breadcrumb__home" href="#"></a>
+                    </li>
+                    <li><a class="breadcrumb active" href="#">Дни рождения</a></li>
+                </ul>
+                <div class="col-9 px-0">
+                    <div class="container__block">
+                        <div class="page">
+                            <div class="page__block">
+                                <h2 class="page__title">Дни рождения</h2>
+                                <p class="page__description"></p>
+                            </div>
+                            <div class="page__birthdays">
+                                <div class="page__nav">
+                                    <select>
+                                        <optgroup label="По месяцам">
+                                            <option>Все</option>
+                                            <option>Февраль</option>
+                                            <option>Январь</option>
+                                            <option>Декабрь 2021</option>
+                                            <option>Ноябрь 2021</option>
+                                            <option>Октябрь 2021</option>
+                                            <option>Сентябрь 2021</option>
+                                            <option>Август 2021</option>
+                                            <option>Июль 2021</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <div class="page__birthdays__block">
+                                    <div class="page__birthdays__title__block">
+                                        <h2 class="page__birthdays__title">Апрель</h2>
+                                        <p class="page__birthdays__title__count">11</p>
+                                    </div>
+                                    <div class="page__birthdays__items">
+                                        <div class="card employee birthday">
+                                            <a href="#">
+                                                <img class="card__img" src=".\img\people\Rectangle 111-23.png" />
+                                            </a>
+                                            <div class="card__box">
+                                                <div class="card__header">
+                                                    <p class="card__data">12 апреля</p>
+                                                </div>
+                                                <div class="card__body">
+                                                    <a src="#">
+                                                        <p class="card__fio">Кира Попова</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__footer">
+                                                    <a class="link" href="#">
+                                                        <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                        <p>Поздравить</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card employee birthday">
+                                            <a href="#">
+                                                <img class="card__img" src=".\img\people\Rectangle 111-24.png" />
+                                            </a>
+                                            <div class="card__box">
+                                                <div class="card__header">
+                                                    <p class="card__data">12 апреля</p>
+                                                </div>
+                                                <div class="card__body">
+                                                    <a src="#">
+                                                        <p class="card__fio">Владислав Тарасов</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__footer">
+                                                    <a class="link" href="#">
+                                                        <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                        <p>Поздравить</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card employee birthday">
+                                            <a href="#">
+                                                <img class="card__img" src=".\img\people\Rectangle 111-17.png" />
+                                            </a>
+                                            <div class="card__box">
+                                                <div class="card__header">
+                                                    <p class="card__data">12 апреля</p>
+                                                </div>
+                                                <div class="card__body">
+                                                    <a src="#">
+                                                        <p class="card__fio">Аскар Алексеев</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__footer">
+                                                    <a class="link" href="#">
+                                                        <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                        <p>Поздравить</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card employee birthday">
+                                            <a href="#">
+                                                <img class="card__img" src=".\img\people\Rectangle 111-14.png" />
+                                            </a>
+                                            <div class="card__box">
+                                                <div class="card__header">
+                                                    <p class="card__data">12 апреля</p>
+                                                </div>
+                                                <div class="card__body">
+                                                    <a src="#">
+                                                        <p class="card__fio">Кира Попова</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__footer">
+                                                    <a class="link" href="#">
+                                                        <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                        <p>Поздравить</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card employee birthday">
+                                            <a href="#">
+                                                <img class="card__img" src=".\img\people\Rectangle 111-18.png" />
+                                            </a>
+                                            <div class="card__box">
+                                                <div class="card__header">
+                                                    <p class="card__data">12 апреля</p>
+                                                </div>
+                                                <div class="card__body">
+                                                    <a src="#">
+                                                        <p class="card__fio">Афина Борисова</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__footer">
+                                                    <a class="link" href="#">
+                                                        <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                        <p>Поздравить</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card employee birthday">
+                                            <a href="#">
+                                                <img class="card__img" src=".\img\people\Rectangle 111-19.png" />
+                                            </a>
+                                            <div class="card__box">
+                                                <div class="card__header">
+                                                    <p class="card__data">12 апреля</p>
+                                                </div>
+                                                <div class="card__body">
+                                                    <a src="#">
+                                                        <p class="card__fio">Ксения Павлова</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__footer">
+                                                    <a class="link" href="#">
+                                                        <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                        <p>Поздравить</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card employee birthday">
+                                            <a href="#">
+                                                <img class="card__img" src=".\img\people\Rectangle 111-15.png" />
+                                            </a>
+                                            <div class="card__box">
+                                                <div class="card__header">
+                                                    <p class="card__data">12 апреля</p>
+                                                </div>
+                                                <div class="card__body">
+                                                    <a src="#">
+                                                        <p class="card__fio">Кира Попова</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__footer">
+                                                    <a class="link" href="#">
+                                                        <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                        <p>Поздравить</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card employee birthday">
+                                            <a href="#">
+                                                <img class="card__img" src=".\img\people\Rectangle 111-25.png" />
+                                            </a>
+                                            <div class="card__box">
+                                                <div class="card__header">
+                                                    <p class="card__data">12 апреля</p>
+                                                </div>
+                                                <div class="card__body">
+                                                    <a src="#">
+                                                        <p class="card__fio">Афина Борисова</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__footer">
+                                                    <a class="link" href="#">
+                                                        <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                        <p>Поздравить</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card employee birthday">
+                                            <a href="#">
+                                                <img class="card__img" src=".\img\people\Rectangle 111-22.png" />
+                                            </a>
+                                            <div class="card__box">
+                                                <div class="card__header">
+                                                    <p class="card__data">12 апреля</p>
+                                                </div>
+                                                <div class="card__body">
+                                                    <a src="#">
+                                                        <p class="card__fio">Ксения Павлова</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__footer">
+                                                    <a class="link" href="#">
+                                                        <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                        <p>Поздравить</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card employee birthday">
+                                            <a href="#">
+                                                <img class="card__img" src=".\img\people\Rectangle 111-13.png" />
+                                            </a>
+                                            <div class="card__box">
+                                                <div class="card__header">
+                                                    <p class="card__data">12 апреля</p>
+                                                </div>
+                                                <div class="card__body">
+                                                    <a src="#">
+                                                        <p class="card__fio">Кира Попова</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__footer">
+                                                    <a class="link" href="#">
+                                                        <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                        <p>Поздравить</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card employee birthday">
+                                            <a href="#">
+                                                <img class="card__img" src=".\img\people\Rectangle 111-12.png" />
+                                            </a>
+                                            <div class="card__box">
+                                                <div class="card__header">
+                                                    <p class="card__data">12 апреля</p>
+                                                </div>
+                                                <div class="card__body">
+                                                    <a src="#">
+                                                        <p class="card__fio">Афина Борисова</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__footer">
+                                                    <a class="link" href="#">
+                                                        <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                        <p>Поздравить</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page__birthdays__block">
+                                    <div class="page__birthdays__title__block">
+                                        <h2 class="page__birthdays__title">Май</h2>
+                                        <p class="page__birthdays__title__count">4</p>
+                                    </div>
+                                    <div class="page__birthdays__items">
+                                        <div class="card employee birthday">
+                                            <a href="#">
+                                                <img class="card__img" src=".\img\people\Rectangle 111-21.png" />
+                                            </a>
+                                            <div class="card__box">
+                                                <div class="card__header">
+                                                    <p class="card__data">12 мая</p>
+                                                </div>
+                                                <div class="card__body">
+                                                    <a src="#">
+                                                        <p class="card__fio">Кира Попова</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__footer">
+                                                    <a class="link" href="#">
+                                                        <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                        <p>Поздравить</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card employee birthday">
+                                            <a href="#">
+                                                <img class="card__img" src=".\img\people\Rectangle 111-16.png" />
+                                            </a>
+                                            <div class="card__box">
+                                                <div class="card__header">
+                                                    <p class="card__data">12 мая</p>
+                                                </div>
+                                                <div class="card__body">
+                                                    <a src="#">
+                                                        <p class="card__fio">Владислав Тарасов</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__footer">
+                                                    <a class="link" href="#">
+                                                        <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                        <p>Поздравить</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card employee birthday">
+                                            <a href="#">
+                                                <img class="card__img" src=".\img\people\Rectangle 111-26.png" />
+                                            </a>
+                                            <div class="card__box">
+                                                <div class="card__header">
+                                                    <p class="card__data">12 мая</p>
+                                                </div>
+                                                <div class="card__body">
+                                                    <a src="#">
+                                                        <p class="card__fio">Аскар Алексеев</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__footer">
+                                                    <a class="link" href="#">
+                                                        <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                        <p>Поздравить</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card employee birthday">
+                                            <a href="#">
+                                                <img class="card__img" src=".\img\people\Rectangle 111-27.png" />
+                                            </a>
+                                            <div class="card__box">
+                                                <div class="card__header">
+                                                    <p class="card__data">12 мая</p>
+                                                </div>
+                                                <div class="card__body">
+                                                    <a src="#">
+                                                        <p class="card__fio">Кира Попова</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__footer">
+                                                    <a class="link" href="#">
+                                                        <img class="link__img" src=".\img\icon\Cake.svg" />
+                                                        <p>Поздравить</p>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page__pagination">
+                                <a class="btn left disable" href="#">Предыдущая</a>
+                                <div class="pagination">
+                                    <a href="#" class="pagination__item active">1</a>
+                                    <a href="#" class="pagination__item">2</a>
+                                    <a href="#" class="pagination__item">3</a>
+                                    <a href="#" class="pagination__item">...</a>
+                                    <a href="#" class="pagination__item">8</a>
+                                    <a href="#" class="pagination__item">9</a>
+                                    <a href="#" class="pagination__item">10</a>
+                                </div>
+                                <div class="pagination__mob">
+                                    <p>Страница 1 из 10 </p>
+                                </div>
+                                <a class="btn right" href="#">Следующая</a>
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="popUp" data-bs-keyboard="false" tabindex="-1"
+                                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="ModalLabel">Поздравить коллегу</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="img" src="./img/Other/Ресурс 2@4x-8 1.png">
+                                            <div class="card employee">
+                                                <img class="card__img" src=".\img\people\Rectangle 111-28.png">
+                                                <div class="card__box">
+                                                    <div class="card__header">
+                                                        <a src="#">
+                                                            <p class="card__fio">Афина Борисова</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <p class="card__departament">Руководитель департамента.</p>
+                                                    </div>
+                                                    <div class="card__footer">
+                                                        <p class="card__job">Менеджер отдела</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="modal-comment__form">
+                                                <div class="modal-comment__form__input">
+                                                    <p class="modal-comment__form__title">Текст поздравления</p>
+                                                    <textarea class="modal-comment__form__textarea"
+                                                        placeholder="Текст"></textarea>
+                                                </div>
+                                                <a class="btn img" href="#">
+                                                    <p class="btn__text">Отправить</p>
+                                                    <img src=".\img\icon\gift-01.svg">
+                                                </a>
+                                            </div>
+                                            <div class="notification__form disable__block">
+                                                <h2 class="notification__title">Сообщение отправлено</h2>
+                                                <p class="notification__description">Письмо с поздравлением придет на
+                                                    почту имениннику</p>
+                                                <a href="#" class="btn">Закрыть</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 px-0">
+                    <div class="widget__container">
+                        <div class="widget__links depart box">
+                            <a href="#">
+                                <h2 class="widget__title">Подразделения</h2>
+                            </a>
+                            <a class="link active" href="#">
+                                <p>Все</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Отдел маркетинга</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Отдел снабжения</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Отдел управления рисками</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Отдел разработки</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Отдел дизайна</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Отдел работы с клиентами</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Технический отдел</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Руководство</p>
+                            </a>
+                        </div>
+                        <div class="widget__birthdays">
+                            <a href="#">
+                                <h2 class="widget__title">Дни рождения</h2>
+                            </a>
+                            <ul class="tab">
+                                <li>Недавние</li>
+                                <li>Ближайшие</li>
+                                <li class="active">По месяцам</li>
+                            </ul>
+                            <div class="widget__birthdays__tab">
+                                <a class="link__date" href="#">
+                                    <p class="link__date__text">22 Мая</p>
+                                    <p class="link__date__number">2</p>
+                                </a>
+                            </div>
+                            <div class="widget__birthdays__tab">
+                                <a class="link__date" href="#">
+                                    <p class="link__date__text">21 Мая</p>
+                                    <p class="link__date__number">1</p>
+                                </a>
+                            </div>
+                            <div class="widget__birthdays__tab active">
+                                <a class="link__date active" href="#">
+                                    <p class="link__date__text">Все</p>
+                                </a>
+                                <a class="link__date" href="#">
+                                    <p class="link__date__text">Февраль</p>
+                                    <p class="link__date__number">18</p>
+                                </a>
+                                <a class="link__date" href="#">
+                                    <p class="link__date__text">Январь</p>
+                                    <p class="link__date__number">15</p>
+                                </a>
+                                <a class="link__date" href="#">
+                                    <p class="link__date__text">Декабрь 2021</p>
+                                    <p class="link__date__number">13</p>
+                                </a>
+                                <a class="link__date" href="#">
+                                    <p class="link__date__text">Ноябрь 2021</p>
+                                    <p class="link__date__number">5</p>
+                                </a>
+                                <a class="link__date" href="#">
+                                    <p class="link__date__text">Октябрь 2021</p>
+                                    <p class="link__date__number">4</p>
+                                </a>
+                                <a class="link__date" href="#">
+                                    <p class="link__date__text">Сентябрь 2021</p>
+                                    <p class="link__date__number">1</p>
+                                </a>
+                                <a class="link__date" href="#">
+                                    <p class="link__date__text">Август 2021</p>
+                                    <p class="link__date__number">6</p>
+                                </a>
+                                <a class="link__date" href="#">
+                                    <p class="link__date__text">Июль 2021</p>
+                                    <p class="link__date__number">9</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container ">
+            <div class="footer">
+                <div class="footer__col">
+                    <div class="footer__item ">
+                        <a class="logo " href="# ">
+                            <img src="./img/Other/logo/AdamPortal.png" class="logo__img " />
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__items ">
+                        <div class="footer__item ">
+                            <p>Описание ресурса</p>
+                            <a href="# " class="link">https://adamweb.ru/</a>
+                        </div>
+                    </div>
+                    <div class="footer__items ">
+                        <div class="footer__item ">
+                            <p>Обратная связь по работе портала</p>
+                            <a href="# " class="link">Никита Богданов</a>
+                        </div>
+                        <div class="footer__item ">
+                            <p>Помощь по сайту</p>
+                            <a href="# " class="link">Руководство пользователя портала</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <dialog id="popupSettings">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="list">
+                        <div class="list__item">
+                            <a href="https://sergey-khomyakov.github.io/AdamDemo/" class="link">На главную страницу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./libs/bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
+    <script src="./libs/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
+    <script src="./js/common.js?v=8"></script>
+    <script src="./pages/portal/js/mobNav.js?v=5"></script>
+    <script src="./pages/portal/js/master.js?v=10"></script>
+
+    <script src="./js/birthdays.js"></script>
+</body>
+
+</html>

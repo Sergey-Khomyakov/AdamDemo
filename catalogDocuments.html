@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Каталог Документов</title>
+    <link rel="stylesheet" href="./css/common.css?v=3">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="./libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./pages/portal/css/style.css?v=2">
+</head>
+
+<body>
+    <header>
+        <div class="container mob">
+            <div class="row">
+                <div class="col p-0">
+                    <div class="header__mob__box">
+                        <a class="logo" href="https://sergey-khomyakov.github.io/AdamDemo/PortalIndex.html">
+                            <img src="./img/Other/logo/AdamPortal.png" class="logo__img__mob" />
+                        </a>
+                        <div class="header__group_btn">
+                            <a class="search__btn" href="#"></a>
+                            <a class="header__btn__menu" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="header__group__menu">
+                        <div class="menu">
+                            <div class="searchbox">
+                                <div class="searchbox__input">
+                                    <img src="./img/icon/MagnifyingGlass.svg" />
+                                    <input type="text" id="searchPeople" class="active"
+                                        placeholder="Поиск по сотруднику" />
+                                    <input type="text" id="searchDocument" placeholder="Поиск по документам" />
+                                </div>
+                                <div class="searchbox__btns">
+                                    <div class="searchbox__btn active">
+                                        <img src="./img/icon/UserCircleHeader.svg" class="searchbox__icon" />
+                                        <p class="searchbox__text">Сотрудники</p>
+                                    </div>
+                                    <div class="searchbox__btn">
+                                        <img src="./img/icon/FileHeader.svg" class="searchbox__icon" />
+                                        <p class="searchbox__text">Документы</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="nav">
+                                <li>
+                                    <a class="nav__link disable" href="#">О КОМПАНИИ</a>
+                                </li>
+                                <li><a class="nav__link disable" href="#">ЖИЗНЬ</a></li>
+                                <li><a class="nav__link disable" href="#">HR СОТРУДНИКИ</a></li>
+                                <li><a class="nav__link disable" href="#">СЕРВИСЫ</a></li>
+                                <li><a class="nav__link" href="#">БАЗА ЗНАНИЙ<img
+                                            src="./img/icon/chevron-down.svg" /></a>
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/layout-bottom.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Составление отчетов</p>
+                                                    <p class="dropdown__block__description">Статистика и метрики</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/cube-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Командная сеть</p>
+                                                    <p class="dropdown__block__description">Мониторинг команд</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/play-circle.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Сегментация по отчетам</p>
+                                                    <p class="dropdown__block__description">Проверка скрытых трендов</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/file-code-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Групповая аналитика</p>
+                                                    <p class="dropdown__block__description">Подсчет в B2B сегменте</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/life-buoy-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Конвертация</p>
+                                                    <p class="dropdown__block__description">Learn, fix a problem, and
+                                                        get ansers to your questions.</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav__link disable" href="#">ДОКУМЕНТЫ</a></li>
+                                <li><a class="nav__link disable" href="#">ОБУЧЕНИЕ</a></li>
+                                <li><a class="nav__link disable" href="#">ИДЕИ</a></li>
+                                <li><a class="nav__link disable" href="#">КАРТА САЙТА</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-0">
+                    <div class="mob__account">
+                        <a class="widget__lk__info"
+                            href="https://sergey-khomyakov.github.io/AdamDemo/PortalEmployeeCard.html">
+                            <div class="widget__lk__img">
+                                <img src="./img/Other/stub.png">
+                                <div class="widget__lk__counter">12</div>
+                            </div>
+                            <div>
+                                <p>Здравствуйте,</p>
+                                <div class="widget__lk__fio">Александр Иванович</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <ul class="breadcrumbs">
+                    <li>
+                        <a class="breadcrumb__home" href="#"></a>
+                    </li>
+                    <li><a class="breadcrumb active" href="#">Каталог Документов</a></li>
+                </ul>
+                <div class="col-9 px-0">
+                    <div class="container__block">
+                        <div class="page">
+                            <div class="page__block">
+                                <h2 class="page__title">Каталог Документов</h2>
+                                <p class="page__description"></p>
+                            </div>
+                            <div class="page__catalog__documents">
+                                <div class="page__catalog__documents__nav">
+                                    <div class="searchbox__input">
+                                        <img src="./img/icon/MagnifyingGlass.svg">
+                                        <input type="text" id="searchDoc" placeholder="Найти">
+                                    </div>
+                                    <select>
+                                        <option selected="selected" disabled>Вид документа</option>
+                                        <option>Word</option>
+                                        <option>Excel</option>
+                                        <option>PowerPoint</option>
+                                    </select>
+                                    <div class="datepicker">
+                                        <a class="input datepicker" href="#">
+                                            <img class="datepicker__img" src="./img/icon/Calendar.svg">
+                                            <input type="text" name="datepicker" value="12 декабря - 14 декабря">
+                                        </a>
+                                    </div>
+                                    <select>
+                                        <option> &#8693; По умолчанию</option>
+                                        <option>Дата</option>
+                                        <option>Категория</option>
+                                    </select>
+                                    <select class="mob">
+                                        <optgroup label="Типы документов">
+                                            <option>Все</option>
+                                            <option>Word</option>
+                                            <option>Excel</option>
+                                            <option>PowerPoint</option>
+                                            <option>PDF</option>
+                                            <option>.txt</option>
+                                            <option>PHP</option>
+                                        </optgroup>
+                                    </select>
+                                    <div class="page__catalog__documents__nav__btn">
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <p class="text">Архив</p>
+                                    </div>
+                                </div>
+                                <div class="page__catalog__documents__box">
+                                    <div class="folder__menu">
+                                        <ul class="two__tier__list">
+                                            <li>
+                                                <p class="link">
+                                                    <img class="link__img" src="./img/icon/CaretRight.svg" />
+                                                    <img class="link__img" src="./img/icon/Folder.svg">
+                                                    <a href="#" class="link__title">Москва</a>
+                                                </p>
+                                                <ul class="two__tier__list__col">
+                                                    <li>
+                                                        <a class="link" href="#">
+                                                            <img class="link__img" src="./img/icon/Folder.svg">
+                                                            <p class="link__title">Правила</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link" href="#">
+                                                            <img class="link__img" src="./img/icon/Folder.svg">
+                                                            <p class="link__title">Отчеты</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="two__tier__list">
+                                                            <li>
+                                                                <p class="link">
+                                                                    <img class="link__img"
+                                                                        src="./img/icon/CaretRight.svg" />
+                                                                    <img class="link__img" src="./img/icon/Folder.svg">
+                                                                    <a href="#" class="link__title">Москва</a>
+                                                                </p>
+                                                                <ul class="two__tier__list__col">
+                                                                    <li>
+                                                                        <a class="link" href="google.com">
+                                                                            <img class="link__img"
+                                                                                src="./img/icon/Folder.svg">
+                                                                            <p class="link__title">Правила</p>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="link" href="#">
+                                                                            <img class="link__img"
+                                                                                src="./img/icon/Folder.svg">
+                                                                            <p class="link__title">Отчеты</p>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <ul class="two__tier__list">
+                                                                            <li>
+                                                                                <p class="link">
+                                                                                    <img class="link__img"
+                                                                                        src="./img/icon/CaretRight.svg" />
+                                                                                    <img class="link__img"
+                                                                                        src="./img/icon/Folder.svg">
+                                                                                    <a href="#"
+                                                                                        class="link__title">Москва</a>
+                                                                                </p>
+                                                                                <ul class="two__tier__list__col">
+                                                                                    <li>
+                                                                                        <a class="link" href="#">
+                                                                                            <img class="link__img"
+                                                                                                src="./img/icon/Folder.svg">
+                                                                                            <p class="link__title">
+                                                                                                Правила</p>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a class="link" href="#">
+                                                                                            <img class="link__img"
+                                                                                                src="./img/icon/Folder.svg">
+                                                                                            <p class="link__title">
+                                                                                                Отчеты</p>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <ul class="two__tier__list">
+                                                                                            <li>
+                                                                                                <p class="link">
+                                                                                                    <img class="link__img"
+                                                                                                        src="./img/icon/CaretRight.svg" />
+                                                                                                    <img class="link__img"
+                                                                                                        src="./img/icon/Folder.svg">
+                                                                                                    <a href="#"
+                                                                                                        class="link__title">Москва</a>
+                                                                                                </p>
+                                                                                                <ul
+                                                                                                    class="two__tier__list__col">
+                                                                                                    <li>
+                                                                                                        <a class="link"
+                                                                                                            href="#">
+                                                                                                            <img class="link__img"
+                                                                                                                src="./img/icon/Folder.svg">
+                                                                                                            <p
+                                                                                                                class="link__title">
+                                                                                                                Правила
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a class="link"
+                                                                                                            href="#">
+                                                                                                            <img class="link__img"
+                                                                                                                src="./img/icon/Folder.svg">
+                                                                                                            <p
+                                                                                                                class="link__title">
+                                                                                                                Отчеты
+                                                                                                            </p>
+                                                                                                        </a>
+                                                                                                    </li>
+                                                                                                </ul>
+
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                </ul>
+
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <ul class="two__tier__list">
+                                                            <li>
+                                                                <p class="link">
+                                                                    <img class="link__img"
+                                                                        src="./img/icon/CaretRight.svg" />
+                                                                    <img class="link__img" src="./img/icon/Folder.svg">
+                                                                    <a href="#" class="link__title">Москва</a>
+                                                                </p>
+                                                                <ul class="two__tier__list__col">
+                                                                    <li>
+                                                                        <a class="link" href="#">
+                                                                            <img class="link__img"
+                                                                                src="./img/icon/Folder.svg">
+                                                                            <p class="link__title">Правила</p>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="link" href="#">
+                                                                            <img class="link__img"
+                                                                                src="./img/icon/Folder.svg">
+                                                                            <p class="link__title">Отчеты</p>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p class="link">
+                                                    <img class="link__img" src="./img/icon/CaretRight.svg" />
+                                                    <img class="link__img" src="./img/icon/Folder.svg">
+                                                    <a href="#" class="link__title">Саратовская область</a>
+                                                </p>
+                                                <ul class="two__tier__list__col">
+                                                    <li>
+                                                        <a class="link" href="#">
+                                                            <img class="link__img" src="./img/icon/Folder.svg">
+                                                            <p class="link__title">Правила</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link" href="#">
+                                                            <img class="link__img" src="./img/icon/Folder.svg">
+                                                            <p class="link__title">Отчеты</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="active">
+                                                <p class="link">
+                                                    <img class="link__img" src="./img/icon/CaretRight.svg" />
+                                                    <img class="link__img" src="./img/icon/Folder.svg">
+                                                    <a href="#" class="link__title">Московская область</a>
+                                                </p>
+                                                <ul class="two__tier__list__col">
+                                                    <li>
+                                                        <a class="link active" href="#">
+                                                            <img class="link__img" src="./img/icon/Folder.svg">
+                                                            <p class="link__title">Правила</p>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="link" href="#">
+                                                            <img class="link__img" src="./img/icon/Folder.svg">
+                                                            <p class="link__title">Отчеты</p>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="page__catalog__documents__items">
+                                        <div class="card__document">
+                                            <div class="card__document__img">
+                                                <img src="./img/icon/File icon.svg">
+                                            </div>
+                                            <div class="card__document__block">
+                                                <div class="card__document__header">
+                                                    <p class="red">Бланк</p>
+                                                    <a href="#">
+                                                        <p class="text red">Андрей Котляр</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__document__body">
+                                                    <p>Финансы и контроль</p>
+                                                </div>
+                                                <div class="card__document__footer">
+                                                    <p>17.01.2022 | Срок действия: 12.02.2023 - 12.02.2024</p>
+                                                    <a class="link" href="#">
+                                                        <p>Скачать</p>
+                                                        <img class="link__img" src="./img/icon/download-cloud-02.svg" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__document">
+                                            <div class="card__document__img">
+                                                <img src="./img/icon/File icon-1.svg">
+                                            </div>
+                                            <div class="card__document__block">
+                                                <div class="card__document__header">
+                                                    <p class="red">Презентация</p>
+                                                    <a href="#">
+                                                        <p class="text red">Андрей Котляр</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__document__body">
+                                                    <p>Операционная деятельность</p>
+                                                </div>
+                                                <div class="card__document__footer">
+                                                    <p>17.01.2022 | Срок действия: 12.02.2023 - 12.02.2024</p>
+                                                    <a class="link" href="#">
+                                                        <p>Скачать</p>
+                                                        <img class="link__img" src="./img/icon/download-cloud-02.svg" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__document">
+                                            <div class="card__document__img">
+                                                <img src="./img/icon/File icon-2.svg">
+                                            </div>
+                                            <div class="card__document__block">
+                                                <div class="card__document__header">
+                                                    <p class="red">Вложенный файл</p>
+                                                    <a href="#">
+                                                        <p class="text red">Андрей Котляр</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__document__body">
+                                                    <p>Операционная деятельность</p>
+                                                </div>
+                                                <div class="card__document__footer">
+                                                    <p>17.01.2022 | Срок действия: 12.02.2023 - 12.02.2024</p>
+                                                    <a class="link" href="#">
+                                                        <p>Скачать</p>
+                                                        <img class="link__img" src="./img/icon/download-cloud-02.svg" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__document">
+                                            <div class="card__document__img">
+                                                <img src="./img/icon/File icon-3.svg">
+                                            </div>
+                                            <div class="card__document__block">
+                                                <div class="card__document__header">
+                                                    <p class="red">Документ</p>
+                                                    <a href="#">
+                                                        <p class="text red">Андрей Котляр</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__document__body">
+                                                    <p>Клиенты и развитие</p>
+                                                </div>
+                                                <div class="card__document__footer">
+                                                    <p>17.01.2022 | Срок действия: 12.02.2023 - 12.02.2024</p>
+                                                    <a class="link" href="#">
+                                                        <p>Скачать</p>
+                                                        <img class="link__img" src="./img/icon/download-cloud-02.svg" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__document">
+                                            <div class="card__document__img">
+                                                <img src="./img/icon/File icon-4.svg">
+                                            </div>
+                                            <div class="card__document__block">
+                                                <div class="card__document__header">
+                                                    <p class="red">Документ</p>
+                                                    <a href="#">
+                                                        <p class="text red">Андрей Котляр</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__document__body">
+                                                    <p>Клиенты и развитие</p>
+                                                </div>
+                                                <div class="card__document__footer">
+                                                    <p>17.01.2022 | Срок действия: 12.02.2023 - 12.02.2024</p>
+                                                    <a class="link" href="#">
+                                                        <p>Скачать</p>
+                                                        <img class="link__img" src="./img/icon/download-cloud-02.svg" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__document">
+                                            <div class="card__document__img">
+                                                <img src="./img/icon/File icon-5.svg">
+                                            </div>
+                                            <div class="card__document__block">
+                                                <div class="card__document__header">
+                                                    <p class="red">Документ</p>
+                                                    <a href="#">
+                                                        <p class="text red">Андрей Котляр</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__document__body">
+                                                    <p>Клиенты и развитие</p>
+                                                </div>
+                                                <div class="card__document__footer">
+                                                    <p>17.01.2022 | Срок действия: 12.02.2023 - 12.02.2024</p>
+                                                    <a class="link" href="#">
+                                                        <p>Скачать</p>
+                                                        <img class="link__img" src="./img/icon/download-cloud-02.svg" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__document">
+                                            <div class="card__document__img">
+                                                <img src="./img/icon/File icon-6.svg">
+                                            </div>
+                                            <div class="card__document__block">
+                                                <div class="card__document__header">
+                                                    <p class="red">Бланк</p>
+                                                    <a href="#">
+                                                        <p class="text red">Андрей Котляр</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__document__body">
+                                                    <p>Финансы и контроль</p>
+                                                </div>
+                                                <div class="card__document__footer">
+                                                    <p>17.01.2022 | Срок действия: 12.02.2023 - 12.02.2024</p>
+                                                    <a class="link" href="#">
+                                                        <p>Скачать</p>
+                                                        <img class="link__img" src="./img/icon/download-cloud-02.svg" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__document">
+                                            <div class="card__document__img">
+                                                <img src="./img/icon/File icon-7.svg">
+                                            </div>
+                                            <div class="card__document__block">
+                                                <div class="card__document__header">
+                                                    <p class="red">Таблица</p>
+                                                    <a href="#">
+                                                        <p class="text red">Андрей Котляр</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__document__body">
+                                                    <p>Клиенты и развитие</p>
+                                                </div>
+                                                <div class="card__document__footer">
+                                                    <p>17.01.2022 | Срок действия: 12.02.2023 - 12.02.2024</p>
+                                                    <a class="link" href="#">
+                                                        <p>Скачать</p>
+                                                        <img class="link__img" src="./img/icon/download-cloud-02.svg" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__document">
+                                            <div class="card__document__img">
+                                                <img src="./img/icon/File icon-8.svg">
+                                            </div>
+                                            <div class="card__document__block">
+                                                <div class="card__document__header">
+                                                    <p class="red">Документ</p>
+                                                    <a href="#">
+                                                        <p class="text red">Андрей Котляр</p>
+                                                    </a>
+                                                </div>
+                                                <div class="card__document__body">
+                                                    <p>Клиенты и развитие</p>
+                                                </div>
+                                                <div class="card__document__footer">
+                                                    <p>17.01.2022 | Срок действия: 12.02.2023 - 12.02.2024</p>
+                                                    <a class="link" href="#">
+                                                        <p>Скачать</p>
+                                                        <img class="link__img" src="./img/icon/download-cloud-02.svg" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page__pagination">
+                                    <a class="btn left disable" href="#">Предыдущая</a>
+                                    <div class="pagination">
+                                        <a href="#" class="pagination__item active">1</a>
+                                        <a href="#" class="pagination__item">2</a>
+                                        <a href="#" class="pagination__item">3</a>
+                                        <a href="#" class="pagination__item">...</a>
+                                        <a href="#" class="pagination__item">8</a>
+                                        <a href="#" class="pagination__item">9</a>
+                                        <a href="#" class="pagination__item">10</a>
+                                    </div>
+                                    <div class="pagination__mob">
+                                        <p>Страница 1 из 10 </p>
+                                    </div>
+                                    <a class="btn right" href="#">Следующая</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 px-0">
+                    <div class="widget__container" style="margin-top: 70px;">
+                        <div class="widget__archive__doc mt-0">
+                            <h2 class="widget__title">Типы документов</h2>
+                            <a class="link active" href="#">
+                                <p>Все</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Word</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Excel</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>PowerPoint</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>PDF</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>.txt</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>PHP</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container ">
+            <div class="footer">
+                <div class="footer__col">
+                    <div class="footer__item ">
+                        <a class="logo " href="# ">
+                            <img src="./img/Other/logo/AdamPortal.png" class="logo__img " />
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__items ">
+                        <div class="footer__item ">
+                            <p>Описание ресурса</p>
+                            <a href="# " class="link">https://adamweb.ru/</a>
+                        </div>
+                    </div>
+                    <div class="footer__items ">
+                        <div class="footer__item ">
+                            <p>Обратная связь по работе портала</p>
+                            <a href="# " class="link">Никита Богданов</a>
+                        </div>
+                        <div class="footer__item ">
+                            <p>Помощь по сайту</p>
+                            <a href="# " class="link">Руководство пользователя портала</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <dialog id="popupSettings">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="list">
+                        <div class="list__item">
+                            <a href="https://sergey-khomyakov.github.io/AdamDemo/" class="link">На главную страницу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./libs/bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
+    <script src="./libs/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
+    <script src="./libs/daterangepicker/js/moment.min.js"></script>
+    <script src="./libs/daterangepicker/js/daterangepicker.js"></script>
+    <script src="./js/common.js?v=8"></script>
+    <script src="./pages/portal/js/mobNav.js?v=5"></script>
+    <script src="./pages/portal/js/master.js?v=10"></script>
+    <script src="./pages/portal/js/catalogDocuments.js"></script>
+</body>
+
+</html>

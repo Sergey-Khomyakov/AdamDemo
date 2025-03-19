@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="./css/common.css?v=3">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="./libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./pages/portal/css/style.css?v=2">
+</head>
+
+<body>
+    <header>
+        <div class="container mob">
+            <div class="row">
+                <div class="col p-0">
+                    <div class="header__mob__box">
+                        <a class="logo" href="https://sergey-khomyakov.github.io/AdamDemo/PortalIndex.html">
+                            <img src="./img/Other/logo/AdamPortal.png" class="logo__img__mob" />
+                        </a>
+                        <div class="header__group_btn">
+                            <a class="search__btn" href="#"></a>
+                            <a class="header__btn__menu" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="header__group__menu">
+                        <div class="menu">
+                            <div class="searchbox">
+                                <div class="searchbox__input">
+                                    <img src="./img/icon/MagnifyingGlass.svg" />
+                                    <input type="text" id="searchPeople" class="active"
+                                        placeholder="Поиск по сотруднику" />
+                                    <input type="text" id="searchDocument" placeholder="Поиск по документам" />
+                                </div>
+                                <div class="searchbox__btns">
+                                    <div class="searchbox__btn active">
+                                        <img src="./img/icon/UserCircleHeader.svg" class="searchbox__icon" />
+                                        <p class="searchbox__text">Сотрудники</p>
+                                    </div>
+                                    <div class="searchbox__btn">
+                                        <img src="./img/icon/FileHeader.svg" class="searchbox__icon" />
+                                        <p class="searchbox__text">Документы</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="nav">
+                                <li>
+                                    <a class="nav__link disable" href="#">О КОМПАНИИ</a>
+                                </li>
+                                <li><a class="nav__link disable" href="#">ЖИЗНЬ</a></li>
+                                <li><a class="nav__link disable" href="#">HR СОТРУДНИКИ</a></li>
+                                <li><a class="nav__link disable" href="#">СЕРВИСЫ</a></li>
+                                <li><a class="nav__link" href="#">БАЗА ЗНАНИЙ<img
+                                            src="./img/icon/chevron-down.svg" /></a>
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/layout-bottom.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Составление отчетов</p>
+                                                    <p class="dropdown__block__description">Статистика и метрики</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/cube-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Командная сеть</p>
+                                                    <p class="dropdown__block__description">Мониторинг команд</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/play-circle.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Сегментация по отчетам</p>
+                                                    <p class="dropdown__block__description">Проверка скрытых трендов</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/file-code-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Групповая аналитика</p>
+                                                    <p class="dropdown__block__description">Подсчет в B2B сегменте</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/life-buoy-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Конвертация</p>
+                                                    <p class="dropdown__block__description">Learn, fix a problem, and
+                                                        get ansers to your questions.</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav__link disable" href="#">ДОКУМЕНТЫ</a></li>
+                                <li><a class="nav__link disable" href="#">ОБУЧЕНИЕ</a></li>
+                                <li><a class="nav__link disable" href="#">ИДЕИ</a></li>
+                                <li><a class="nav__link disable" href="#">КАРТА САЙТА</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-0">
+                    <div class="mob__account">
+                        <a class="widget__lk__info"
+                            href="https://sergey-khomyakov.github.io/AdamDemo/PortalEmployeeCard.html">
+                            <div class="widget__lk__img">
+                                <img src="./img/Other/stub.png">
+                                <div class="widget__lk__counter">12</div>
+                            </div>
+                            <div>
+                                <p>Здравствуйте,</p>
+                                <div class="widget__lk__fio">Александр Иванович</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <ul class="breadcrumbs">
+                    <li>
+                        <a class="breadcrumb__home" href="#"></a>
+                    </li>
+                    <li><a class="breadcrumb active" href="#">Новости</a></li>
+                </ul>
+                <div class="col-9 px-0">
+                    <div class="container__block">
+                        <div class="page">
+                            <div class="page__block">
+                                <h2 class="page__title">Новости</h2>
+                                <p class="page__description"></p>
+                            </div>
+                            <div class="page__news">
+                                <div class="page__nav">
+                                    <div class="tags border_off">
+                                        <div class="tag">
+                                            <p class="tag__text" data-tagId="all">Все</p>
+                                        </div>
+                                        <div class="tag">
+                                            <p class="tag__text" data-tagId="Command">Командная</p>
+                                        </div>
+                                        <div class="tag">
+                                            <p class="tag__text" data-tagId="Employees">Сотрудники</p>
+                                        </div>
+                                        <div class="tag">
+                                            <p class="tag__text" data-tagId="Vacancy">Вакансии</p>
+                                        </div>
+                                        <div class="tag">
+                                            <p class="tag__text" data-tagId="Investments">Инвестиции</p>
+                                        </div>
+                                        <div class="tag">
+                                            <p class="tag__text" data-tagId="Factory">Завод</p>
+                                        </div>
+                                        <div class="tag">
+                                            <p class="tag__text" data-tagId="AuthorArticles">Авторские статьи</p>
+                                        </div>
+                                    </div>
+                                    <select>
+                                        <option value="Все">Все</option>
+                                        <option value="Командная">Командная</option>
+                                        <option value="Сотрудники">Сотрудники</option>
+                                        <option value="Вакансии">Вакансии</option>
+                                        <option value="Инвестиции">Инвестиции</option>
+                                        <option value="Завод">Завод</option>
+                                        <option value="Авторские статьи">Авторские статьи</option>
+
+                                    </select>
+                                    <select class="mob">
+                                        <optgroup label="Архив новостей">
+                                            <option>Март</option>
+                                            <option>Февраль</option>
+                                            <option>Январь</option>
+                                            <option>Декабрь 2022</option>
+                                            <option>Ноябрь 2022</option>
+                                            <option>Октябрь 2022</option>
+                                        </optgroup>
+                                    </select>
+                                    <a class="btn" href="#">Подписаться</a>
+                                </div>
+                                <div class="page__news__items">
+                                    <div class="card new">
+                                        <div class="card__header">
+                                            <div class="card__img__container">
+                                                <img class="card__img" src=".\img\Other\dane-deaner-500.jpg" />
+                                            </div>
+                                            <div class="card__header__nav">
+                                                <p class="text data red">16.02.2023</p>
+                                                <p class="text">Статьи</p>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__body__box">
+                                                <a src="#">
+                                                    <p class="card__text">Бронирование переговорных</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__footer__box">
+                                                <div class="btn__group">
+                                                    <div class="btn__panel like">
+                                                        <div class="btn__panel bg__img">
+                                                            <img src="./img/icon/Likes.svg" />
+                                                        </div>
+                                                        <p class="btn__panel number">35</p>
+                                                    </div>
+                                                    <div class="btn__panel heart">
+                                                        <div class="btn__panel bg__img">
+                                                            <img src="./img/icon/Heart.svg">
+                                                        </div>
+                                                        <p class="btn__panel number">25</p>
+                                                    </div>
+                                                    <div class="btn__panel view">
+                                                        <div class="btn__panel bg__img grey">
+                                                            <img src="./img/icon/eye.svg">
+                                                        </div>
+                                                        <p class="btn__panel number">76</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card new">
+                                        <div class="card__header">
+                                            <div class="card__img__container">
+                                                <img class="card__img" src=".\img\Other\berkeley-c500.jpg" />
+                                            </div>
+                                            <div class="card__header__nav">
+                                                <div class="card__header__nav">
+                                                    <p class="text data red">16.02.2023</p>
+                                                    <p class="text">Статьи</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <div class="card__body__box">
+                                                <a src="#">
+                                                    <p class="card__text">Организация HelpDesk / ServiceDesk</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="card__footer">
+                                            <div class="card__footer__box">
+                                                <div class="btn__group">
+                                                    <div class="btn__panel like">
+                                                        <div class="btn__panel bg__img">
+                                                            <img src="./img/icon/Likes.svg" />
+                                                        </div>
+                                                        <p class="btn__panel number">35</p>
+                                                    </div>
+                                                    <div class="btn__panel heart">
+                                                        <div class="btn__panel bg__img">
+                                                            <img src="./img/icon/Heart.svg">
+                                                        </div>
+                                                        <p class="btn__panel number">25</p>
+                                                    </div>
+                                                    <div class="btn__panel view">
+                                                        <div class="btn__panel bg__img grey">
+                                                            <img src="./img/icon/eye.svg">
+                                                        </div>
+                                                        <p class="btn__panel number">76</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page__pagination">
+                                    <a class="btn left disable" href="#">Предыдущая</a>
+                                    <div class="pagination">
+                                        <a href="#" class="pagination__item active">1</a>
+                                        <a href="#" class="pagination__item">2</a>
+                                        <a href="#" class="pagination__item">3</a>
+                                        <a href="#" class="pagination__item">...</a>
+                                        <a href="#" class="pagination__item">8</a>
+                                        <a href="#" class="pagination__item">9</a>
+                                        <a href="#" class="pagination__item">10</a>
+                                    </div>
+                                    <div class="pagination__mob">
+                                        <p>Страница 1 из 10 </p>
+                                    </div>
+                                    <a class="btn right" href="#">Следующая</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 px-0">
+                    <div class="widget__container" style="margin-top: 70px;">
+                        <div class="widget__archive__news box mb-0 mt-0">
+                            <h2 class="widget__title">Архив новостей</h2>
+                            <a class="link" href="#">
+                                <p>Март</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Февраль</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Январь</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Декабрь 2022</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Ноябрь 2022</p>
+                            </a>
+                            <a class="link" href="#">
+                                <p>Октябрь 2022</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container ">
+            <div class="footer">
+                <div class="footer__col">
+                    <div class="footer__item ">
+                        <a class="logo " href="# ">
+                            <img src="./img/Other/logo/AdamPortal.png" class="logo__img " />
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__items ">
+                        <div class="footer__item ">
+                            <p>Описание ресурса</p>
+                            <a href="# " class="link">https://adamweb.ru/</a>
+                        </div>
+                    </div>
+                    <div class="footer__items ">
+                        <div class="footer__item ">
+                            <p>Обратная связь по работе портала</p>
+                            <a href="# " class="link">Никита Богданов</a>
+                        </div>
+                        <div class="footer__item ">
+                            <p>Помощь по сайту</p>
+                            <a href="# " class="link">Руководство пользователя портала</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <dialog id="popupSettings">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="list">
+                        <div class="list__item">
+                            <a href="https://sergey-khomyakov.github.io/AdamDemo/" class="link">На главную страницу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./libs/bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
+    <script src="./libs/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
+    <script src="./js/common.js?v=8"></script>
+    <script src="./pages/portal/js/mobNav.js?v=5"></script>
+    <script src="./js/news.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Орг. структура</title>
+    <!-- <link rel="stylesheet" href="./libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/common.css?v=3">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="./libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./pages/portal/css/style.css?v=2">
+</head>
+
+<body>
+    <header>
+        <div class="container mob">
+            <div class="row">
+                <div class="col p-0">
+                    <div class="header__mob__box">
+                        <a class="logo" href="https://sergey-khomyakov.github.io/AdamDemo/PortalIndex.html">
+                            <img src="./img/Other/logo/AdamPortal.png" class="logo__img__mob" />
+                        </a>
+                        <div class="header__group_btn">
+                            <a class="search__btn" href="#"></a>
+                            <a class="header__btn__menu" href="#"></a>
+                        </div>
+                    </div>
+                    <div class="header__group__menu">
+                        <div class="menu">
+                            <div class="searchbox">
+                                <div class="searchbox__input">
+                                    <img src="./img/icon/MagnifyingGlass.svg" />
+                                    <input type="text" id="searchPeople" class="active"
+                                        placeholder="Поиск по сотруднику" />
+                                    <input type="text" id="searchDocument" placeholder="Поиск по документам" />
+                                </div>
+                                <div class="searchbox__btns">
+                                    <div class="searchbox__btn active">
+                                        <img src="./img/icon/UserCircleHeader.svg" class="searchbox__icon" />
+                                        <p class="searchbox__text">Сотрудники</p>
+                                    </div>
+                                    <div class="searchbox__btn">
+                                        <img src="./img/icon/FileHeader.svg" class="searchbox__icon" />
+                                        <p class="searchbox__text">Документы</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="nav">
+                                <li>
+                                    <a class="nav__link disable" href="#">О КОМПАНИИ</a>
+                                </li>
+                                <li><a class="nav__link disable" href="#">ЖИЗНЬ</a></li>
+                                <li><a class="nav__link disable" href="#">HR СОТРУДНИКИ</a></li>
+                                <li><a class="nav__link disable" href="#">СЕРВИСЫ</a></li>
+                                <li><a class="nav__link" href="#">БАЗА ЗНАНИЙ<img
+                                            src="./img/icon/chevron-down.svg" /></a>
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/layout-bottom.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Составление отчетов</p>
+                                                    <p class="dropdown__block__description">Статистика и метрики</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/cube-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Командная сеть</p>
+                                                    <p class="dropdown__block__description">Мониторинг команд</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/play-circle.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Сегментация по отчетам</p>
+                                                    <p class="dropdown__block__description">Проверка скрытых трендов</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/file-code-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Групповая аналитика</p>
+                                                    <p class="dropdown__block__description">Подсчет в B2B сегменте</p>
+                                                </div>
+                                            </a>
+                                            <a class="dropdown__item" href="#">
+                                                <img src="./img/icon/life-buoy-01.svg" />
+                                                <div class="dropdown__block">
+                                                    <p class="dropdown__block__title">Конвертация</p>
+                                                    <p class="dropdown__block__description">Learn, fix a problem, and
+                                                        get ansers to your questions.</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="nav__link disable" href="#">ДОКУМЕНТЫ</a></li>
+                                <li><a class="nav__link disable" href="#">ОБУЧЕНИЕ</a></li>
+                                <li><a class="nav__link disable" href="#">ИДЕИ</a></li>
+                                <li><a class="nav__link disable" href="#">КАРТА САЙТА</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-0">
+                    <div class="mob__account">
+                        <a class="widget__lk__info"
+                            href="https://sergey-khomyakov.github.io/AdamDemo/PortalEmployeeCard.html">
+                            <div class="widget__lk__img">
+                                <img src="./img/Other/stub.png">
+                                <div class="widget__lk__counter">12</div>
+                            </div>
+                            <div>
+                                <p>Здравствуйте,</p>
+                                <div class="widget__lk__fio">Александр Иванович</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <ul class="breadcrumbs">
+                    <li>
+                        <a class="breadcrumb__home" href="#"></a>
+                    </li>
+                    <li><a class="breadcrumb" href="#">О компании</a></li>
+                    <li><a class="breadcrumb">...</a></li>
+                    <li><a class="breadcrumb active" href="#">Структура</a></li>
+                </ul>
+                <div class="col-12 px-0">
+                    <div class="container__block">
+                        <div class="page">
+                            <div class="page__block">
+                                <h2 class="page__title">Структура компании</h2>
+                                <p class="page__description"></p>
+                            </div>
+                            <div class="page__structure">
+                                <div class="page__structure__header">
+                                    <div class="card employee red">
+                                        <div class="card__img__block">
+                                            <a href="#">
+                                                <img class="card__img" src=".\img\people\gendir.png" />
+                                            </a>
+                                            <img class="card__img__view" src=".\img\people\Frame 2304.png" />
+                                        </div>
+                                        <div class="card__box">
+                                            <div class="card__header">
+
+                                            </div>
+                                            <div class="card__body">
+                                                <a src="#">
+                                                    <p class="card__fio">Александр Руковедов</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page__structure__body">
+                                    <div class="card depart">
+                                        <div class="card__header">
+                                            <div class="card employee">
+                                                <div class="card__img__block">
+                                                    <a href="#">
+                                                        <img class="card__img" src=".\img\people\Avatar-17.png" />
+                                                    </a>
+                                                    <img class="card__img__view" src=".\img\people\Frame 2304.png" />
+                                                </div>
+                                                <div class="card__box">
+                                                    <div class="card__header">
+                                                        <a src="#">
+                                                            <p class="card__fio">Никита Зайцев</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <p class="card__job">Руководитель</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__departament">Административно-финансовая дирекция</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card depart">
+                                        <div class="card__header">
+                                            <div class="card employee">
+                                                <div class="card__img__block">
+                                                    <a href="#">
+                                                        <img class="card__img" src=".\img\people\Avatar-1.png" />
+                                                    </a>
+                                                    <img class="card__img__view" src=".\img\people\Frame 2304.png" />
+                                                </div>
+                                                <div class="card__box">
+                                                    <div class="card__header">
+                                                        <a src="#">
+                                                            <p class="card__fio">Георгий Пономарёв</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <p class="card__job">Руководитель</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__departament">Дирекция по связям с общественностью</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card depart">
+                                        <div class="card__header">
+                                            <div class="card employee">
+                                                <div class="card__img__block">
+                                                    <a href="#">
+                                                        <img class="card__img" src=".\img\people\Avatar-2.png" />
+                                                    </a>
+                                                    <img class="card__img__view" src=".\img\people\Frame 2304.png" />
+                                                </div>
+                                                <div class="card__box">
+                                                    <div class="card__header">
+                                                        <a src="#">
+                                                            <p class="card__fio">Полина Петрова</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <p class="card__job">Руководитель</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__departament">Дирекция по качеству удовлетворенности
+                                                    клиента</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card depart">
+                                        <div class="card__header">
+                                            <div class="card employee">
+                                                <div class="card__img__block">
+                                                    <a href="#">
+                                                        <img class="card__img" src=".\img\people\Avatar-3.png" />
+                                                    </a>
+                                                    <img class="card__img__view" src=".\img\people\Frame 2304.png" />
+                                                </div>
+                                                <div class="card__box">
+                                                    <div class="card__header">
+                                                        <a src="#">
+                                                            <p class="card__fio">Глеб Комаров</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <p class="card__job">Руководитель</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__departament">Дирекция внешней логистики</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card depart">
+                                        <div class="card__header">
+                                            <div class="card employee">
+                                                <div class="card__img__block">
+                                                    <a href="#">
+                                                        <img class="card__img" src=".\img\people\Avatar-4.png" />
+                                                    </a>
+                                                    <img class="card__img__view" src=".\img\people\Frame 2304.png" />
+                                                </div>
+                                                <div class="card__box">
+                                                    <div class="card__header">
+                                                        <a src="#">
+                                                            <p class="card__fio">Иван Семёнов</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <p class="card__job">Руководитель</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__departament">Дирекция завода</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card depart">
+                                        <div class="card__header">
+                                            <div class="card employee">
+                                                <div class="card__img__block">
+                                                    <a href="#">
+                                                        <img class="card__img" src=".\img\people\Avatar-5.png" />
+                                                    </a>
+                                                    <img class="card__img__view" src=".\img\people\Frame 2304.png" />
+                                                </div>
+                                                <div class="card__box">
+                                                    <div class="card__header">
+                                                        <a src="#">
+                                                            <p class="card__fio">Антон Герасимов</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <p class="card__job">Руководитель</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__departament">Административная дирекция</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card depart">
+                                        <div class="card__header">
+                                            <div class="card employee">
+                                                <div class="card__img__block">
+                                                    <a href="#">
+                                                        <img class="card__img" src=".\img\people\Avatar-6.png" />
+                                                    </a>
+                                                    <img class="card__img__view" src=".\img\people\Frame 2304.png" />
+                                                </div>
+                                                <div class="card__box">
+                                                    <div class="card__header">
+                                                        <a src="#">
+                                                            <p class="card__fio">Аделия Кузьмина</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <p class="card__job">Руководитель</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__departament">Коммерческая дирекция</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card depart">
+                                        <div class="card__header">
+                                            <div class="card employee">
+                                                <div class="card__img__block">
+                                                    <a href="#">
+                                                        <img class="card__img" src=".\img\people\Avatar-7.png" />
+                                                    </a>
+                                                    <img class="card__img__view" src=".\img\people\Frame 2304.png" />
+                                                </div>
+                                                <div class="card__box">
+                                                    <div class="card__header">
+                                                        <a src="#">
+                                                            <p class="card__fio">Денис Андреев</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <p class="card__job">Руководитель</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__departament">Дирекция по человеческим ресурсам</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card depart">
+                                        <div class="card__header">
+                                            <div class="card employee">
+                                                <div class="card__img__block">
+                                                    <a href="#">
+                                                        <img class="card__img" src=".\img\people\Avatar-8.png" />
+                                                    </a>
+                                                    <img class="card__img__view" src=".\img\people\Frame 2304.png" />
+                                                </div>
+                                                <div class="card__box">
+                                                    <div class="card__header">
+                                                        <a src="#">
+                                                            <p class="card__fio">Вероника Новикова</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <p class="card__job">Руководитель</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__departament">Дирекция по взаимодействию с гос. органами
+                                                    и корпоративным связям</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card depart">
+                                        <div class="card__header">
+                                            <div class="card employee">
+                                                <div class="card__img__block">
+                                                    <a href="#">
+                                                        <img class="card__img" src=".\img\people\Avatar-9.png" />
+                                                    </a>
+                                                    <img class="card__img__view" src=".\img\people\Frame 2304.png" />
+                                                </div>
+                                                <div class="card__box">
+                                                    <div class="card__header">
+                                                        <a src="#">
+                                                            <p class="card__fio">Марьяна Соловьёва</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <p class="card__job">Руководитель</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__departament">Дирекция по информационным технологиям</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card depart">
+                                        <div class="card__header">
+                                            <div class="card employee">
+                                                <div class="card__img__block">
+                                                    <a href="#">
+                                                        <img class="card__img" src=".\img\people\Avatar-10.png" />
+                                                    </a>
+                                                    <img class="card__img__view" src=".\img\people\Frame 2304.png" />
+                                                </div>
+                                                <div class="card__box">
+                                                    <div class="card__header">
+                                                        <a src="#">
+                                                            <p class="card__fio">Кристина Тарасова</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <p class="card__job">Руководитель</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__departament">Дирекция безопасности</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card depart">
+                                        <div class="card__header">
+                                            <div class="card employee">
+                                                <div class="card__img__block">
+                                                    <a href="#">
+                                                        <img class="card__img" src=".\img\people\Avatar-11.png" />
+                                                    </a>
+                                                    <img class="card__img__view" src=".\img\people\Frame 2304.png" />
+                                                </div>
+                                                <div class="card__box">
+                                                    <div class="card__header">
+                                                        <a src="#">
+                                                            <p class="card__fio">Мадияр Макаров</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <p class="card__job">Руководитель</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__departament">Дирекция по продукту и международным
+                                                    проектам</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card depart">
+                                        <div class="card__header">
+                                            <div class="card employee">
+                                                <div class="card__img__block">
+                                                    <a href="#">
+                                                        <img class="card__img" src=".\img\people\Avatar-2.png" />
+                                                    </a>
+                                                    <img class="card__img__view" src=".\img\people\Frame 2304.png" />
+                                                </div>
+                                                <div class="card__box">
+                                                    <div class="card__header">
+                                                        <a src="#">
+                                                            <p class="card__fio">Игорь Степанов</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <p class="card__job">Руководитель</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__departament">Дирекция по инженерии</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card depart">
+                                        <div class="card__header">
+                                            <div class="card employee">
+                                                <div class="card__img__block">
+                                                    <a href="#">
+                                                        <img class="card__img" src=".\img\people\Avatar-13.png" />
+                                                    </a>
+                                                    <img class="card__img__view" src=".\img\people\Frame 2304.png" />
+                                                </div>
+                                                <div class="card__box">
+                                                    <div class="card__header">
+                                                        <a src="#">
+                                                            <p class="card__fio">Елисей Ильин</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <p class="card__job">Руководитель</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__departament">Дирекция по закупкам</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card depart">
+                                        <div class="card__header">
+                                            <div class="card employee">
+                                                <div class="card__img__block">
+                                                    <a href="#">
+                                                        <img class="card__img" src=".\img\people\Avatar-14.png" />
+                                                    </a>
+                                                    <img class="card__img__view" src=".\img\people\Frame 2304.png" />
+                                                </div>
+                                                <div class="card__box">
+                                                    <div class="card__header">
+                                                        <a src="#">
+                                                            <p class="card__fio">Дмитрий Лебедев</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <p class="card__job">Руководитель</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__departament">Дирекция комплаенса, внутреннего аудита и
+                                                    рисков</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card depart">
+                                        <div class="card__header">
+                                            <div class="card employee">
+                                                <div class="card__img__block">
+                                                    <a href="#">
+                                                        <img class="card__img" src=".\img\people\Avatar-15.png" />
+                                                    </a>
+                                                    <img class="card__img__view" src=".\img\people\Frame 2304.png" />
+                                                </div>
+                                                <div class="card__box">
+                                                    <div class="card__header">
+                                                        <a src="#">
+                                                            <p class="card__fio">Даниил Новиков</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <p class="card__job">Руководитель</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__departament">Аппарат генерального директора</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card depart">
+                                        <div class="card__header">
+                                            <div class="card employee">
+                                                <div class="card__img__block">
+                                                    <a href="#">
+                                                        <img class="card__img" src=".\img\people\Avatar-1.png" />
+                                                    </a>
+                                                    <img class="card__img__view" src=".\img\people\Frame 2304.png" />
+                                                </div>
+                                                <div class="card__box">
+                                                    <div class="card__header">
+                                                        <a src="#">
+                                                            <p class="card__fio">Алексей Голубев</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card__body">
+                                                        <p class="card__job">Руководитель</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card__body">
+                                            <a href="#">
+                                                <p class="card__departament">Дирекция по правовым вопросам</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container ">
+            <div class="footer">
+                <div class="footer__col">
+                    <div class="footer__item ">
+                        <a class="logo " href="# ">
+                            <img src="./img/Other/logo/AdamPortal.png" class="logo__img " />
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <div class="footer__items ">
+                        <div class="footer__item ">
+                            <p>Описание ресурса</p>
+                            <a href="# " class="link">https://adamweb.ru/</a>
+                        </div>
+                    </div>
+                    <div class="footer__items ">
+                        <div class="footer__item ">
+                            <p>Обратная связь по работе портала</p>
+                            <a href="# " class="link">Никита Богданов</a>
+                        </div>
+                        <div class="footer__item ">
+                            <p>Помощь по сайту</p>
+                            <a href="# " class="link">Руководство пользователя портала</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <dialog id="popupSettings">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="list">
+                        <div class="list__item">
+                            <a href="https://sergey-khomyakov.github.io/AdamDemo/" class="link">На главную страницу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./libs/bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
+    <script src="./libs/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
+    <script src="./js/common.js?v=8"></script>
+    <script src="./pages/portal/js/mobNav.js?v=5"></script>
+    <script src="./pages/portal/js/master.js?v=10"></script>
+</body>
+
+</html>

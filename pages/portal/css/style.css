@@ -1474,11 +1474,11 @@ input[type=submit] {
 
 .card.employee.red {
     border: 1px solid var(--primary);
-    background: linear-gradient(20deg, #FF2D2D 30%, var(--primary) 80%);
+    background: linear-gradient(20deg, #2d73ff 30%, var(--primary) 80%)
 }
 
 .card.employee.red:before {
-    background: linear-gradient(155.3deg, #C21313 20.1%, rgba(255, 45, 45, 0) 67.17%);
+    background: linear-gradient(155.3deg, #2d73ff 20.1%, rgba(255, 45, 45, 0) 67.17%);
     transform: rotate(29.14deg);
 }
 

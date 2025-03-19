@@ -6150,7 +6150,7 @@ input[name=datepicker] {
 }
 
 .page__pagination .btn.left:before {
-    background: url("../img/icon/arrow-left.svg") no-repeat 50%;
+    background: url("../../img/icon/arrow-left.svg") no-repeat 50%;
 }
 
 @media (max-width: 959px) {
@@ -6165,7 +6165,7 @@ input[name=datepicker] {
 }
 
 .page__pagination .btn.right:before {
-    background: url("../img/icon/arrow-right.svg") no-repeat 50%;
+    background: url("../../img/icon/arrow-right.svg") no-repeat 50%;
 }
 
 @media (max-width: 959px) {

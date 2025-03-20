@@ -141,18 +141,18 @@ header .header__btn__menu {
     display: block;
     width: 32px;
     height: 32px;
-    background: url("../img/icon/menu-01.svg") no-repeat 50%;
+    background: url("../../../img/icon/menu-01.svg") no-repeat 50%;
     transition: all 0.5s;
 }
 
 header .header__btn__menu.active {
-    background: url("../img/icon/X.svg") no-repeat 50%;
+    background: url("../../../img/icon/X.svg") no-repeat 50%;
 }
 
 header .menu {
     display: none;
     position: absolute;
-    top: 160px;
+    top: 70px;
     left: 0;
     background: var(--white);
     z-index: 100;
@@ -12106,7 +12106,7 @@ input:not(:checked):focus~#helper-text {
     }
 
     .card__header__nav {
-        margin-top: -23px;
+        margin-top: 23px;
     }
 
     .card.ribbon .card__header {

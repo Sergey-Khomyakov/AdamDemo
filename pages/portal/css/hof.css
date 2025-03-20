@@ -1,0 +1,224 @@
+.hof-right-container {
+    max-width: 270px;
+}
+
+.hof-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.hof-item {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: calc(50% - 15px);
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(235, 235, 235, 0.8);
+    border-radius: 6px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.hof-card {
+    display: flex;
+}
+
+.hof-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.hof-card-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.hof-card-name {
+    font-family: "FS Albert Pro";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: #1E1B1F;
+    margin-bottom: 17px;
+}
+
+.hof-card-name:visited {
+    color: #1E1B1F;
+}
+
+.hof-card-name:hover {
+    color: #6C03A8;
+    text-decoration: none;
+}
+
+.hof-card-rewards {
+    font-family: "FS Albert Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0;
+    color: #646464;
+}
+
+.hof-from {
+    font-family: "FS Albert Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    color: #646464;
+    margin-top: 24px;
+}
+
+.hof-from-link {
+    font-family: "FS Albert Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #646464;
+    margin-left: 10px;
+}
+
+.hof-from-link:visited {
+    color: #646464;
+}
+
+.hof-from-link:hover {
+    color: #6C03A8;
+    text-decoration: none;
+}
+
+.hof-text {
+    max-height: 105px;
+    font-family: "FS Albert Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 8px;
+    color: #1E1B1F;
+    overflow: hidden;
+    transition: all 1s ease 0s;
+    margin-bottom: 0;
+}
+
+.hof-item-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 5px;
+}
+
+.hof-text-show-more {
+    display: flex;
+    align-items: center;
+}
+
+.hof-text-show-more-link {
+    font-family: "FS Albert Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #646464;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.hof-text-show-more-link:hover {
+    text-decoration: none;
+    color: #FF48A6;
+}
+
+.lk-arrow-down {
+    transition: all 0.5s ease 0s;
+    width: 10px;
+    height: 5px;
+}
+
+.lk-arrow-up {
+    transform: rotate(180deg);
+    transition: all 0.5s ease 0s;
+    width: 10px;
+    height: 5px;
+}
+
+.hof-datetime-icon {
+    width: 12px;
+    height: 12px;
+}
+
+.hof-datetime {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hof-datetime-item {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.hof-datetime-text {
+    font-family: "FS Albert Pro";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 0;
+    color: #646464;
+    margin-left: 8px;
+}
+
+.hof-item-back-1,
+.hof-item-back-2,
+.hof-item-back-3,
+.hof-item-back-4,
+.hof-item-back-5 {
+    position: absolute;
+}
+
+.hof-item-back-1 {
+    right: 0px;
+    top: 0px;
+    width: 140px !important;
+    height: 140px;
+}
+
+.hof-item-back-2 {
+    right: 32px;
+    top: 26px;
+    width: 110px !important;
+    height: auto;
+}
+
+.hof-item-back-3 {
+    right: 55%;
+    top: 80%;
+    width: 20px !important;
+    height: 20px;
+}
+
+.hof-item-back-4 {
+    right: 65%;
+    top: 8%;
+    width: 20px !important;
+    height: 20px;
+}
+
+.hof-item-back-5 {
+    right: 45%;
+    top: 10%;
+    width: 20px !important;
+    height: 20px;
+}

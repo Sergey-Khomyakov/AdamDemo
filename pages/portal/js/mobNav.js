@@ -1,17 +1,17 @@
 $(document).ready(function() {
     // var app = document.getElementsByTagName('body');
     // app.style.zoom = 1;
-    if (window.devicePixelRatio <= 1.75) {
-        let scaleValue = (0.8 / window.devicePixelRatio);
-        console.log(window.devicePixelRatio, scaleValue);
-        //$('meta[name="viewport"]').prop('content', 'width=device-width, initial-scale=0.9');
-        $('body').css('zoom', scaleValue);
-        const winWidth = window.innerWidth;
-        const d = document.querySelector('.container').clientWidth;
-        // if (winWidth > d) {
-        //     $('meta[name="viewport"]').prop('content', 'width=device-width, initial-scale=0.9');
-        // }
-    }
+    // if (window.devicePixelRatio <= 1.75) {
+    //     let scaleValue = (0.8 / window.devicePixelRatio);
+    //     console.log(window.devicePixelRatio, scaleValue);
+    //     //$('meta[name="viewport"]').prop('content', 'width=device-width, initial-scale=0.9');
+    //     $('body').css('zoom', scaleValue);
+    //     const winWidth = window.innerWidth;
+    //     const d = document.querySelector('.container').clientWidth;
+    //     // if (winWidth > d) {
+    //     //     $('meta[name="viewport"]').prop('content', 'width=device-width, initial-scale=0.9');
+    //     // }
+    // }
 
     let $btns = $('.header__group_btn a');
     let $menus = $('.menu');

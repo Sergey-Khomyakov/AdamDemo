@@ -4030,11 +4030,15 @@ input[name=datepicker] {
 }
 
 .link:hover .link__img {
-    filter: var(--filter-blue);
+    filter: brightness(0) saturate(100%) invert(54%) sepia(86%) saturate(6325%) hue-rotate(344deg) brightness(91%) contrast(106%);
 }
 
 .link__counter {
     margin-left: 5px !important;
+}
+
+.two__tier__list__col .link {
+    padding-bottom: 0.5rem;
 }
 
 .link p {
@@ -4042,7 +4046,7 @@ input[name=datepicker] {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color: var(--primary);
+    color: #B32318;
     font-style: italic;
 }
 

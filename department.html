@@ -10,8 +10,6 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link rel="stylesheet" href="./libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./libs/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css.map">
-    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./libs/OwlCarousel2-2.3.4/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./pages/portal/css/style.css?v=2">
 </head>
 
@@ -97,7 +95,7 @@
                                 <p class="page__description"></p>
                             </div>
                             <div class="page__structure">
-                                <div class="page__structure__header">
+                                <!-- <div class="page__structure__header">
                                     <div class="card employee red">
                                         <div class="card__img__block">
                                             <a href="#">
@@ -116,9 +114,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="page__structure__body">
-                                    <div class="card depart">
+                                    <div id="tree"></div>
+                                    <!-- <div class="card depart">
                                         <div class="card__header">
                                             <div class="card employee">
                                                 <div class="card__img__block">
@@ -580,7 +579,7 @@
                                                 <p class="card__departament">Дирекция по правовым вопросам</p>
                                             </a>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -606,10 +605,11 @@
 
     <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
     <script src="./libs/bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
-    <script src="./libs/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
+    <script src="./libs/orgChart/orgchart.js"></script>
     <script src="./js/common.js?v=8"></script>
     <script src="./pages/portal/js/mobNav.js?v=5"></script>
-    <script src="./pages/portal/js/master.js?v=10"></script>
+    <script src="./pages/portal/js/tgSettings.js?v=10"></script>
+    <script src="./pages/portal/js/department.js?v=1"></script>
 </body>
 
 </html>

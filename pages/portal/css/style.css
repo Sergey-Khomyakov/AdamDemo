@@ -13881,6 +13881,10 @@ input:not(:checked):focus~#helper-text {
     margin-top: 100px;
 }
 
+.page {
+    margin-bottom: 1rem;
+}
+
 .message__item {
     width: auto;
     max-width: 40%;

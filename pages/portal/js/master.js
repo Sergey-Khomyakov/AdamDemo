@@ -1,5 +1,7 @@
 $(document).ready(function() {
     setTimeout(function() {
+        let owl = $(".board__facts.owl-carousel");
+        
         owl.owlCarousel({
             items: 1,
             loop: true,

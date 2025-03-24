@@ -3,7 +3,7 @@ $(document).ready(function() {
     OrgChart.templates.orgHeader = Object.assign ( { },OrgChart.templates.ana);
     OrgChart.templates.orgChild.node = '<rect x="0" y="0" height="{h}" width="{w}" fill="#fff" filter="url(#isla-shadow)" stroke-width="0" stroke="#aeaeae" rx="7" ry="7"></rect>'
     OrgChart.templates.orgChild.defs = '' ;
-    OrgChart.templates.orgChild.name = `<foreignobject class="node" x="10" y="70" width="220" height="100">{val}</foreignobject>`;
+    OrgChart.templates.orgChild.name = `<foreignobject class="node" x="10" y="70" width="220" height="50">{val}</foreignobject>`;
     OrgChart.templates.orgChild.fio = `<foreignobject class="node" x="55" y="20" width="220" height="50">{val}</foreignobject>`;
     OrgChart.templates.orgChild.img = `<foreignobject class="node" x="10" y="20" width="36" height="36">{val}</foreignobject>`;
 

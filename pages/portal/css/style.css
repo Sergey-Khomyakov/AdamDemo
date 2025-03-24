@@ -2329,7 +2329,7 @@ background-color: var(--primary) ;
 }
 
 .card__document__header .text:hover {
-    color: #B32318;
+    color: var(--primary);
 }
 
 .card__document__body p {
@@ -2377,7 +2377,7 @@ background-color: var(--primary) ;
 }
 
 .card__document .link p:hover {
-    color: #B32318;
+    color: var(--primary);
 }
 
 .card__document .link .link__img {
@@ -4030,7 +4030,7 @@ input[name=datepicker] {
 }
 
 .link:hover .link__img {
-    filter: brightness(0) saturate(100%) invert(54%) sepia(86%) saturate(6325%) hue-rotate(344deg) brightness(91%) contrast(106%);
+    filter: brightness(0) saturate(100%) invert(19%) sepia(95%) saturate(1485%) hue-rotate(203deg) brightness(99%) contrast(90%);
 }
 
 .link__counter {
@@ -5783,7 +5783,7 @@ input[name=datepicker] {
 }
 
 .folder__menu .two__tier__list .link.active .link__img {
-    filter: invert(25%) sepia(96%) saturate(4286%) hue-rotate(350deg) brightness(88%) contrast(98%);
+    filter: brightness(0) saturate(100%) invert(19%) sepia(95%) saturate(1485%) hue-rotate(203deg) brightness(99%) contrast(90%);
 }
 
 .folder__menu .two__tier__list__col {

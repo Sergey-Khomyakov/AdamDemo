@@ -615,10 +615,10 @@ main {
 .btn__panel.rating.active .btn__panel.bg__img,
 .btn__panel.favorites.active .btn__panel.bg__img,
 .btn__panel.view.active .btn__panel.bg__img {
-    background: #FEE4E2;
+    background: #e2eafe;
     padding: 17px;
     border-radius: 50%;
-    box-shadow: 0px 0px 0px 5px rgb(254, 243, 242);
+    box-shadow: 0px 0px 0px 5px rgb(242 242 254);
 }
 
 .btn__panel.like.active .btn__panel.bg__img img,
@@ -628,7 +628,7 @@ main {
 .btn__panel.rating.active .btn__panel.bg__img img,
 .btn__panel.favorites.active .btn__panel.bg__img img,
 .btn__panel.view.active .btn__panel.bg__img img {
-    filter: invert(26%) sepia(100%) saturate(1671%) hue-rotate(322deg) brightness(86%) contrast(100%);
+    filter: brightness(0) saturate(100%) invert(28%) sepia(83%) saturate(513%) hue-rotate(175deg) brightness(93%) contrast(102%);
 }
 
 .btn__panel:hover .btn__panel.bg__img {
@@ -11861,7 +11861,7 @@ input:not(:checked):focus~#helper-text {
 .btn__panel.rating.active .btn__panel.bg__img img,
 .btn__panel.favorites.active .btn__panel.bg__img img,
 .btn__panel.view.active .btn__panel.bg__img img {
-    filter: brightness(0) saturate(100%) invert(54%) sepia(86%) saturate(6325%) hue-rotate(344deg) brightness(91%) contrast(106%);
+    filter: brightness(0) saturate(100%) invert(28%) sepia(83%) saturate(513%) hue-rotate(175deg) brightness(93%) contrast(102%);
     width: 20px;
 }
 

@@ -10919,7 +10919,7 @@ label.upload__file::before {
 }
 
 .modal .btn-close {
-    background: url("../img/icon/x-close.svg") no-repeat 50%;
+    background: url("../../../img/icon/x-close.svg") no-repeat 50%;
     width: 16px;
     height: 16px;
     padding: 0 8px;

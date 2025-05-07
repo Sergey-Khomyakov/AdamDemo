@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./pages/Configurator/css/style.css?v=9">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/other/favicon.ico" type="image/x-icon" />
+    <title>Главная - Конфигуратор</title>
+    <meta name="description" content="" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a class="logo" href="#">
+                <img src="./img/Other/logo/Logo2.webp" class="logo__img__mob" />
+            </a>
+            <div class="w-12 h-12">
+                <img userCardImg="" class="w-full h-full object-contain rounded-full" src="./img/people/Avatar_1.png" />
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main">
+                <div class="cards">
+                    <template templateProduct="">
+                        <aside class="product__cart">
+                            <div class="product__img">
+                                <img class="w-full h-full object-cover" src="./pages/Configurator/images/unnamed.jpg" />
+                            </div>
+                            <div class="product__info">
+                                <p class="product__price"></p>
+                                <p class="product__title"></p>
+                            </div>
+                            <div class="product__btns">
+                                <a btn="detailed" href="#" class="product__btn">Подробнее</a>
+                            </div>
+                        </aside>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <dialog id="popupSettings">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="list">
+                        <div class="list__item">
+                            <a href="https://sergey-khomyakov.github.io/AdamDemo/" class="link">На главную страницу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./js/common.js?v=8"></script>
+    <script src="./pages/Configurator/js/data.js?v=1"></script>
+    <script src="./pages/Configurator/js/index.js?v=1"></script>
+</body>
+
+</html>

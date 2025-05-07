@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./pages/Configurator/css/style.css?v=9">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/other/favicon.ico" type="image/x-icon" />
+    <title>Товар - Конфигуратор</title>
+    <meta name="description" content="" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+
+<body class="relative">
+    <header>
+        <div class="header">
+            <a class="logo" href="#">
+                <img src="./img/Other/logo/Logo2.webp" class="logo__img__mob" />
+            </a>
+            <div class="w-12 h-12">
+                <img userCardImg="" class="w-full h-full object-contain rounded-full" src="./img/people/Avatar_1.png" />
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main">
+                <div class="product">
+                    <div class="product__content">
+                        <p class="product__name"></p>
+                        <div class="product__img">
+                            <img class="w-full h-full object-cover" src="./pages/Configurator/images/unnamed.jpg" />
+                        </div>
+                        <div class="product__info">
+                            <div class="product__price"><span></span> руб.</div>
+                            <div class="product__info-total"></div>
+                        </div>
+                        <button type="button" change="">Изменить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <dialog class="dialog" id="popupSettings">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="list">
+                        <div class="list__item">
+                            <a href="https://sergey-khomyakov.github.io/AdamDemo/" class="link">На главную страницу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="rounded-xl" id="Setting">
+        <div class="flex items-center justify-between p-4">
+            <p class="font-montserrat font-semibold text-2xl text-black" titleCard=""></p>
+            <img class="w-6 h-6 object-contain filter-black cursor-pointer" closeModal="" src="./img/icon/X.svg"
+                alt="иконки">
+        </div>
+        <div class="flex flex-col gap-4 px-4 h-full pb-24" dialogBody="">
+            <div canvas style="width: 100%"></div>
+            <p class="">Цвет изделия может отличаться от фотографии на несколько оттенков в зависимости от настроек
+                экрана.</p>
+        </div>
+    </dialog>
+
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.176.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.176.0/examples/jsm/"
+          }
+        }
+    </script>
+    <script src="./pages/Configurator/libs/jquery/jquery-3.7.1.min.js"></script>
+    <script src="./pages/Configurator/libs/jquery/jquery-ui.min.js"></script>
+    <script src="./js/common.js?v=8"></script>
+    <script src="./pages/Configurator/js/data.js?v=1"></script>
+    <script type="module" src="./pages/Configurator/js/product.js?v=1"></script>
+</body>
+
+</html>

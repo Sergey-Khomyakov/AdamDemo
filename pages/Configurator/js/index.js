@@ -36,7 +36,7 @@ class ProductManager{
             image.setAttribute('alt', el.images[0].alt);
         }
 
-        if(btnDetailed !== null) btnDetailed.setAttribute('href', '/ConfiguratorProduct.html?id=' +el.id);
+        if(btnDetailed !== null) btnDetailed.setAttribute('href', 'https://sergey-khomyakov.github.io/AdamDemo/ConfiguratorProduct.html?id=' +el.id);
 
         this.body.appendChild(clone);
     }
